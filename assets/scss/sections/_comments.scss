@@ -1,0 +1,81 @@
+/* # Comments ===== */
+#comments {
+	margin-top: rem-calc(40);
+}
+
+/* ## Individual Comments ===== */
+li.comment,
+li.ping,
+li.bypostauthor {
+	margin: rem-calc(10 0 50 0);
+
+	article {
+		display: flex;
+		padding-bottom: rem-calc(20);
+		border-bottom: 1px solid $light-gray;
+	}
+}
+
+.comment-entry {
+	flex: 0 1 auto;
+}
+
+.comment-header {
+	margin-bottom: rem-calc(20);
+	@include clearfix;
+}
+
+/* ## Comment Avatars ===== */
+.comment-avatar {
+	flex: 0 0 rem-calc(75);
+	width: rem-calc(75);
+
+	img {
+		border-radius: 1000px;
+	}
+}
+
+/* ## Comment Meta===== */
+.comment-meta {
+	padding-top: 2%;
+
+	cite {
+		display: block;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 1;
+
+		.bypostauthor &,
+		.bypostauthor & a {
+			color: $warning-color;
+		}
+	}
+
+	time,
+	.comment-permalink,
+	.comment-edit-link {
+		font-size: rem-calc(12);
+		color: $medium-gray;
+	}
+
+	.ping & {
+		float: none;
+	}
+}
+
+/* ## Comment Reply ===== */
+.comment-reply-link {
+	margin-top: rem-calc(10);
+	margin-bottom: 0;
+	text-align: right;
+	font-size: rem-calc(12);
+	color: $medium-gray;
+}
+.comment-reply-link:hover {}
+
+
+/* ## Comment Form ===== */
+#respond {
+
+}
+

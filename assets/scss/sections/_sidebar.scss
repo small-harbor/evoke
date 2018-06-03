@@ -1,0 +1,35 @@
+/* # Sidebars and Widgets ===== */
+.widget-title,
+.widgettitle {
+	margin-bottom: rem-calc(16);
+	font-size: rem-calc(12);
+	font-weight: bold;
+	text-align: center;
+	//color: $white;
+
+	span {		
+		display: inline-block;
+		padding: rem-calc(8);
+		border-bottom: 1px solid $medium-gray;
+	}
+}
+
+.widget {
+	position: relative;
+	padding: 0 rem-calc(32) rem-calc(16);
+	margin-bottom: rem-calc(32);
+
+	p,
+	ul,
+	ol,
+	dl {
+		font-size: rem-calc(14);
+	}
+
+	ul,
+	ol,
+	dl {
+		list-style-type: none;
+		margin-left: 0;
+	}
+}

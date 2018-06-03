@@ -1,0 +1,8 @@
+/* # Footer ===== */
+footer.footer {
+	.colophon {
+		@include small-column(12);
+		@include medium-column(12);
+		@include large-column(12);
+	}
+}

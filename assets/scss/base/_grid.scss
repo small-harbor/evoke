@@ -1,0 +1,87 @@
+@mixin small-column(
+	$columns: null,
+	$order: null,
+	$gutter: $grid-column-gutter) {
+
+	@media only screen {
+		@if $global-flexbox {
+			@include flex-grid-column(
+				$columns,
+				$gutter);
+			@if $gutter != null {
+				@include flex-order($order);
+			}
+		}
+		@else {
+			@include grid-column(
+				$columns,
+				$gutter);
+		}
+	}
+}
+
+@mixin medium-column(
+	$columns: null,
+	$order: null,
+	$gutter: $grid-column-gutter) {
+
+	@include breakpoint(medium) {
+		@if $global-flexbox {
+			@include flex-grid-column(
+				$columns,
+				$gutter);
+			@if $gutter != null {
+				@include flex-order($order);
+			}
+		}
+		@else {
+			@include grid-column(
+				$columns,
+				$gutter);
+		}
+	}
+}
+
+@mixin large-column(
+	$columns: null,
+	$order: null,
+	$gutter: $grid-column-gutter) {
+
+	@include breakpoint(large) {
+		@if $global-flexbox {
+			@include flex-grid-column(
+				$columns,
+				$gutter);
+			@if $gutter != null {
+				@include flex-order($order);
+			}
+		}
+		@else {
+			@include grid-column(
+				$columns,
+				$gutter);
+		}
+	}
+}
+
+@mixin xlarge-column(
+	$columns: null,
+	$order: null,
+	$gutter: $grid-column-gutter) {
+
+	@include breakpoint(xlarge) {
+		@if $global-flexbox {
+			@include flex-grid-column(
+				$columns,
+				$gutter);
+			@if $gutter != null {
+				@include flex-order($order);
+			}
+		}
+		@else {
+			@include grid-column(
+				$columns,
+				$gutter);
+		}
+	}
+}
