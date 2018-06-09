@@ -10,7 +10,7 @@
 				<?php hybrid_post_format_link(); ?>
 				<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
 				<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
-				<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
+				<?php comments_popup_link( number_format_i18n( 0 ) . ' comments', number_format_i18n( 1 ) . ' comment', '% comments', 'comments-link', '' ); ?>
 				<?php edit_post_link(); ?>
 			</div><!-- .entry-byline -->
 
@@ -36,7 +36,7 @@
 			<?php hybrid_post_format_link(); ?>
 			<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
 			<a class="entry-permalink" href="<?php the_permalink(); ?>" rel="bookmark" itemprop="url"><?php _e( 'Permalink', 'evoke' ); ?></a>
-			<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
+			<?php comments_popup_link( number_format_i18n( 0 ) . ' comments', number_format_i18n( 1 ) . ' comment', '% comments', 'comments-link', '' ); ?>
 			<?php edit_post_link(); ?>
 		</footer><!-- .entry-footer -->
 
