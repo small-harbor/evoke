@@ -273,9 +273,9 @@ final class Evoke_Theme {
 	 */
 	public function register_layouts() {
 
-		hybrid_register_layout( '1c',        array( 'label' => __( '1 Column Wide',                'evoke' ), 'image' => '%s/images/layouts/1c.png' ) );
-		hybrid_register_layout( '2c-l',      array( 'label' => __( '2 Columns: Content / Sidebar', 'evoke' ), 'image' => '%s/images/layouts/2c-l.png' ) );
-		hybrid_register_layout( '2c-r',      array( 'label' => __( '2 Columns: Sidebar / Content', 'evoke' ), 'image' => '%s/images/layouts/2c-r.png' ) );
+		hybrid_register_layout( '1c',        array( 'label' => __( '1 Column Wide',                'evoke' ), 'image' => '%s/assets/images/layouts/1c.png' ) );
+		hybrid_register_layout( '2c-l',      array( 'label' => __( '2 Columns: Content / Sidebar', 'evoke' ), 'image' => '%s/assets/images/layouts/2c-l.png' ) );
+		hybrid_register_layout( '2c-r',      array( 'label' => __( '2 Columns: Sidebar / Content', 'evoke' ), 'image' => '%s/assets/images/layouts/2c-r.png' ) );
 	}
 }
 

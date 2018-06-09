@@ -55,7 +55,7 @@ final class Evoke_Admin_Post_Layout {
 			return;
 
 		// Load on the edit tags screen.
-		add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ) );
+		add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ), 20 );
 
 		// Update post meta.
 		add_action( 'save_post',       array( $this, 'save' ), 10, 2 );
@@ -74,6 +74,8 @@ final class Evoke_Admin_Post_Layout {
 	public function add_meta_boxes( $post_type ) {
 
 		if ( post_type_supports( $post_type, 'theme-layouts' ) && current_user_can( 'edit_theme_options' ) ) {
+			global $wp_meta_boxes;
+			$wp_meta_boxes[$post_type]['side']['default']['hybrid-post-layout']['title'] = 'Content Layout';
 
 			// Add meta box.
 			add_meta_box( 'evoke-container-post-layout', esc_html__( 'Body Container Layout', 'evoke' ), array( $this, 'meta_box' ), $post_type, 'side', 'default' );
