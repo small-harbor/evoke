@@ -1,25 +1,17 @@
 <article <?php hybrid_attr( 'post' ); ?>>
 
-	<?php if ( has_post_thumbnail() ) : ?>
-
-		<div class="entry-thumbnail">
-
-			<?php the_post_thumbnail( 'full' ); ?>
-
-		</div>
-
-	<?php endif; ?>
-
 	<?php if ( is_singular( get_post_type() ) ) : // If viewing a single post. ?>
 
 		<header class="entry-header">
 
-			<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
+			<?php if ( 'post' == evoke_get_option( 'layout_post_title' ) ) : ?>
+				<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
+			<?php endif; ?>
 
 			<div class="entry-byline">
 				<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
 				<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
-				<?php comments_popup_link( number_format_i18n( 0 ) . ' comments', number_format_i18n( 1 ) . ' comment', '% comments', 'comments-link', '' ); ?>
+				<?php comments_popup_link( number_format_i18n( 0 ) . ' comments', number_format_i18n( 1 ) . ' comment', '% comments', 'comments-link', 'Comments Off' ); ?>
 				<?php edit_post_link(); ?>
 			</div><!-- .entry-byline -->
 
@@ -44,7 +36,7 @@
 			<div class="entry-byline">
 				<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
 				<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
-				<?php comments_popup_link( number_format_i18n( 0 ) . ' comments', number_format_i18n( 1 ) . ' comment', '% comments', 'comments-link', '' ); ?>
+				<?php comments_popup_link( number_format_i18n( 0 ) . ' comments', number_format_i18n( 1 ) . ' comment', '% comments', 'comments-link', 'Comments Off' ); ?>
 				<?php edit_post_link(); ?>
 			</div><!-- .entry-byline -->
 

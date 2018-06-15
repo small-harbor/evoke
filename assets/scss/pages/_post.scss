@@ -17,7 +17,7 @@ article {
 }
 
 .entry-header {
-	margin-bottom: rem-calc(48);
+	margin-bottom: rem-calc(16);
 	text-align: center;
 	border-bottom: 1px solid $light-gray;
 }
@@ -44,6 +44,11 @@ article {
 			color: $black;
 		}
 	}
+}
+
+/* ## Post Content ===== */
+.entry-content {
+	@include clearfix;
 }
 
 /* ## Post Footer ===== */

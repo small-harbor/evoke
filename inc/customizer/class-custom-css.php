@@ -120,6 +120,8 @@ if ( ! class_exists( 'Evoke_Custom_CSS' ) ) {
 				$style .= '.is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after { border-left-color: ' . $options['color_primary'] . '}';
 
 				$style .= '.pagination .current { background: ' . $options['color_primary'] . ' }';
+
+				$style .= 'input[type="submit"] { background: ' . $options['color_primary'] . ' }';
 			}
 
 			return $style;

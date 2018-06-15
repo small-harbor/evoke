@@ -10,6 +10,26 @@
 	@include breakpoint(large up) {
 		height: rem-calc(600);
 	}
+
+	.entry-hero-content {
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+
+	.entry-hero-inner {
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background-color: rgba(0,0,0,0.5);
+		color: $white;
+		padding: rem-calc(10 20);
+	}
+
+	.entry-hero-title {
+		text-align: center;
+	}
 }
 
 .container-body-boxed,
