@@ -1,5 +1,11 @@
 /* # Archives ===== */
+.archive-header {
+	margin-bottom: rem-calc(16);
 
+	.archive-title {
+		margin-bottom: 0;
+	}
+}
 
 /* # Pagination ===== */
 .nav-links {

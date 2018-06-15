@@ -8763,8 +8763,18 @@ li.bypostauthor article {
 }
 
 /* # Archives ===== */
+/* line 2, /Users/dsutoyo/Dev/preview.themeharbor.dev.cc/wp-content/themes/evoke/assets/scss/pages/_archives.scss */
+.archive-header {
+  margin-bottom: 1rem;
+}
+
+/* line 5, /Users/dsutoyo/Dev/preview.themeharbor.dev.cc/wp-content/themes/evoke/assets/scss/pages/_archives.scss */
+.archive-header .archive-title {
+  margin-bottom: 0;
+}
+
 /* # Pagination ===== */
-/* line 6, /Users/dsutoyo/Dev/preview.themeharbor.dev.cc/wp-content/themes/evoke/assets/scss/pages/_archives.scss */
+/* line 12, /Users/dsutoyo/Dev/preview.themeharbor.dev.cc/wp-content/themes/evoke/assets/scss/pages/_archives.scss */
 .nav-links span {
   display: block;
   padding: 0.1875rem 0.625rem;
@@ -8772,7 +8782,7 @@ li.bypostauthor article {
   color: #333333;
 }
 
-/* line 14, /Users/dsutoyo/Dev/preview.themeharbor.dev.cc/wp-content/themes/evoke/assets/scss/pages/_archives.scss */
+/* line 20, /Users/dsutoyo/Dev/preview.themeharbor.dev.cc/wp-content/themes/evoke/assets/scss/pages/_archives.scss */
 .page-numbers {
   margin-left: 0;
 }
