@@ -45,6 +45,8 @@
 
 		<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
 
+		<?php locate_template( array( 'misc/hero.php' ), true ); // Loads the misc/hero.php template. ?>
+
 		<div id="main" class="main">
 
 			<div class="wrap">

@@ -82,6 +82,9 @@ if ( ! class_exists( 'Evoke_Theme_Options' ) ) {
 					'layout_content_page' => '1c',
 					'layout_content_post' => '1c',
 					'layout_content_archive' => '2c-l',
+					'layout_featured_image' => 'theme',
+					'layout_post_title' => 'featured-image',
+					'front_page_hide_title' => true
 				)
 			);
 		}

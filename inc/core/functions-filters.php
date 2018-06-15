@@ -72,6 +72,10 @@ function evoke_attr_body( $attr ) {
 		$attr['class'] .= ' container-footer-' . evoke_get_option( 'layout_container_footer' );
 	}
 
+	if ( is_singular() && has_post_thumbnail() ) {
+		$attr['class'] .= ' has-post-thumbnail';
+	}
+
 	return $attr;
 }
 

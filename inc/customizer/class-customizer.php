@@ -63,9 +63,8 @@ if ( ! class_exists( 'Evoke_Customizer' ) ) {
 		 */
 		public function customize_register( $wp_customize ) {
 			require EVOKE_THEME_DIR . 'inc/customizer/defaults-override.php';
-
 			require EVOKE_THEME_DIR . 'inc/customizer/controls/divider.php';
-
+			require EVOKE_THEME_DIR . 'inc/customizer/sections/homepage-settings/homepage-settings.php';
 			require EVOKE_THEME_DIR . 'inc/customizer/sections/site-identity/site-identity.php';
 			require EVOKE_THEME_DIR . 'inc/customizer/sections/layout/layout.php';
 			require EVOKE_THEME_DIR . 'inc/customizer/sections/colors/colors.php';

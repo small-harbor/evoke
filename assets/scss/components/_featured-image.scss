@@ -1,0 +1,22 @@
+.entry-hero {
+	height: rem-calc(200);
+	background-position: center center;
+	background-size: cover;
+
+	@include breakpoint(medium up) {
+		height: rem-calc(400);
+	}
+
+	@include breakpoint(large up) {
+		height: rem-calc(600);
+	}
+}
+
+.container-body-boxed,
+.container-page-boxed,
+.container-post-boxed,
+.container-singular-boxed {
+	.entry-hero {
+		@include flex-grid-row();
+	}
+}

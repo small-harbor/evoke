@@ -100,5 +100,17 @@
 			}
 		});
 	});
+
+	wp.customize('layout_featured_image', function(value) {
+		value.bind( function(newval) {
+			if (newval == 'ratio') {
+				$('.entry-hero').css('height', $('.entry-hero').data('ratio') + 'vw');
+			}
+
+			else {
+				$('.entry-hero').css('height', '');
+			}
+		});
+	});
 	
 })(jQuery);

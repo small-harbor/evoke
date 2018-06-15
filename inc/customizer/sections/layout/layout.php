@@ -313,3 +313,54 @@ $wp_customize->add_control(
 		)
 	)
 );
+
+/*
+ * Setting: Featured Image Layout
+ */
+$wp_customize->add_setting(
+	'layout_featured_image',
+	array(
+		'default'           => evoke_get_option( 'layout_featured_image' ),
+		'sanitize_callback' => 'sanitize_key',
+		'transport'         => 'postMessage'
+	)
+);
+
+$wp_customize->add_control(
+	'layout_featured_image',
+	array(
+		'type' => 'select',
+		'section' => 'panel_layout_section_content',
+		'label' => __( 'Featured Image Size', 'evoke' ),
+		'choices' => array(
+			'theme' => __( 'Theme Defined', 'evoke' ),
+			'ratio' => __( 'Use Image Ratio', 'evoke' ),
+		),
+		'description' => __( 'Use the predefined image size or keep the ratio of your upload image', 'evoke' )
+	)
+);
+
+/*
+ * Setting: Post Title
+ */
+$wp_customize->add_setting(
+	'layout_post_title',
+	array(
+		'default'           => evoke_get_option( 'layout_post_title' ),
+		'sanitize_callback' => 'sanitize_key',
+		'transport'         => 'postMessage'
+	)
+);
+
+$wp_customize->add_control(
+	'layout_post_title',
+	array(
+		'type' => 'select',
+		'section' => 'panel_layout_section_content',
+		'label' => __( 'Post Title Placement', 'evoke' ),
+		'choices' => array(
+			'featured-image' => __( 'Inside Featured Image', 'evoke' ),
+			'post' => __( 'With Post', 'evoke' ),
+		),
+	)
+);
