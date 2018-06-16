@@ -7,6 +7,8 @@
 /* # Container Layout Structure ===== */
 .container-body-boxed {
 	#main {
+		padding-top: 0;
+
 		> .wrap {
 			background: $white;
 			padding: rem-calc(64 0);
@@ -105,6 +107,7 @@
 .container-post-boxed,
 .container-singular-boxed {
 	#main {
+		padding-top: 0;
 		background-color: $feather-gray;
 
 		> .wrap {
@@ -154,8 +157,8 @@
 
 /* # Content Layout Structure ===== */
 #main {
-	padding-top: rem-calc(40);
-	padding-bottom: rem-calc(40);
+	padding-top: rem-calc(48);
+	padding-bottom: rem-calc(48);
 
 	.layout-1c & {
 		main.content {

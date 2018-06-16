@@ -21,12 +21,12 @@ $css_height = 'ratio' == evoke_get_option( 'layout_featured_image' ) ? 'height: 
 <div class="entry-hero" data-height="<?php echo $thumbnail_src[2]; ?>" data-width="<?php echo $thumbnail_src[1]; ?>" data-ratio="<?php echo ($thumbnail_src[2]/$thumbnail_src[1]) * 100; ?>" style="background-image: url(<?php echo $thumbnail_src[0]; ?>);<?php echo $css_height; ?>">
 	<div class="entry-hero-overlay"></div>
 	<div class="entry-hero-content">
-		<div class="entry-hero-inner">
 		<?php if ( $object->post_title && 'featured-image' == evoke_get_option( 'layout_post_title' ) ) : ?>
 			<?php if ( ! is_front_page() || is_front_page() && ! evoke_get_option( 'front_page_hide_title' ) ) : ?>
-				<h1 class="entry-hero-title"><?php echo $object->post_title; ?></h1>
+				<div class="entry-hero-inner">
+					<h1 class="entry-hero-title"><?php echo $object->post_title; ?></h1>
+				</div>
 			<?php endif; ?>
 		<?php endif; ?>
-		</div>
 	</div>
 </div>
