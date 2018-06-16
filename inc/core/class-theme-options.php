@@ -71,8 +71,8 @@ if ( ! class_exists( 'Evoke_Theme_Options' ) ) {
 				'evoke_defaults',
 				array(
 					'custom_logo_height' => 60,
-					'color_primary' => '#ff0000',
-					'color_secondary' => '#00ff00',
+					'color_primary' => '#ff780b',
+					'color_secondary' => '#0d95db',
 					'layout_container' => 'boxed',
 					'layout_container_header' => 'full-width',
 					'layout_container_footer' => 'full-width',

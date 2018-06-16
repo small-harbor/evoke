@@ -1668,7 +1668,7 @@ h5, .h5,
 h6, .h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
 }
@@ -1762,14 +1762,14 @@ h6, .h6 {
 /* line 371, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
 a {
   line-height: inherit;
-  color: #1779ba;
+  color: #ff780b;
   text-decoration: none;
   cursor: pointer;
 }
 
 /* line 378, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
 a:hover, a:focus {
-  color: #1468a0;
+  color: #e56600;
 }
 
 /* line 386, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
@@ -1841,14 +1841,14 @@ blockquote {
 /* line 454, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
 blockquote, blockquote p {
   line-height: 1.6;
-  color: #8a8a8a;
+  color: #474747;
 }
 
 /* line 461, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
 cite {
   display: block;
   font-size: 0.8125rem;
-  color: #8a8a8a;
+  color: #474747;
 }
 
 /* line 466, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
@@ -1893,7 +1893,7 @@ kbd {
   margin-bottom: 0.5rem;
   font-weight: 300;
   line-height: 1.4;
-  color: #8a8a8a;
+  color: #474747;
 }
 
 /* line 58, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_helpers.scss */
@@ -2045,7 +2045,7 @@ ul.no-bullet, ol.no-bullet {
   /* line 54, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_print.scss */
   pre,
   blockquote {
-    border: 1px solid #8a8a8a;
+    border: 1px solid #474747;
     page-break-inside: avoid;
   }
   /* line 61, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_print.scss */
@@ -2115,7 +2115,7 @@ textarea {
 [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid #8a8a8a;
+  border: 1px solid #474747;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 5px #cacaca;
           box-shadow: 0 0 5px #cacaca;
@@ -2373,7 +2373,7 @@ select {
   font-weight: 300;
   line-height: 1.5;
   color: #333333;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%2871, 71, 71%29'></polygon></svg>");
   background-origin: content-box;
   background-position: right -1rem center;
   background-repeat: no-repeat;
@@ -2395,7 +2395,7 @@ select {
 /* line 54, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/forms/_select.scss */
 select:focus {
   outline: none;
-  border: 1px solid #8a8a8a;
+  border: 1px solid #474747;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 5px #cacaca;
           box-shadow: 0 0 5px #cacaca;
@@ -2478,7 +2478,7 @@ select[multiple] {
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  background-color: #1779ba;
+  background-color: #ff780b;
   color: #ffffff;
 }
 
@@ -2489,7 +2489,7 @@ select[multiple] {
 
 /* line 150, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button:hover, .button:focus {
-  background-color: #14679e;
+  background-color: #e26500;
   color: #ffffff;
 }
 
@@ -2518,26 +2518,26 @@ select[multiple] {
 
 /* line 277, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.primary {
-  background-color: #1779ba;
-  color: #ffffff;
+  background-color: #ff780b;
+  color: #333333;
 }
 
 /* line 150, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.primary:hover, .button.primary:focus {
-  background-color: #126195;
-  color: #ffffff;
+  background-color: #d55f00;
+  color: #333333;
 }
 
 /* line 277, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.secondary {
-  background-color: #767676;
-  color: #ffffff;
+  background-color: #0d95db;
+  color: #333333;
 }
 
 /* line 150, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.secondary:hover, .button.secondary:focus {
-  background-color: #5e5e5e;
-  color: #ffffff;
+  background-color: #0a77af;
+  color: #333333;
 }
 
 /* line 277, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2584,7 +2584,7 @@ select[multiple] {
 
 /* line 207, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.disabled, .button.disabled:hover, .button.disabled:focus, .button[disabled], .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #1779ba;
+  background-color: #ff780b;
   color: #ffffff;
 }
 
@@ -2596,8 +2596,8 @@ select[multiple] {
 
 /* line 207, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.disabled.primary, .button.disabled.primary:hover, .button.disabled.primary:focus, .button[disabled].primary, .button[disabled].primary:hover, .button[disabled].primary:focus {
-  background-color: #1779ba;
-  color: #ffffff;
+  background-color: #ff780b;
+  color: #333333;
 }
 
 /* line 298, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2608,8 +2608,8 @@ select[multiple] {
 
 /* line 207, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.disabled.secondary, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-  background-color: #767676;
-  color: #ffffff;
+  background-color: #0d95db;
+  color: #333333;
 }
 
 /* line 298, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2650,8 +2650,8 @@ select[multiple] {
 
 /* line 306, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #ff780b;
+  color: #ff780b;
 }
 
 /* line 158, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2666,50 +2666,50 @@ select[multiple] {
 
 /* line 182, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow:hover, .button.hollow:focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
+  border-color: #853b00;
+  color: #853b00;
 }
 
 /* line 185, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow:hover.disabled, .button.hollow:hover[disabled], .button.hollow:focus.disabled, .button.hollow:focus[disabled] {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #ff780b;
+  color: #ff780b;
 }
 
 /* line 311, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow.primary {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #ff780b;
+  color: #ff780b;
 }
 
 /* line 182, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow.primary:hover, .button.hollow.primary:focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
+  border-color: #853b00;
+  color: #853b00;
 }
 
 /* line 185, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow.primary:hover.disabled, .button.hollow.primary:hover[disabled], .button.hollow.primary:focus.disabled, .button.hollow.primary:focus[disabled] {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #ff780b;
+  color: #ff780b;
 }
 
 /* line 311, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow.secondary {
-  border: 1px solid #767676;
-  color: #767676;
+  border: 1px solid #0d95db;
+  color: #0d95db;
 }
 
 /* line 182, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow.secondary:hover, .button.hollow.secondary:focus {
-  border-color: #3b3b3b;
-  color: #3b3b3b;
+  border-color: #074b6e;
+  color: #074b6e;
 }
 
 /* line 185, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.hollow.secondary:hover.disabled, .button.hollow.secondary:hover[disabled], .button.hollow.secondary:focus.disabled, .button.hollow.secondary:focus[disabled] {
-  border: 1px solid #767676;
-  color: #767676;
+  border: 1px solid #0d95db;
+  color: #0d95db;
 }
 
 /* line 311, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2768,8 +2768,8 @@ select[multiple] {
 
 /* line 320, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #ff780b;
+  color: #ff780b;
 }
 
 /* line 158, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2784,14 +2784,14 @@ select[multiple] {
 
 /* line 182, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear:hover, .button.clear:focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
+  border-color: #853b00;
+  color: #853b00;
 }
 
 /* line 185, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear:hover.disabled, .button.clear:hover[disabled], .button.clear:focus.disabled, .button.clear:focus[disabled] {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #ff780b;
+  color: #ff780b;
 }
 
 /* line 325, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2801,20 +2801,20 @@ select[multiple] {
 
 /* line 331, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear.primary {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #ff780b;
+  color: #ff780b;
 }
 
 /* line 182, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear.primary:hover, .button.clear.primary:focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
+  border-color: #853b00;
+  color: #853b00;
 }
 
 /* line 185, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear.primary:hover.disabled, .button.clear.primary:hover[disabled], .button.clear.primary:focus.disabled, .button.clear.primary:focus[disabled] {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #ff780b;
+  color: #ff780b;
 }
 
 /* line 336, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2824,20 +2824,20 @@ select[multiple] {
 
 /* line 331, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear.secondary {
-  border: 1px solid #767676;
-  color: #767676;
+  border: 1px solid #0d95db;
+  color: #0d95db;
 }
 
 /* line 182, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear.secondary:hover, .button.clear.secondary:focus {
-  border-color: #3b3b3b;
-  color: #3b3b3b;
+  border-color: #074b6e;
+  color: #074b6e;
 }
 
 /* line 185, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.clear.secondary:hover.disabled, .button.clear.secondary:hover[disabled], .button.clear.secondary:focus.disabled, .button.clear.secondary:focus[disabled] {
-  border: 1px solid #767676;
-  color: #767676;
+  border: 1px solid #0d95db;
+  color: #0d95db;
 }
 
 /* line 336, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -2933,17 +2933,17 @@ select[multiple] {
 
 /* line 358, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.dropdown.hollow::after {
-  border-top-color: #1779ba;
+  border-top-color: #ff780b;
 }
 
 /* line 364, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.dropdown.hollow.primary::after {
-  border-top-color: #1779ba;
+  border-top-color: #ff780b;
 }
 
 /* line 364, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button.dropdown.hollow.secondary::after {
-  border-top-color: #767676;
+  border-top-color: #0d95db;
 }
 
 /* line 364, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
@@ -3004,7 +3004,7 @@ a.button:hover, a.button:focus {
   border-bottom: 0;
   font-size: 0.75rem;
   line-height: 1;
-  color: #1779ba;
+  color: #ff780b;
 }
 
 /* line 93, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_accordion.scss */
@@ -3088,7 +3088,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-bottom-width: 0;
   border-top-style: solid;
-  border-color: #1779ba transparent transparent;
+  border-color: #ff780b transparent transparent;
   position: absolute;
   top: 50%;
   margin-top: -3px;
@@ -3146,7 +3146,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-bottom-width: 0;
   border-top-style: solid;
-  border-color: #1779ba transparent transparent;
+  border-color: #ff780b transparent transparent;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -3184,20 +3184,20 @@ a.button:hover, a.button:focus {
   border-radius: 50%;
   font-size: 0.6rem;
   text-align: center;
-  background: #1779ba;
+  background: #ff780b;
   color: #ffffff;
 }
 
 /* line 57, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_badge.scss */
 .badge.primary {
-  background: #1779ba;
-  color: #ffffff;
+  background: #ff780b;
+  color: #333333;
 }
 
 /* line 57, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_badge.scss */
 .badge.secondary {
-  background: #767676;
-  color: #ffffff;
+  background: #0d95db;
+  color: #333333;
 }
 
 /* line 57, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_badge.scss */
@@ -3260,7 +3260,7 @@ a.button:hover, a.button:focus {
 
 /* line 99, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_breadcrumbs.scss */
 .breadcrumbs a {
-  color: #1779ba;
+  color: #ff780b;
 }
 
 /* line 102, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_breadcrumbs.scss */
@@ -3343,26 +3343,26 @@ a.button:hover, a.button:focus {
 
 /* line 212, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button-group.scss */
 .button-group.primary .button {
-  background-color: #1779ba;
-  color: #ffffff;
+  background-color: #ff780b;
+  color: #333333;
 }
 
 /* line 150, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button-group.primary .button:hover, .button-group.primary .button:focus {
-  background-color: #126195;
-  color: #ffffff;
+  background-color: #d55f00;
+  color: #333333;
 }
 
 /* line 212, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button-group.scss */
 .button-group.secondary .button {
-  background-color: #767676;
-  color: #ffffff;
+  background-color: #0d95db;
+  color: #333333;
 }
 
 /* line 150, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-  background-color: #5e5e5e;
-  color: #ffffff;
+  background-color: #0a77af;
+  color: #333333;
 }
 
 /* line 212, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button-group.scss */
@@ -3474,13 +3474,13 @@ a.button:hover, a.button:focus {
 
 /* line 93, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_callout.scss */
 .callout.primary {
-  background-color: #d7ecfa;
+  background-color: #ffebda;
   color: #333333;
 }
 
 /* line 93, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_callout.scss */
 .callout.secondary {
-  background-color: #eaeaea;
+  background-color: #d8f0fd;
   color: #333333;
 }
 
@@ -3583,7 +3583,7 @@ a.button:hover, a.button:focus {
 /* line 96, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_close-button.scss */
 .close-button {
   position: absolute;
-  color: #8a8a8a;
+  color: #474747;
   cursor: pointer;
 }
 
@@ -3851,13 +3851,13 @@ a.button:hover, a.button:focus {
 
 /* line 444, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_menu.scss */
 .menu .is-active > a {
-  background: #1779ba;
+  background: #ff780b;
   color: #ffffff;
 }
 
 /* line 450, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_menu.scss */
 .menu .active > a {
-  background: #1779ba;
+  background: #ff780b;
   color: #ffffff;
 }
 
@@ -4013,9 +4013,9 @@ a.button:hover, a.button:focus {
 
 /* line 137, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/util/_mixins.scss */
 .menu-icon.dark:hover::after {
-  background: #8a8a8a;
-  -webkit-box-shadow: 0 7px 0 #8a8a8a, 0 14px 0 #8a8a8a;
-          box-shadow: 0 7px 0 #8a8a8a, 0 14px 0 #8a8a8a;
+  background: #474747;
+  -webkit-box-shadow: 0 7px 0 #474747, 0 14px 0 #474747;
+          box-shadow: 0 7px 0 #474747, 0 14px 0 #474747;
 }
 
 /* line 73, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_drilldown.scss */
@@ -4105,7 +4105,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #1779ba;
+  border-color: transparent transparent transparent #ff780b;
 }
 
 /* line 57, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_drilldown.scss */
@@ -4119,7 +4119,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #1779ba;
+  border-color: transparent transparent transparent #ff780b;
 }
 
 /* line 63, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_drilldown.scss */
@@ -4133,7 +4133,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #1779ba transparent transparent;
+  border-color: transparent #ff780b transparent transparent;
 }
 
 /* line 131, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_drilldown.scss */
@@ -4145,7 +4145,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #1779ba transparent transparent;
+  border-color: transparent #ff780b transparent transparent;
   border-left-width: 0;
   display: inline-block;
   vertical-align: middle;
@@ -4222,7 +4222,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-bottom-width: 0;
   border-top-style: solid;
-  border-color: #1779ba transparent transparent;
+  border-color: #ff780b transparent transparent;
   right: 5px;
   left: auto;
   margin-top: -2px;
@@ -4241,7 +4241,7 @@ a.button:hover, a.button:focus {
 /* line 155, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_dropdown-menu.scss */
 .dropdown.menu .is-active > a {
   background: transparent;
-  color: #1779ba;
+  color: #ff780b;
 }
 
 /* line 160, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_dropdown-menu.scss */
@@ -4289,7 +4289,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #1779ba transparent transparent;
+  border-color: transparent #ff780b transparent transparent;
 }
 
 /* line 77, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_dropdown-menu.scss */
@@ -4301,7 +4301,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #1779ba;
+  border-color: transparent transparent transparent #ff780b;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -4331,7 +4331,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-bottom-width: 0;
     border-top-style: solid;
-    border-color: #1779ba transparent transparent;
+    border-color: #ff780b transparent transparent;
     right: 5px;
     left: auto;
     margin-top: -2px;
@@ -4366,7 +4366,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-left-width: 0;
     border-right-style: solid;
-    border-color: transparent #1779ba transparent transparent;
+    border-color: transparent #ff780b transparent transparent;
   }
   /* line 77, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_dropdown-menu.scss */
   .dropdown.menu.medium-vertical > li.opens-right > a::after {
@@ -4377,7 +4377,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-right-width: 0;
     border-left-style: solid;
-    border-color: transparent transparent transparent #1779ba;
+    border-color: transparent transparent transparent #ff780b;
   }
 }
 
@@ -4408,7 +4408,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-bottom-width: 0;
     border-top-style: solid;
-    border-color: #1779ba transparent transparent;
+    border-color: #ff780b transparent transparent;
     right: 5px;
     left: auto;
     margin-top: -2px;
@@ -4443,7 +4443,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-left-width: 0;
     border-right-style: solid;
-    border-color: transparent #1779ba transparent transparent;
+    border-color: transparent #ff780b transparent transparent;
   }
   /* line 77, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_dropdown-menu.scss */
   .dropdown.menu.large-vertical > li.opens-right > a::after {
@@ -4454,7 +4454,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-right-width: 0;
     border-left-style: solid;
-    border-color: transparent transparent transparent #1779ba;
+    border-color: transparent transparent transparent #ff780b;
   }
 }
 
@@ -4540,7 +4540,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #1779ba transparent transparent;
+  border-color: transparent #ff780b transparent transparent;
 }
 
 /* line 77, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_dropdown-menu.scss */
@@ -4552,7 +4552,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #1779ba;
+  border-color: transparent transparent transparent #ff780b;
 }
 
 /* line 259, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_dropdown-menu.scss */
@@ -4611,20 +4611,20 @@ a.button:hover, a.button:focus {
   line-height: 1;
   white-space: nowrap;
   cursor: default;
-  background: #1779ba;
+  background: #ff780b;
   color: #ffffff;
 }
 
 /* line 58, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_label.scss */
 .label.primary {
-  background: #1779ba;
-  color: #ffffff;
+  background: #ff780b;
+  color: #333333;
 }
 
 /* line 58, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_label.scss */
 .label.secondary {
-  background: #767676;
-  color: #ffffff;
+  background: #0d95db;
+  color: #333333;
 }
 
 /* line 58, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_label.scss */
@@ -5422,12 +5422,12 @@ a.button:hover, a.button:focus {
 
 /* line 144, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_orbit.scss */
 .orbit-bullets button:hover {
-  background-color: #8a8a8a;
+  background-color: #474747;
 }
 
 /* line 148, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_orbit.scss */
 .orbit-bullets button.is-active {
-  background-color: #8a8a8a;
+  background-color: #474747;
 }
 
 /* line 162, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_pagination.scss */
@@ -5490,7 +5490,7 @@ a.button:hover, a.button:focus {
 /* line 165, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_pagination.scss */
 .pagination .current {
   padding: 0.1875rem 0.625rem;
-  background: #1779ba;
+  background: #ff780b;
   color: #ffffff;
   cursor: default;
 }
@@ -5540,12 +5540,12 @@ a.button:hover, a.button:focus {
 
 /* line 48, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_progress-bar.scss */
 .progress.primary .progress-meter {
-  background-color: #1779ba;
+  background-color: #ff780b;
 }
 
 /* line 48, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_progress-bar.scss */
 .progress.secondary .progress-meter {
-  background-color: #767676;
+  background-color: #0d95db;
 }
 
 /* line 48, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_progress-bar.scss */
@@ -5569,7 +5569,7 @@ a.button:hover, a.button:focus {
   display: block;
   width: 0%;
   height: 100%;
-  background-color: #1779ba;
+  background-color: #ff780b;
 }
 
 /* line 61, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_progress-bar.scss */
@@ -5636,7 +5636,7 @@ a.button:hover, a.button:focus {
   width: 1.4rem;
   height: 1.4rem;
   border-radius: 0;
-  background-color: #1779ba;
+  background-color: #ff780b;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -ms-touch-action: manipulation;
@@ -5650,7 +5650,7 @@ a.button:hover, a.button:focus {
 
 /* line 67, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_slider.scss */
 .slider-handle:hover {
-  background-color: #14679e;
+  background-color: #e26500;
 }
 
 /* line 71, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_slider.scss */
@@ -5940,7 +5940,7 @@ input + .switch-paddle {
 
 /* line 127, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_switch.scss */
 input:checked ~ .switch-paddle {
-  background: #1779ba;
+  background: #ff780b;
 }
 
 /* line 130, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_switch.scss */
@@ -6233,17 +6233,17 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 
 /* line 168, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_tabs.scss */
 .tabs.primary {
-  background: #1779ba;
+  background: #ff780b;
 }
 
 /* line 171, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_tabs.scss */
 .tabs.primary > li > a {
-  color: #ffffff;
+  color: #333333;
 }
 
 /* line 174, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_tabs.scss */
 .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
-  background: #1673b1;
+  background: #fd7100;
 }
 
 /* line 181, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_tabs.scss */
@@ -6257,19 +6257,19 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   padding: 1.25rem 1.5rem;
   font-size: 0.75rem;
   line-height: 1;
-  color: #1779ba;
+  color: #ff780b;
 }
 
 /* line 100, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_tabs.scss */
 .tabs-title > a:hover {
   background: #ffffff;
-  color: #1468a0;
+  color: #e56600;
 }
 
 /* line 105, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_tabs.scss */
 .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
   background: #e4e6e7;
-  color: #1779ba;
+  color: #ff780b;
 }
 
 /* line 185, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_tabs.scss */
@@ -6321,8 +6321,8 @@ a.thumbnail {
 
 /* line 49, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_thumbnail.scss */
 a.thumbnail:hover, a.thumbnail:focus {
-  -webkit-box-shadow: 0 0 6px 1px rgba(23, 121, 186, 0.5);
-          box-shadow: 0 0 6px 1px rgba(23, 121, 186, 0.5);
+  -webkit-box-shadow: 0 0 6px 1px rgba(255, 120, 11, 0.5);
+          box-shadow: 0 0 6px 1px rgba(255, 120, 11, 0.5);
 }
 
 /* line 54, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_thumbnail.scss */
@@ -6377,7 +6377,7 @@ a.thumbnail image {
 .has-tip {
   position: relative;
   display: inline-block;
-  border-bottom: dotted 1px #8a8a8a;
+  border-bottom: dotted 1px #474747;
   font-weight: normal;
   cursor: help;
 }
@@ -7261,7 +7261,7 @@ input[type="submit"] {
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  background-color: #1779ba;
+  background-color: #ff780b;
   color: #ffffff;
 }
 
@@ -7272,7 +7272,7 @@ input[type="submit"] {
 
 /* line 150, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_button.scss */
 input[type="submit"]:hover, input[type="submit"]:focus {
-  background-color: #14679e;
+  background-color: #e26500;
   color: #ffffff;
 }
 
@@ -7677,7 +7677,7 @@ img.aligncenter {
 figcaption {
   margin-top: 0.3125rem;
   font-size: 0.75rem;
-  color: #8a8a8a;
+  color: #474747;
 }
 
 /* ## Admin Bar ===== */
@@ -8378,7 +8378,7 @@ figcaption {
 
 /* line 99, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_breadcrumbs.scss */
 .trail-items a {
-  color: #1779ba;
+  color: #ff780b;
 }
 
 /* line 102, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_breadcrumbs.scss */
@@ -8756,22 +8756,22 @@ li.bypostauthor article {
   text-align: center;
 }
 
-/* line 10, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
+/* line 9, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
 .widget-title span,
 .widgettitle span {
   display: inline-block;
   padding: 0.5rem;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid #e4e6e7;
 }
 
-/* line 17, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
+/* line 16, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
 .widget {
   position: relative;
   padding: 0 2rem 1rem;
   margin-bottom: 2rem;
 }
 
-/* line 22, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
+/* line 21, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
 .widget p,
 .widget ul,
 .widget ol,
@@ -8779,7 +8779,7 @@ li.bypostauthor article {
   font-size: 0.875rem;
 }
 
-/* line 29, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
+/* line 28, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
 .widget ul,
 .widget ol,
 .widget dl {
@@ -8844,18 +8844,18 @@ article:last-child:not(:first-child) {
 /* line 25, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline {
   margin-bottom: 1.25rem;
-  color: #8a8a8a;
+  color: #474747;
   font-size: 0.75rem;
 }
 
 /* line 30, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline a {
-  color: #8a8a8a;
+  color: #474747;
 }
 
 /* line 33, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline a:hover {
-  color: #1779ba;
+  color: #ff780b;
 }
 
 /* line 41, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
@@ -8889,7 +8889,7 @@ article:last-child:not(:first-child) {
 .entry-footer {
   padding: 1rem 0 0 0;
   margin: 3rem 0 0 0;
-  color: #8a8a8a;
+  color: #474747;
   font-size: 0.75rem;
   border-top: 1px solid #e4e6e7;
 }
@@ -9202,7 +9202,7 @@ body .fl-row-full-width .fl-row-content {
 .wordpress.woocommerce button.button.alt,
 .wordpress.woocommerce input.button.alt {
   padding: 0.75rem 1.125rem;
-  background: #1779ba;
+  background: #ff780b;
   font-size: 0.75rem;
   font-weight: normal;
   color: #fff;
@@ -9217,5 +9217,5 @@ body .fl-row-full-width .fl-row-content {
 .wordpress.woocommerce button.button.alt:hover,
 .wordpress.woocommerce input.button.alt:hover {
   color: #fff;
-  background: #115b8d;
+  background: #d76000;
 }

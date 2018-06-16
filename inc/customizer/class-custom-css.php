@@ -124,6 +124,10 @@ if ( ! class_exists( 'Evoke_Custom_CSS' ) ) {
 				$style .= 'input[type="submit"] { background: ' . $options['color_primary'] . ' }';
 			}
 
+			if ( $options['color_secondary'] ) {
+				$style .= '.sidebar-secondary a { color: ' . $options['color_secondary'] . ' }';
+			}
+
 			return $style;
 		}
 

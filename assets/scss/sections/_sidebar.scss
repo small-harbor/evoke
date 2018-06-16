@@ -5,12 +5,11 @@
 	font-size: rem-calc(12);
 	font-weight: bold;
 	text-align: center;
-	//color: $white;
 
 	span {		
 		display: inline-block;
 		padding: rem-calc(8);
-		border-bottom: 1px solid $medium-gray;
+		border-bottom: 1px solid $light-gray;
 	}
 }
 
