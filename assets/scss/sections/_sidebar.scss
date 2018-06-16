@@ -3,11 +3,10 @@
 .widgettitle {
 	margin-bottom: rem-calc(16);
 	font-size: rem-calc(12);
-	text-align: center;
 
 	span {		
 		display: inline-block;
-		padding: rem-calc(8);
+		padding: rem-calc(0 0 8 0);
 		border-bottom: 1px solid $light-gray;
 	}
 }

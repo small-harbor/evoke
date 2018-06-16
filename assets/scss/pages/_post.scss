@@ -18,14 +18,23 @@ article {
 
 .entry-header {
 	margin-bottom: rem-calc(16);
-	text-align: center;
-	border-bottom: 1px solid $light-gray;
+}
+
+.entry-title {
+	font-size: rem-calc(21);
+
+	.singular & {
+		font-size: rem-calc(33);
+	}
 }
 
 .entry-byline {
-	margin-bottom: rem-calc(20);
+	margin-bottom: rem-calc(24);
 	color: $dark-gray;
+	font-family: $header-font-family;
 	font-size: rem-calc(12);
+	font-weight: 300;
+	font-style: italic;
 
 	a {
 		color: $dark-gray;
@@ -51,13 +60,17 @@ article {
 	@include clearfix;
 }
 
+.entry-summary,
+.entry-content {
+	color: #828282;
+}
+
 /* ## Post Footer ===== */
 .entry-footer {
 	padding: rem-calc(16 0 0 0);
-	margin: rem-calc(48 0 0 0);
+	margin: rem-calc(16 0 0 0);
 	color: $dark-gray;
 	font-size: rem-calc(12);
-	border-top: 1px solid $light-gray;
 }
 
 .loop-nav {
@@ -66,7 +79,6 @@ article {
 
 	h5 {
 		font-size: rem-calc(12);
-		font-weight: bold;
 	}
 
 	.prev,

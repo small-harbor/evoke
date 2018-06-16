@@ -43,7 +43,7 @@ function evoke_enqueue_styles() {
 		wp_enqueue_style( 'hybrid-parent' );
 
 	/* Load font. */
-	wp_enqueue_style( 'evoke-font', '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i' );
+	wp_enqueue_style( 'evoke-font', '//fonts.googleapis.com/css?family=Merriweather:300,300i,400|Merriweather+Sans:300,300i,400,400i"' );
 
 	/* Load active theme stylesheet. */
 	wp_enqueue_style( 'evoke-style', trailingslashit( get_stylesheet_directory_uri() ) . 'assets/dist/style.min.css', array(), filemtime( get_stylesheet_directory() . '/assets/dist/style.min.css' ) );
