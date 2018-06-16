@@ -22,9 +22,14 @@ article {
 
 .entry-title {
 	font-size: rem-calc(21);
+	margin-bottom: rem-calc(4);
 
 	.singular & {
 		font-size: rem-calc(33);
+	}
+
+	a {
+		color: $black;
 	}
 }
 
@@ -62,7 +67,7 @@ article {
 
 .entry-summary,
 .entry-content {
-	color: #828282;
+	color: #626262;
 }
 
 /* ## Post Footer ===== */

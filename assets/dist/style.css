@@ -571,7 +571,7 @@ body {
   margin: 0;
   padding: 0;
   background: #f4f6f7;
-  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
   color: #333333;
@@ -7688,6 +7688,12 @@ figcaption {
   }
 }
 
+/* line 1, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/base/_general.scss */
+code {
+  border: none;
+  font-size: 0.9em;
+}
+
 /* line 2, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
 #main > .wrap {
   max-width: 64rem;
@@ -8640,6 +8646,12 @@ li.description {
   }
 }
 
+/* line 9, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_footer.scss */
+footer.footer .credit {
+  font-size: 0.875rem;
+  color: #474747;
+}
+
 /* # Comments ===== */
 /* line 2, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_comments.scss */
 #comments {
@@ -8906,14 +8918,20 @@ article:last-child:not(:first-child) {
 /* line 23, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-title {
   font-size: 1.3125rem;
+  margin-bottom: 0.25rem;
 }
 
-/* line 26, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 27, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .singular .entry-title {
   font-size: 2.0625rem;
 }
 
 /* line 31, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+.entry-title a {
+  color: #333333;
+}
+
+/* line 36, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline {
   margin-bottom: 1.5rem;
   color: #474747;
@@ -8923,17 +8941,17 @@ article:last-child:not(:first-child) {
   font-style: italic;
 }
 
-/* line 39, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 44, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline a {
   color: #474747;
 }
 
-/* line 42, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 47, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline a:hover {
   color: #ff780b;
 }
 
-/* line 50, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 55, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline .comments-link:before,
 .entry-byline .entry-published:before,
 .entry-byline .post-edit-link:before {
@@ -8959,14 +8977,14 @@ article:last-child:not(:first-child) {
   clear: both;
 }
 
-/* line 63, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 68, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-summary,
 .entry-content {
-  color: #828282;
+  color: #626262;
 }
 
 /* ## Post Footer ===== */
-/* line 69, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 74, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-footer {
   padding: 1rem 0 0 0;
   margin: 1rem 0 0 0;
@@ -8974,7 +8992,7 @@ article:last-child:not(:first-child) {
   font-size: 0.75rem;
 }
 
-/* line 76, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 81, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav {
   font-size: 0.75rem;
   display: -webkit-box;
@@ -8982,12 +9000,12 @@ article:last-child:not(:first-child) {
   display: flex;
 }
 
-/* line 80, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 85, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav h5 {
   font-size: 0.75rem;
 }
 
-/* line 84, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 89, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .prev,
 .loop-nav .next {
   text-align: left;
@@ -8996,7 +9014,7 @@ article:last-child:not(:first-child) {
           flex: 1 0 auto;
 }
 
-/* line 89, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 94, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .prev span,
 .loop-nav .next span {
   display: block;
@@ -9004,19 +9022,19 @@ article:last-child:not(:first-child) {
   color: #cacaca;
 }
 
-/* line 96, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 101, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .prev {
   width: 50%;
   padding-right: 2rem;
   border-right: 1px solid #e4e6e7;
 }
 
-/* line 102, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 107, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .next {
   width: 100%;
 }
 
-/* line 106, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 111, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .prev + .next {
   width: 50%;
   padding-left: 2rem;
