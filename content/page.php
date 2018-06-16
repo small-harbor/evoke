@@ -2,7 +2,7 @@
 
 	<?php if ( is_page() ) : // If viewing a single page. ?>
 
-		<?php if ( 'post' == evoke_get_option( 'layout_post_title' ) ) : ?>
+		<?php if ( 'post' == evoke_get_option( 'layout_post_title' ) || ! has_post_thumbnail() ) : ?>
 			<?php if ( ! is_front_page() || is_front_page() && ! evoke_get_option( 'front_page_hide_title' ) ) : ?>
 				<header class="entry-header">
 					<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>

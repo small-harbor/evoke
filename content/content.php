@@ -4,7 +4,7 @@
 
 		<header class="entry-header">
 
-			<?php if ( 'post' == evoke_get_option( 'layout_post_title' ) ) : ?>
+			<?php if ( 'post' == evoke_get_option( 'layout_post_title' ) || ! has_post_thumbnail() ) : ?>
 				<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 			<?php endif; ?>
 
