@@ -572,7 +572,7 @@ body {
   padding: 0;
   background: #f4f6f7;
   font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.5;
   color: #333333;
   -webkit-font-smoothing: antialiased;
@@ -1649,7 +1649,7 @@ i {
 /* line 296, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
 strong,
 b {
-  font-weight: normal;
+  font-weight: bold;
   line-height: inherit;
 }
 
@@ -1828,7 +1828,7 @@ dl {
 /* line 442, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
 dl dt {
   margin-bottom: 0.3rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* line 449, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/typography/_base.scss */
@@ -1874,7 +1874,7 @@ code {
   border: 1px solid #cacaca;
   background-color: #e4e6e7;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: 300;
+  font-weight: normal;
   color: #333333;
 }
 
@@ -1891,7 +1891,7 @@ kbd {
 .subheader {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.4;
   color: #474747;
 }
@@ -2099,7 +2099,7 @@ textarea {
           box-shadow: inset 0 1px 2px rgba(51, 51, 51, 0.1);
   font-family: inherit;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.5;
   color: #333333;
   -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
@@ -2215,7 +2215,7 @@ label {
   display: block;
   margin: 0;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.8;
   color: #333333;
 }
@@ -2370,7 +2370,7 @@ select {
   background-color: #ffffff;
   font-family: inherit;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1.5;
   color: #333333;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%2871, 71, 71%29'></polygon></svg>");
@@ -2453,7 +2453,7 @@ select[multiple] {
   margin-top: -0.5rem;
   margin-bottom: 1rem;
   font-size: 0.75rem;
-  font-weight: normal;
+  font-weight: bold;
   color: #cc4b37;
 }
 
@@ -6077,7 +6077,7 @@ table tfoot {
 /* line 119, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_table.scss */
 table caption {
   padding: 0.5rem 0.625rem 0.625rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* line 125, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/node_modules/foundation-sites/scss/components/_table.scss */
@@ -6104,7 +6104,7 @@ table thead td,
 table tfoot th,
 table tfoot td {
   padding: 0.5rem 0.625rem 0.625rem;
-  font-weight: normal;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -6378,7 +6378,7 @@ a.thumbnail image {
   position: relative;
   display: inline-block;
   border-bottom: dotted 1px #474747;
-  font-weight: normal;
+  font-weight: bold;
   cursor: help;
 }
 
@@ -8784,11 +8784,10 @@ li.bypostauthor article {
 .widgettitle {
   margin-bottom: 1rem;
   font-size: 0.75rem;
-  font-weight: bold;
   text-align: center;
 }
 
-/* line 9, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
+/* line 8, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
 .widget-title span,
 .widgettitle span {
   display: inline-block;
@@ -8796,14 +8795,14 @@ li.bypostauthor article {
   border-bottom: 1px solid #e4e6e7;
 }
 
-/* line 16, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
+/* line 15, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
 .widget {
   position: relative;
   padding: 0 2rem 1rem;
   margin-bottom: 2rem;
 }
 
-/* line 21, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
+/* line 20, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
 .widget p,
 .widget ul,
 .widget ol,
@@ -8811,7 +8810,7 @@ li.bypostauthor article {
   font-size: 0.875rem;
 }
 
-/* line 28, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
+/* line 27, /Users/dsutoyo/Dev/themes.dev.cc/wp-content/themes/evoke/assets/scss/sections/_sidebar.scss */
 .widget ul,
 .widget ol,
 .widget dl {
