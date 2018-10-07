@@ -83,8 +83,8 @@ gulp.task('watch', ['styles', 'scripts'], function() {
 // Package it up for distribution
 // =========================================================
 gulp.task('package', function() {
-	return gulp.src(['./*', './+(assets|comment|content|inc|languages|library|menu|misc|sidebar)/**/*'], {base: "."})
-		.pipe(zip('archive.zip'))
+	return gulp.src(['./*', '!./package.json', '!./package-lock.json', '!./gulpfile.js', './assets/+(dist|fonts|images|stylesheets)/**/*', './+(comment|content|inc|languages|library|menu|misc|sidebar)/**/*'], {base: "."})
+		.pipe(zip('evoke.zip'))
 		.pipe(gulp.dest('./'));
 });
 
