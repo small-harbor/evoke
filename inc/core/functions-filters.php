@@ -15,6 +15,9 @@ add_filter( 'hybrid_attr_branding', 'evoke_attr_branding', 6 );
 # Filter the theme layout class
 add_filter( 'hybrid_get_theme_layout', 'evoke_theme_layout', 5 );
 
+# Customize our parent theme stylesheet uri
+add_filter( 'hybrid_get_parent_stylesheet_uri', 'evoke_parent_stylesheet_uri', 5 );
+
 # Filter the default form options
 add_filter( 'comment_form_defaults', 'evoke_comment_form_defaults' );
 
@@ -131,6 +134,19 @@ function evoke_theme_layout( $theme_layout ) {
 	}
 
 	return $theme_layout;
+}
+
+/**
+ * Filters the parent theme stylesheet uri.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return array
+ */
+function evoke_parent_stylesheet_uri( $stylesheet_uri ) {
+	$stylesheet_uri = hybrid()->parent_uri . 'assets/dist/style.min.css';
+
+	return $stylesheet_uri;
 }
 
 /**
