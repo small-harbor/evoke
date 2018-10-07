@@ -192,6 +192,8 @@ final class Evoke_Theme {
 			array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' )
 		);
 
+		add_image_size( 'archive', 1024, 682, true );
+
 		// Handle content width for embeds and images.
 		hybrid_set_content_width( 1280 );
 

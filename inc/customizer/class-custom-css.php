@@ -157,8 +157,7 @@ if ( ! class_exists( 'Evoke_Custom_CSS' ) ) {
 				'height' => 0
 			);
 
-			if ( has_custom_logo() ) {
-				$image = wp_get_attachment_metadata( $attachment_id );
+			if ( has_custom_logo() & $image = wp_get_attachment_metadata( $attachment_id ) ) {
 				$size['height'] = $custom_logo_height;
 				$size['width'] = $image['width'] / $image['height'] * $custom_logo_height;
 			}

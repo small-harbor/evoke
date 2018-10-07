@@ -1,0 +1,31 @@
+.home {
+	.latest-articles {
+		display: flex;
+		margin: rem-calc(0 -24);
+
+		article {
+			flex: 0 0 33.3333%;
+			width: 33.3333%;
+			padding: rem-calc(24);
+		}
+	}
+
+	.article-list {
+		article {
+			display: flex;
+			margin: rem-calc(0 -24);
+
+			.entry-thumbnail {
+				flex: 0 0 33.3333%;
+				width: 33.3333%;
+				padding: rem-calc(24);
+			}
+
+			.entry-body {
+				flex: 0 0 66.6666%;
+				width: 66.6666%;
+				padding: rem-calc(24);
+			}
+		}
+	}
+}

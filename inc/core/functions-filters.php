@@ -13,7 +13,7 @@ add_filter( 'hybrid_attr_body', 'evoke_attr_body', 6 );
 add_filter( 'hybrid_attr_branding', 'evoke_attr_branding', 6 );
 
 # Filter the theme layout class
-add_filter( 'theme_mod_theme_layout', 'evoke_theme_layout', 5 );
+add_filter( 'hybrid_get_theme_layout', 'evoke_theme_layout', 5 );
 
 # Filter the default form options
 add_filter( 'comment_form_defaults', 'evoke_comment_form_defaults' );

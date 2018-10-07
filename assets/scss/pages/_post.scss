@@ -24,7 +24,7 @@ article {
 	font-size: rem-calc(21);
 	margin-bottom: rem-calc(4);
 
-	.singular & {
+	.singular:not(.home) & {
 		font-size: rem-calc(33);
 	}
 
