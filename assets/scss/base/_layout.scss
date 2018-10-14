@@ -155,6 +155,14 @@
 	}
 }
 
+.page-template-beaver-builder {
+	#main {
+		> .wrap {
+			max-width: none;
+		}
+	}
+}
+
 /* # Content Layout Structure ===== */
 #main {
 	padding-top: rem-calc(48);

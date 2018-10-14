@@ -6,7 +6,7 @@
  * Version:     1.0.0
  * Author:      Press Cargo
  * Author URI:  https://presscargo.io
- * Tags:        one-column, two-columns, custom-menu, featured-images, left-sidebar, post-formats, responsive-layout, right-sidebar, rtl-language-support, threaded-comments, translation-ready, Foundation, sass
+ * Tags:        one-column, two-columns, custom-menu, featured-images, left-sidebar, post-formats, responsive-layout, right-sidebar, rtl-language-support, threaded-comments, translation-ready, Foundation
  * Text Domain: evoke
  * License:     GNU General Public License v2.0 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -7885,15 +7885,20 @@ code {
   max-width: none;
 }
 
+/* line 160, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+.page-template-beaver-builder #main > .wrap {
+  max-width: none;
+}
+
 /* # Content Layout Structure ===== */
-/* line 159, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+/* line 167, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
 #main {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 @media only screen {
-  /* line 164, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 172, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -7905,7 +7910,7 @@ code {
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 164, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 172, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -7913,7 +7918,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 164, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 172, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -7925,7 +7930,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) and (min-width: 40em) {
-  /* line 164, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 172, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -7933,7 +7938,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) {
-  /* line 164, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 172, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -7945,7 +7950,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) and (min-width: 40em) {
-  /* line 164, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 172, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -7953,7 +7958,7 @@ code {
 }
 
 @media only screen {
-  /* line 169, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 177, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main .sidebar-primary,
   .layout-1c #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -7966,7 +7971,7 @@ code {
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 169, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 177, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main .sidebar-primary,
   .layout-1c #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -7975,7 +7980,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 169, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 177, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main .sidebar-primary,
   .layout-1c #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -7988,7 +7993,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) and (min-width: 40em) {
-  /* line 169, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 177, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main .sidebar-primary,
   .layout-1c #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -7997,7 +8002,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) {
-  /* line 169, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 177, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main .sidebar-primary,
   .layout-1c #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -8010,7 +8015,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) and (min-width: 40em) {
-  /* line 169, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 177, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-1c #main .sidebar-primary,
   .layout-1c #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -8019,7 +8024,7 @@ code {
 }
 
 @media only screen {
-  /* line 178, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 186, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -8031,7 +8036,7 @@ code {
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 178, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 186, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -8039,7 +8044,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 178, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 186, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 66.66667%;
@@ -8051,7 +8056,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) and (min-width: 40em) {
-  /* line 178, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 186, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -8059,7 +8064,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) {
-  /* line 178, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 186, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 66.66667%;
@@ -8071,7 +8076,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) and (min-width: 40em) {
-  /* line 178, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 186, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -8079,7 +8084,7 @@ code {
 }
 
 @media only screen {
-  /* line 183, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 191, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main .sidebar-primary,
   .layout-2c-l #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -8092,7 +8097,7 @@ code {
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 183, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 191, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main .sidebar-primary,
   .layout-2c-l #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -8101,7 +8106,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 183, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 191, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main .sidebar-primary,
   .layout-2c-l #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -8114,7 +8119,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) and (min-width: 40em) {
-  /* line 183, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 191, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main .sidebar-primary,
   .layout-2c-l #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -8123,7 +8128,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) {
-  /* line 183, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 191, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main .sidebar-primary,
   .layout-2c-l #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -8136,7 +8141,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) and (min-width: 40em) {
-  /* line 183, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 191, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-l #main .sidebar-primary,
   .layout-2c-l #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -8145,7 +8150,7 @@ code {
 }
 
 @media only screen {
-  /* line 192, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 200, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -8157,7 +8162,7 @@ code {
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 192, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 200, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -8165,7 +8170,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 192, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 200, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 66.66667%;
@@ -8180,7 +8185,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) and (min-width: 40em) {
-  /* line 192, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 200, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -8188,7 +8193,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) {
-  /* line 192, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 200, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main main.content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 66.66667%;
@@ -8203,7 +8208,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) and (min-width: 40em) {
-  /* line 192, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 200, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main main.content {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -8211,7 +8216,7 @@ code {
 }
 
 @media only screen {
-  /* line 197, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 205, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main .sidebar-primary,
   .layout-2c-r #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -8224,7 +8229,7 @@ code {
 }
 
 @media only screen and (min-width: 40em) {
-  /* line 197, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 205, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main .sidebar-primary,
   .layout-2c-r #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -8233,7 +8238,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 197, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 205, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main .sidebar-primary,
   .layout-2c-r #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -8249,7 +8254,7 @@ code {
 }
 
 @media print, screen and (min-width: 40em) and (min-width: 40em) {
-  /* line 197, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 205, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main .sidebar-primary,
   .layout-2c-r #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -8258,7 +8263,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) {
-  /* line 197, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 205, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main .sidebar-primary,
   .layout-2c-r #main .sidebar-secondary {
     -webkit-box-flex: 0;
@@ -8274,7 +8279,7 @@ code {
 }
 
 @media print, screen and (min-width: 64em) and (min-width: 40em) {
-  /* line 197, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+  /* line 205, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
   .layout-2c-r #main .sidebar-primary,
   .layout-2c-r #main .sidebar-secondary {
     padding-right: 1.25rem;
@@ -8282,7 +8287,7 @@ code {
   }
 }
 
-/* line 207, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
+/* line 215, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/base/_layout.scss */
 .has-post-thumbnail #main {
   padding-top: 0;
 }
