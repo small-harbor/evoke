@@ -8911,7 +8911,14 @@ li.bypostauthor article:last-child {
   margin: 0 -1.5rem;
 }
 
-/* line 7, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+@media screen and (min-width: 40em) {
+  /* line 2, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+  .home .latest-articles {
+    margin-top: 1.5rem;
+  }
+}
+
+/* line 11, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
 .home .latest-articles article {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -8921,7 +8928,7 @@ li.bypostauthor article:last-child {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 7, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+  /* line 11, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
   .home .latest-articles article {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.3333%;
@@ -8930,13 +8937,21 @@ li.bypostauthor article:last-child {
   }
 }
 
-/* line 17, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+/* line 21, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
 .home .latest-articles article .entry-thumbnail {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
 }
 
-/* line 25, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+@media screen and (min-width: 40em) {
+  /* line 21, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+  .home .latest-articles article .entry-thumbnail {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* line 34, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
 .home .article-list article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8949,7 +8964,7 @@ li.bypostauthor article:last-child {
   margin-right: -1.5rem;
 }
 
-/* line 31, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+/* line 40, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
 .home .article-list article .entry-thumbnail {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -8958,7 +8973,7 @@ li.bypostauthor article:last-child {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 31, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+  /* line 40, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
   .home .article-list article .entry-thumbnail {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.3333%;
@@ -8968,7 +8983,7 @@ li.bypostauthor article:last-child {
   }
 }
 
-/* line 42, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+/* line 51, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
 .home .article-list article .entry-body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -8979,7 +8994,7 @@ li.bypostauthor article:last-child {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 42, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
+  /* line 51, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_front-page.scss */
   .home .article-list article .entry-body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 66.6666%;
@@ -9005,34 +9020,47 @@ article:last-child:not(:first-child) {
   margin-bottom: 0;
 }
 
+/* line 14, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+article .read-more a.button {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #cacaca;
+}
+
+/* line 19, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+article .read-more a.button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
 /* ## Post Header ===== */
-/* line 15, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 28, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-thumbnail {
   margin-bottom: 1rem;
 }
 
-/* line 19, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 32, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-header {
   margin-bottom: 1rem;
 }
 
-/* line 23, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 36, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-title {
   font-size: 1.3125rem;
   margin-bottom: 0.25rem;
 }
 
-/* line 27, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 40, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .singular:not(.home) .entry-title {
   font-size: 2.0625rem;
 }
 
-/* line 31, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 44, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-title a {
   color: #333333;
 }
 
-/* line 36, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 49, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline {
   margin-bottom: 1.5rem;
   color: #474747;
@@ -9042,17 +9070,17 @@ article:last-child:not(:first-child) {
   font-style: italic;
 }
 
-/* line 44, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 57, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline a {
   color: #474747;
 }
 
-/* line 47, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 60, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline a:hover {
   color: #ff780b;
 }
 
-/* line 55, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 68, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-byline .comments-link:before,
 .entry-byline .entry-published:before,
 .entry-byline .post-edit-link:before {
@@ -9078,14 +9106,14 @@ article:last-child:not(:first-child) {
   clear: both;
 }
 
-/* line 68, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 81, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-summary,
 .entry-content {
   color: #626262;
 }
 
 /* ## Post Footer ===== */
-/* line 74, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 87, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .entry-footer {
   padding: 1rem 0 0 0;
   margin: 1rem 0 0 0;
@@ -9093,7 +9121,7 @@ article:last-child:not(:first-child) {
   font-size: 0.75rem;
 }
 
-/* line 81, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 94, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav {
   font-size: 0.75rem;
   display: -webkit-box;
@@ -9101,12 +9129,12 @@ article:last-child:not(:first-child) {
   display: flex;
 }
 
-/* line 85, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 98, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav h5 {
   font-size: 0.75rem;
 }
 
-/* line 89, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 102, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .prev,
 .loop-nav .next {
   text-align: left;
@@ -9115,7 +9143,7 @@ article:last-child:not(:first-child) {
           flex: 1 0 auto;
 }
 
-/* line 94, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 107, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .prev span,
 .loop-nav .next span {
   display: block;
@@ -9123,19 +9151,19 @@ article:last-child:not(:first-child) {
   color: #cacaca;
 }
 
-/* line 101, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 114, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .prev {
   width: 50%;
   padding-right: 2rem;
   border-right: 1px solid #e4e6e7;
 }
 
-/* line 107, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 120, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .next {
   width: 100%;
 }
 
-/* line 111, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
+/* line 124, /Users/dsutoyo/Dev/preview.presscargo.dev.cc/wp-content/themes/evoke/assets/scss/pages/_post.scss */
 .loop-nav .prev + .next {
   width: 50%;
   padding-left: 2rem;

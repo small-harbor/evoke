@@ -27,6 +27,10 @@ add_filter( 'breadcrumb_trail', 'evoke_breadcrumb_trail', 5, 2 );
 
 add_filter( 'hybrid_sidebar_args', 'evoke_sidebar_defaults' );
 
+add_filter( 'excerpt_more', 'evoke_excerpt_more' );
+
+add_filter( 'excerpt_length', 'evoke_excerpt_length', 999 );
+
 /**
  * Filter the body attributes.
  *
@@ -189,9 +193,38 @@ function evoke_breadcrumb_trail( $breadcrumb, $args ) {
 	return $breadcrumb;
 }
 
+/**
+ * Filter the arguments for the sidebar
+ *
+ * @since  2.0.0
+ * @access public
+ * @return array
+ */
 function evoke_sidebar_defaults( $defaults ) {
 	$defaults['before_title'] = '<h3 class="widget-title"><span>';
 	$defaults['after_title'] = '</span></h3>';
 
 	return $defaults;
+}
+
+/**
+ * Filter the ellipses for the excerpt
+ *
+ * @since  2.0.0
+ * @access public
+ * @return array
+ */
+function evoke_excerpt_more( $more ) {
+	return '<p class="read-more"><a class="button small" href="' . get_permalink() . '">' . __( 'Read More', 'evoke' ) . '</a></p>';
+}
+
+/**
+ * Filter the excerpt length
+ *
+ * @since  2.0.0
+ * @access public
+ * @return array
+ */
+function evoke_excerpt_length( $length ) {
+	return 20;
 }
