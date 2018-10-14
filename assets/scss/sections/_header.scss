@@ -17,6 +17,10 @@
 	}
 }
 
+.title-bar-title {
+	padding: rem-calc(8 12);
+}
+
 // Line up the logo/header text to the rest of the site
 .top-bar {
 	@include grid-column-gutter($gutters: $grid-column-gutter);

@@ -8,7 +8,9 @@
 
 			<?php the_post(); // Loads the post data. ?>
 
-			<?php hybrid_get_content_template(); // Loads the content/*.php template. ?>
+			<?php if ( get_the_content() ) : ?>
+				<?php hybrid_get_content_template(); // Loads the content/*.php template. ?>
+			<?php endif; ?>
 
 		<?php endwhile; // End found posts loop. ?>
 

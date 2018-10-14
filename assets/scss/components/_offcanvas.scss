@@ -1,11 +1,14 @@
 /* # Mobile Menu ===== */
 .off-canvas {
-	
+	.admin-bar & {
+		padding-top: rem-calc(46);
+	}
 }
 
 .off-canvas-menu {
 	a {
 		text-decoration: none;
+		font-weight: bold;
 	}
 
 	.nested {
