@@ -66,7 +66,7 @@ if ( ! class_exists( 'Evoke_Theme_Options' ) ) {
 		 * @access private
 		 * @return array
 		 */
-		public function get_defaults() {
+		public static function get_defaults() {
 			return apply_filters(
 				'evoke_defaults',
 				array(
