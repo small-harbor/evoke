@@ -112,5 +112,20 @@
 			}
 		});
 	});
+
+	//Update site colors in real time...
+	wp.customize( 'color_primary', function( value ) {
+		value.bind( function( newval ) {
+			$('.site-title a').css('color', newval);
+			$('.dropdown.menu .is-active > a').css('color', newval);
+			$('.pagination .current, input[type="submit"]').css('background', newval);
+		} );
+	} );
+
+	wp.customize( 'color_secondary', function( value ) {
+		value.bind( function( newval ) {
+			$('.sidebar-secondary a').css('color', newval);
+		} );
+	} );
 	
 })(jQuery);

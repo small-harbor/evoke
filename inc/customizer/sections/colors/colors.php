@@ -14,7 +14,8 @@ $wp_customize->add_setting(
 	'color_primary',
 	array(
 		'default' => fathom_get_option( 'color_primary' ),
-		'sanitize_callback' => 'fathom_sanitize_hex_color'
+		'sanitize_callback' => 'fathom_sanitize_hex_color',
+		'transport' => 'postMessage'
 	)
 );
 
@@ -35,7 +36,8 @@ $wp_customize->add_setting(
 	'color_secondary',
 	array(
 		'default' => fathom_get_option( 'color_secondary' ),
-		'sanitize_callback' => 'fathom_sanitize_hex_color'
+		'sanitize_callback' => 'fathom_sanitize_hex_color',
+		'transport' => 'postMessage'
 	)
 );
 
