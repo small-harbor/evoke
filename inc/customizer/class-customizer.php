@@ -1,22 +1,22 @@
 <?php
 /**
- * Evoke Customizer
+ * Fathom Customizer
  *
- * @package     Evoke
+ * @package     Fathom
  * @since       1.0.0
  */
 
 /**
  * Customizer Loader
  */
-if ( ! class_exists( 'Evoke_Customizer' ) ) {
+if ( ! class_exists( 'Fathom_Customizer' ) ) {
 
 	/**
 	 * Customizer Loader
 	 *
 	 * @since 1.0.0
 	 */
-	class Evoke_Customizer {
+	class Fathom_Customizer {
 		
 		/**
 		 * Holds the instance of this class.
@@ -62,13 +62,13 @@ if ( ! class_exists( 'Evoke_Customizer' ) ) {
 		 * @return void
 		 */
 		public function customize_register( $wp_customize ) {
-			require EVOKE_THEME_DIR . 'inc/customizer/functions-sanitize.php';
-			require EVOKE_THEME_DIR . 'inc/customizer/defaults-override.php';
-			require EVOKE_THEME_DIR . 'inc/customizer/controls/divider.php';
-			require EVOKE_THEME_DIR . 'inc/customizer/sections/homepage-settings/homepage-settings.php';
-			require EVOKE_THEME_DIR . 'inc/customizer/sections/site-identity/site-identity.php';
-			require EVOKE_THEME_DIR . 'inc/customizer/sections/layout/layout.php';
-			require EVOKE_THEME_DIR . 'inc/customizer/sections/colors/colors.php';
+			require FATHOM_THEME_DIR . 'inc/customizer/functions-sanitize.php';
+			require FATHOM_THEME_DIR . 'inc/customizer/defaults-override.php';
+			require FATHOM_THEME_DIR . 'inc/customizer/controls/divider.php';
+			require FATHOM_THEME_DIR . 'inc/customizer/sections/homepage-settings/homepage-settings.php';
+			require FATHOM_THEME_DIR . 'inc/customizer/sections/site-identity/site-identity.php';
+			require FATHOM_THEME_DIR . 'inc/customizer/sections/layout/layout.php';
+			require FATHOM_THEME_DIR . 'inc/customizer/sections/colors/colors.php';
 		}
 
 		/**
@@ -79,9 +79,9 @@ if ( ! class_exists( 'Evoke_Customizer' ) ) {
 		 * @return void
 		 */
 		public function preview_init() {
-			Evoke_Theme_Options::refresh();
+			Fathom_Theme_Options::refresh();
 
-			wp_enqueue_script( 'evoke-customizer-preview', EVOKE_THEME_URI . 'assets/dist/customizer-preview.js', array( 'jquery' ), null, EVOKE_THEME_VERSION );
+			wp_enqueue_script( 'fathom-customizer-preview', FATHOM_THEME_URI . 'assets/dist/customizer-preview.js', array( 'jquery' ), null, FATHOM_THEME_VERSION );
 		}
 
 		/**
@@ -93,9 +93,9 @@ if ( ! class_exists( 'Evoke_Customizer' ) ) {
 		 */
 		public function customize_save() {
 			// Update variables.
-			Evoke_Theme_Options::refresh();
+			Fathom_Theme_Options::refresh();
 		}
 	}
 }
 
-$evoke_customizer = Evoke_Customizer::get_instance();
+$fathom_customizer = Fathom_Customizer::get_instance();

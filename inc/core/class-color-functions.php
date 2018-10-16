@@ -2,11 +2,11 @@
 /**
  * Color functions.
  *
- * @package    Evoke
+ * @package    Fathom
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-if ( ! class_exists( 'Evoke_Color_Functions' ) ) {
+if ( ! class_exists( 'Fathom_Color_Functions' ) ) {
 
 	/**
 	 * Theme Options.
@@ -14,7 +14,7 @@ if ( ! class_exists( 'Evoke_Color_Functions' ) ) {
 	 * @since  1.0.0
 	 * @access public
 	 */
-	class Evoke_Color_Functions {
+	class Fathom_Color_Functions {
 		/**
 		 * Holds the instance of this class.
 		 *
@@ -211,4 +211,4 @@ if ( ! class_exists( 'Evoke_Color_Functions' ) ) {
 	}
 }
 
-$evoke_color_functions = Evoke_Color_Functions::get_instance();
+$fathom_color_functions = Fathom_Color_Functions::get_instance();

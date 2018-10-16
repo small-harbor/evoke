@@ -2,7 +2,7 @@
 /**
  * Additional Site Identity Options.
  *
- * @package     Evoke
+ * @package     Fathom
  * @since       1.0.0
  */
 
@@ -13,9 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 $wp_customize->add_setting(
 	'custom_logo_height',
 	array(
-		'default' => evoke_get_option( 'custom_logo_height' ),
+		'default' => fathom_get_option( 'custom_logo_height' ),
 		'transport' => 'postMessage',
-		'sanitize_callback' => 'evoke_sanitize_integer'
+		'sanitize_callback' => 'fathom_sanitize_integer'
 	)
 );
 
@@ -25,8 +25,8 @@ $wp_customize->add_control(
 		'type'           => 'number',
 		'section'        => 'title_tagline',
 		'priority'       => 8,
-		'label'          => __( 'Logo Height', 'evoke' ),
-		'description' => __( 'Set the height (in pixels) for the logo.', 'evoke' ),
+		'label'          => __( 'Logo Height', 'fathom' ),
+		'description' => __( 'Set the height (in pixels) for the logo.', 'fathom' ),
 	)
 );
 
@@ -41,7 +41,7 @@ $wp_customize->add_setting(
 );
 
 $wp_customize->add_control(
-	new Evoke_Divider(
+	new Fathom_Divider(
 		$wp_customize,
 		'site_identity_divider',
 		array(

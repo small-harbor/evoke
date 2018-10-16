@@ -1,8 +1,8 @@
 {
-	"name": "evoke",
+	"name": "fathom",
 	"version": "1.0.0",
 	"author": "David Sutoyo",
-	"description": "Evoke WordPress theme",
+	"description": "Fathom WordPress theme",
 	"dependencies": {
 		"foundation-sites": "6.4.3",
 		"bourbon": "^4.3.4"

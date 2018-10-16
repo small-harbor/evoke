@@ -24,21 +24,21 @@
 
 		<div class="media-info">
 
-			<h3><?php esc_html_e( 'Audio Info', 'evoke' ); ?></h3>
+			<h3><?php esc_html_e( 'Audio Info', 'fathom' ); ?></h3>
 
 			<ul class="media-meta">
 				<?php $pre = '<li><span class="prep">%s</span>'; ?>
-				<?php hybrid_media_meta( 'length_formatted', array( 'before' => sprintf( $pre, esc_html__( 'Run Time',  'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'artist',           array( 'before' => sprintf( $pre, esc_html__( 'Artist',    'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'composer',         array( 'before' => sprintf( $pre, esc_html__( 'Composer',  'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'album',            array( 'before' => sprintf( $pre, esc_html__( 'Album',     'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'track_number',     array( 'before' => sprintf( $pre, esc_html__( 'Track',     'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'year',             array( 'before' => sprintf( $pre, esc_html__( 'Year',      'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'genre',            array( 'before' => sprintf( $pre, esc_html__( 'Genre',     'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'file_type',        array( 'before' => sprintf( $pre, esc_html__( 'Type',      'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'file_name',        array( 'before' => sprintf( $pre, esc_html__( 'Name',      'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'file_size',        array( 'before' => sprintf( $pre, esc_html__( 'Size',      'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'mime_type',        array( 'before' => sprintf( $pre, esc_html__( 'Mime Type', 'evoke' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'length_formatted', array( 'before' => sprintf( $pre, esc_html__( 'Run Time',  'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'artist',           array( 'before' => sprintf( $pre, esc_html__( 'Artist',    'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'composer',         array( 'before' => sprintf( $pre, esc_html__( 'Composer',  'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'album',            array( 'before' => sprintf( $pre, esc_html__( 'Album',     'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'track_number',     array( 'before' => sprintf( $pre, esc_html__( 'Track',     'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'year',             array( 'before' => sprintf( $pre, esc_html__( 'Year',      'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'genre',            array( 'before' => sprintf( $pre, esc_html__( 'Genre',     'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'file_type',        array( 'before' => sprintf( $pre, esc_html__( 'Type',      'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'file_name',        array( 'before' => sprintf( $pre, esc_html__( 'Name',      'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'file_size',        array( 'before' => sprintf( $pre, esc_html__( 'Size',      'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'mime_type',        array( 'before' => sprintf( $pre, esc_html__( 'Mime Type', 'fathom' ) ), 'after' => '</li>' ) ); ?>
 			</ul>
 
 		</div><!-- .media-info -->

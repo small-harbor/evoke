@@ -2,7 +2,7 @@
 /**
  * Override default customizer panels, sections, settings or controls.
  *
- * @package     Evoke
+ * @package     Fathom
  * @since       1.0.0
  */
 

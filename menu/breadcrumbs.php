@@ -7,7 +7,7 @@
 			'show_on_front' => false,
 
 			'labels'        => array( 
-				'browse' => esc_html__( 'You are here:', 'evoke' ) 
+				'browse' => esc_html__( 'You are here:', 'fathom' ) 
 			) 
 		) 
 	); ?>

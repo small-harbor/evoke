@@ -11,12 +11,12 @@
  * You should have received a copy of the GNU General Public License along with this program; if not, write
  * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @package    Evoke
+ * @package    Fathom
  * @subpackage Functions
  * @version    1.0.0
  * @author     David Sutoyo <david@smallharbor.com>
  * @copyright  Copyright (c) 2013 - 2015, David Sutoyo
- * @link       https://themeharbor.com/themes/evoke
+ * @link       https://themeharbor.com/themes/fathom
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
@@ -27,7 +27,7 @@
  * @since  1.0.0
  * @access public
  */
-final class Evoke_Theme {
+final class Fathom_Theme {
 
 	/**
 	 * Directory path to the theme folder.
@@ -91,16 +91,16 @@ final class Evoke_Theme {
 
 		/* Define Constants. */
 		// Theme Version
-		define( 'EVOKE_THEME_VERSION', '1.0.0' );
+		define( 'FATHOM_THEME_VERSION', '1.0.0' );
 
 		// Settings
-		define( 'EVOKE_THEME_SETTINGS', 'evoke-settings' );
+		define( 'FATHOM_THEME_SETTINGS', 'fathom-settings' );
 
 		// Theme Directory
-		define( 'EVOKE_THEME_DIR', trailingslashit( get_template_directory() ) );
+		define( 'FATHOM_THEME_DIR', trailingslashit( get_template_directory() ) );
 
 		// Theme Directory URI
-		define( 'EVOKE_THEME_URI', trailingslashit( get_template_directory_uri() ) );
+		define( 'FATHOM_THEME_URI', trailingslashit( get_template_directory_uri() ) );
 
 		// Specify our Foundation version
 		define( 'FOUNDATION_VERSION', '6.4.3');
@@ -222,9 +222,9 @@ final class Evoke_Theme {
 	 */
 	public function register_menus() {
 
-		register_nav_menu( 'primary',   _x( 'Primary',   'nav menu location', 'evoke' ) );
-		register_nav_menu( 'secondary', _x( 'Secondary', 'nav menu location', 'evoke' ) );
-		register_nav_menu( 'social',    _x( 'Social',    'nav menu location', 'evoke' ) );
+		register_nav_menu( 'primary',   _x( 'Primary',   'nav menu location', 'fathom' ) );
+		register_nav_menu( 'secondary', _x( 'Secondary', 'nav menu location', 'fathom' ) );
+		register_nav_menu( 'social',    _x( 'Social',    'nav menu location', 'fathom' ) );
 	}
 
 	/**
@@ -236,8 +236,8 @@ final class Evoke_Theme {
 	 */
 	public function register_image_sizes() {
 
-		// Adds the 'evoke-full' image size.
-		add_image_size( 'evoke-full', 1200, 500, false );
+		// Adds the 'fathom-full' image size.
+		add_image_size( 'fathom-full', 1200, 500, false );
 	}
 
 	/**
@@ -252,16 +252,16 @@ final class Evoke_Theme {
 		hybrid_register_sidebar(
 			array(
 				'id'          => 'primary',
-				'name'        => _x( 'Page Sidebar', 'sidebar', 'evoke' ),
-				'description' => __( 'The main sidebar for pages. It is displayed on either the left or right side of the page based on the chosen layout.', 'evoke' )
+				'name'        => _x( 'Page Sidebar', 'sidebar', 'fathom' ),
+				'description' => __( 'The main sidebar for pages. It is displayed on either the left or right side of the page based on the chosen layout.', 'fathom' )
 			)
 		);
 
 		hybrid_register_sidebar(
 			array(
 				'id'          => 'secondary',
-				'name'        => _x( 'Blog Sidebar', 'sidebar', 'evoke' ),
-				'description' => __( 'The main sidebar for single blog posts and blog archives. It is displayed on either the left or right side of the page based on the chosen layout.', 'evoke' )
+				'name'        => _x( 'Blog Sidebar', 'sidebar', 'fathom' ),
+				'description' => __( 'The main sidebar for single blog posts and blog archives. It is displayed on either the left or right side of the page based on the chosen layout.', 'fathom' )
 			)
 		);
 	}
@@ -275,9 +275,9 @@ final class Evoke_Theme {
 	 */
 	public function register_layouts() {
 
-		hybrid_register_layout( '1c',        array( 'label' => __( '1 Column Wide',                'evoke' ), 'image' => '%s/assets/images/layouts/1c.png' ) );
-		hybrid_register_layout( '2c-l',      array( 'label' => __( '2 Columns: Content / Sidebar', 'evoke' ), 'image' => '%s/assets/images/layouts/2c-l.png' ) );
-		hybrid_register_layout( '2c-r',      array( 'label' => __( '2 Columns: Sidebar / Content', 'evoke' ), 'image' => '%s/assets/images/layouts/2c-r.png' ) );
+		hybrid_register_layout( '1c',        array( 'label' => __( '1 Column Wide',                'fathom' ), 'image' => '%s/assets/images/layouts/1c.png' ) );
+		hybrid_register_layout( '2c-l',      array( 'label' => __( '2 Columns: Content / Sidebar', 'fathom' ), 'image' => '%s/assets/images/layouts/2c-l.png' ) );
+		hybrid_register_layout( '2c-r',      array( 'label' => __( '2 Columns: Sidebar / Content', 'fathom' ), 'image' => '%s/assets/images/layouts/2c-r.png' ) );
 	}
 }
 
@@ -289,8 +289,8 @@ final class Evoke_Theme {
  * @access public
  * @return object
  */
-function evoke_theme() {
-	return Evoke_Theme::get_instance();
+function fathom_theme() {
+	return Fathom_Theme::get_instance();
 }
 
-evoke_theme();
+fathom_theme();

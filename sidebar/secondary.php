@@ -11,9 +11,9 @@
 			<?php the_widget(
 				'WP_Widget_Text',
 				array(
-					'title'  => __( 'Example Widget', 'evoke' ),
+					'title'  => __( 'Example Widget', 'fathom' ),
 					// Translators: The %s are placeholders for HTML, so the order can't be changed. 
-					'text'   => sprintf( __( 'This is an example widget to show how the Secondary sidebar looks by default. You can add custom widgets from the %swidgets screen%s in the admin.', 'evoke' ), current_user_can( 'edit_theme_options' ) ? '<a href="' . admin_url( 'widgets.php' ) . '">' : '', current_user_can( 'edit_theme_options' ) ? '</a>' : '' ),
+					'text'   => sprintf( __( 'This is an example widget to show how the Secondary sidebar looks by default. You can add custom widgets from the %swidgets screen%s in the admin.', 'fathom' ), current_user_can( 'edit_theme_options' ) ? '<a href="' . admin_url( 'widgets.php' ) . '">' : '', current_user_can( 'edit_theme_options' ) ? '</a>' : '' ),
 					'filter' => true,
 				),
 				array(

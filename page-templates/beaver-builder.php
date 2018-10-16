@@ -3,8 +3,8 @@
  * Template Name: Beaver Builder
  *
  * @package WordPress
- * @subpackage Evoke
- * @since Evoke 1.0
+ * @subpackage Fathom
+ * @since Fathom 1.0
  */
 
 get_header(); // Loads the header.php template. ?>

@@ -2,7 +2,7 @@
 /**
  * Adds a layout selector to the create and edit post admin screen.
  *
- * @package    Evoke
+ * @package    Fathom
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
@@ -12,7 +12,7 @@
  * @since  1.0.0
  * @access public
  */
-final class Evoke_Admin_Post_Layout {
+final class Fathom_Admin_Post_Layout {
 
 	/**
 	 * Returns the instance.
@@ -78,7 +78,7 @@ final class Evoke_Admin_Post_Layout {
 			$wp_meta_boxes[$post_type]['side']['default']['hybrid-post-layout']['title'] = 'Content Layout';
 
 			// Add meta box.
-			add_meta_box( 'evoke-container-post-layout', esc_html__( 'Body Container Layout', 'evoke' ), array( $this, 'meta_box' ), $post_type, 'side', 'default' );
+			add_meta_box( 'fathom-container-post-layout', esc_html__( 'Body Container Layout', 'fathom' ), array( $this, 'meta_box' ), $post_type, 'side', 'default' );
 
 			// Enqueue scripts/styles.
 			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
@@ -118,7 +118,7 @@ final class Evoke_Admin_Post_Layout {
 		);
 
 		// Get the current post's layout.
-		$post_layout = get_post_meta( $post->ID, 'evoke-container-post-layout', true );
+		$post_layout = get_post_meta( $post->ID, 'fathom-container-post-layout', true );
 
 		if ( empty( $post_layout ) ) {
 
@@ -126,15 +126,15 @@ final class Evoke_Admin_Post_Layout {
 			$post_layout = 'default';
 
 			if ( 'page' == $obj->post_type ) {
-				$inherited_layout = evoke_get_option( 'layout_container_page' );
+				$inherited_layout = fathom_get_option( 'layout_container_page' );
 			}
 
 			elseif ( 'post' == $obj->post_type ) {
-				$inherited_layout = evoke_get_option( 'layout_container_post' );
+				$inherited_layout = fathom_get_option( 'layout_container_post' );
 			}
 
 			else {
-				$inherited_layout = evoke_get_option( 'layout_container' );
+				$inherited_layout = fathom_get_option( 'layout_container' );
 			}
 
 			$layouts['default'] = 'Default (' . $layouts[$inherited_layout] . ')';
@@ -142,11 +142,11 @@ final class Evoke_Admin_Post_Layout {
 		}
 
 		// Output the nonce field.
-		wp_nonce_field( basename( __FILE__ ), 'evoke_container_post_layout_nonce' );
+		wp_nonce_field( basename( __FILE__ ), 'fathom_container_post_layout_nonce' );
 
 		// Output the layout field. ?>
-		<label for="evoke-container-post-layout"></label>
-		<select name="evoke-container-post-layout" id="evoke-container-post-layout" class="postbox">
+		<label for="fathom-container-post-layout"></label>
+		<select name="fathom-container-post-layout" id="fathom-container-post-layout" class="postbox">
 			<?php foreach ( $layouts as $key => $layout ) : ?>
 				<option value="<?php echo $key; ?>" <?php echo $post_layout == $key ? 'selected' : ''; ?>><?php echo $layout; ?></option>
 			<?php endforeach; ?>
@@ -170,23 +170,23 @@ final class Evoke_Admin_Post_Layout {
 			$post = get_post();
 
 		// Verify the nonce for the post formats meta box.
-		if ( ! hybrid_verify_nonce_post( basename( __FILE__ ), 'evoke_container_post_layout_nonce' ) )
+		if ( ! hybrid_verify_nonce_post( basename( __FILE__ ), 'fathom_container_post_layout_nonce' ) )
 			return;
 
 		// Get the previous post layout.
-		$meta_value = get_post_meta( $post_id, 'evoke-container-post-layout', true );
+		$meta_value = get_post_meta( $post_id, 'fathom-container-post-layout', true );
 
 		// Get the submitted post layout.
-		$new_meta_value = isset( $_POST['evoke-container-post-layout'] ) ? sanitize_key( $_POST['evoke-container-post-layout'] ) : '';
+		$new_meta_value = isset( $_POST['fathom-container-post-layout'] ) ? sanitize_key( $_POST['fathom-container-post-layout'] ) : '';
 
 		// If there is no new meta value but an old value exists, delete it.
 		if ( '' == $new_meta_value && $meta_value )
-			delete_post_meta( $post_id, 'evoke-container-post-layout' );
+			delete_post_meta( $post_id, 'fathom-container-post-layout' );
 
 		// If a new meta value was added and there was no previous value, add it.
 		elseif ( $meta_value !== $new_meta_value )
-			'default' !== $new_meta_value ? update_post_meta( $post_id, 'evoke-container-post-layout', $new_meta_value ) : delete_post_meta( $post_id, 'evoke-container-post-layout' );
+			'default' !== $new_meta_value ? update_post_meta( $post_id, 'fathom-container-post-layout', $new_meta_value ) : delete_post_meta( $post_id, 'fathom-container-post-layout' );
 	}
 }
 
-Evoke_Admin_Post_Layout::get_instance();
+Fathom_Admin_Post_Layout::get_instance();

@@ -84,7 +84,7 @@ gulp.task('watch', ['styles', 'scripts'], function() {
 // =========================================================
 gulp.task('package', function() {
 	return gulp.src(['./*', '!./package.json', '!./package-lock.json', '!./gulpfile.js', './assets/+(dist|fonts|images|stylesheets)/**/*', './+(comment|content|inc|languages|library|menu|misc|sidebar)/**/*'], {base: "."})
-		.pipe(zip('evoke.zip'))
+		.pipe(zip('fathom.zip'))
 		.pipe(gulp.dest('./'));
 });
 

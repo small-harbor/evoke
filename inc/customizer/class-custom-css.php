@@ -2,11 +2,11 @@
 /**
  * Output the custom CSS.
  *
- * @package    Evoke
+ * @package    Fathom
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-if ( ! class_exists( 'Evoke_Custom_CSS' ) ) {
+if ( ! class_exists( 'Fathom_Custom_CSS' ) ) {
 
 	/**
 	 * Theme Custom CSS.
@@ -14,7 +14,7 @@ if ( ! class_exists( 'Evoke_Custom_CSS' ) ) {
 	 * @since  1.0.0
 	 * @access public
 	 */
-	class Evoke_Custom_CSS {
+	class Fathom_Custom_CSS {
 		/**
 		 * Holds the instance of this class.
 		 *
@@ -91,17 +91,17 @@ if ( ! class_exists( 'Evoke_Custom_CSS' ) ) {
 		 */
 		public function get_custom_styles() {
 			$theme_options = get_option( 'theme_mods_' . get_stylesheet() );
-			$theme_defaults = Evoke_Theme_Options::get_defaults();
-			$color_functions = Evoke_Color_Functions::get_instance();
+			$theme_defaults = Fathom_Theme_Options::get_defaults();
+			$color_functions = Fathom_Color_Functions::get_instance();
 
 			$options = wp_parse_args( $theme_options, $theme_defaults );
 
 			$style = '';
 
 			if ( has_custom_logo() ) {
-				$style .= '.site-title a { background: url(' . Evoke_Custom_CSS::get_custom_logo_src() . ') center center no-repeat; }';
+				$style .= '.site-title a { background: url(' . Fathom_Custom_CSS::get_custom_logo_src() . ') center center no-repeat; }';
 
-				$logo_size = Evoke_Custom_CSS::get_custom_logo_ratio( $options['custom_logo'], $options['custom_logo_height'] );
+				$logo_size = Fathom_Custom_CSS::get_custom_logo_ratio( $options['custom_logo'], $options['custom_logo_height'] );
 
 				$style .= '.site-title a { width: ' . $logo_size['width'] . 'px; height: ' . $logo_size['height'] . 'px; }';
 			}
@@ -167,4 +167,4 @@ if ( ! class_exists( 'Evoke_Custom_CSS' ) ) {
 	}
 }
 
-$evoke_custom_css = Evoke_Custom_CSS::get_instance();
+$fathom_custom_css = Fathom_Custom_CSS::get_instance();

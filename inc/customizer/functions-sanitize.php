@@ -1,35 +1,35 @@
 <?php
 
-if ( ! function_exists( 'evoke_sanitize_integer' ) ) {
+if ( ! function_exists( 'fathom_sanitize_integer' ) ) {
 	/**
 	 * Sanitize integers.
 	 *
 	 * @since 1.0.0
 	 */
-	function evoke_sanitize_integer( $input ) {
+	function fathom_sanitize_integer( $input ) {
 		return absint( $input );
 	}
 }
 
-if ( ! function_exists( 'evoke_sanitize_checkbox' ) ) {
+if ( ! function_exists( 'fathom_sanitize_checkbox' ) ) {
 	/**
 	 * Sanitize checkbox values.
 	 *
 	 * @since 1.0.0
 	 */
-	function evoke_sanitize_checkbox( $checked ) {
+	function fathom_sanitize_checkbox( $checked ) {
 		return ( ( isset( $checked ) && true == $checked ) ? true : false );
 	}
 }
 
-if ( ! function_exists( 'evoke_sanitize_hex_color' ) ) {
+if ( ! function_exists( 'fathom_sanitize_hex_color' ) ) {
 	/**
 	 * Sanitize colors.
 	 * Allow blank value.
 	 *
 	 * @since 1.0.0
 	 */
-	 function evoke_sanitize_hex_color( $color ) {
+	 function fathom_sanitize_hex_color( $color ) {
 		 if ( '' === $color ) {
 			 return '';
 		 }
@@ -43,13 +43,13 @@ if ( ! function_exists( 'evoke_sanitize_hex_color' ) ) {
 	 }
 }
 
-if ( ! function_exists( 'evoke_sanitize_choices' ) ) {
+if ( ! function_exists( 'fathom_sanitize_choices' ) ) {
 	/**
 	 * Sanitize choices.
 	 *
 	 * @since 1.0.0
 	 */
-	function evoke_sanitize_choices( $input, $setting ) {
+	function fathom_sanitize_choices( $input, $setting ) {
 		// Ensure input is a slug
 		$input = sanitize_key( $input );
 

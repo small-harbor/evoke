@@ -19,7 +19,7 @@
 			<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 
 			<div class="entry-byline">
-				<span class="image-sizes"><?php printf( esc_html__( 'Sizes: %s', 'evoke' ), hybrid_get_image_size_links() ); ?></span>
+				<span class="image-sizes"><?php printf( esc_html__( 'Sizes: %s', 'fathom' ), hybrid_get_image_size_links() ); ?></span>
 			</div><!-- .entry-byline -->
 
 		</header><!-- .entry-header -->
@@ -56,20 +56,20 @@
 
 		<div class="media-info image-info">
 
-			<h3 class="attachment-meta-title"><?php esc_html_e( 'Image Info', 'evoke' ); ?></h3>
+			<h3 class="attachment-meta-title"><?php esc_html_e( 'Image Info', 'fathom' ); ?></h3>
 
 			<ul class="media-meta">
 				<?php $pre = '<li><span class="prep">%s</span>'; ?>
-				<?php hybrid_media_meta( 'dimensions',        array( 'before' => sprintf( $pre, esc_html__( 'Dimensions',    'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'created_timestamp', array( 'before' => sprintf( $pre, esc_html__( 'Date',          'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'camera',            array( 'before' => sprintf( $pre, esc_html__( 'Camera',        'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'aperture',          array( 'before' => sprintf( $pre, esc_html__( 'Aperture',      'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'focal_length',      array( 'before' => sprintf( $pre, esc_html__( 'Focal Length',  'evoke' ) ), 'after' => '</li>', 'text' => esc_html__( '%s mm', 'evoke' ) ) ); ?>
-				<?php hybrid_media_meta( 'iso',               array( 'before' => sprintf( $pre, esc_html__( 'ISO',           'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'shutter_speed',     array( 'before' => sprintf( $pre, esc_html__( 'Shutter Speed', 'evoke' ) ), 'after' => '</li>', 'text' => esc_html__( '%s sec', 'evoke' ) ) ); ?>
-				<?php hybrid_media_meta( 'file_type',         array( 'before' => sprintf( $pre, esc_html__( 'Type',          'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'file_name',         array( 'before' => sprintf( $pre, esc_html__( 'Name',          'evoke' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'mime_type',         array( 'before' => sprintf( $pre, esc_html__( 'Mime Type',     'evoke' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'dimensions',        array( 'before' => sprintf( $pre, esc_html__( 'Dimensions',    'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'created_timestamp', array( 'before' => sprintf( $pre, esc_html__( 'Date',          'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'camera',            array( 'before' => sprintf( $pre, esc_html__( 'Camera',        'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'aperture',          array( 'before' => sprintf( $pre, esc_html__( 'Aperture',      'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'focal_length',      array( 'before' => sprintf( $pre, esc_html__( 'Focal Length',  'fathom' ) ), 'after' => '</li>', 'text' => esc_html__( '%s mm', 'fathom' ) ) ); ?>
+				<?php hybrid_media_meta( 'iso',               array( 'before' => sprintf( $pre, esc_html__( 'ISO',           'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'shutter_speed',     array( 'before' => sprintf( $pre, esc_html__( 'Shutter Speed', 'fathom' ) ), 'after' => '</li>', 'text' => esc_html__( '%s sec', 'fathom' ) ) ); ?>
+				<?php hybrid_media_meta( 'file_type',         array( 'before' => sprintf( $pre, esc_html__( 'Type',          'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'file_name',         array( 'before' => sprintf( $pre, esc_html__( 'Name',          'fathom' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'mime_type',         array( 'before' => sprintf( $pre, esc_html__( 'Mime Type',     'fathom' ) ), 'after' => '</li>' ) ); ?>
 			</ul>
 
 		</div><!-- .media-info -->
@@ -79,7 +79,7 @@
 		<?php if ( $gallery ) : // Check if the gallery is not empty. ?>
 
 			<div class="image-gallery">
-				<h3 class="attachment-meta-title"><?php esc_html_e( 'Gallery', 'evoke' ); ?></h3>
+				<h3 class="attachment-meta-title"><?php esc_html_e( 'Gallery', 'fathom' ); ?></h3>
 				<?php echo $gallery; ?>
 			</div>
 

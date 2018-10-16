@@ -4,7 +4,7 @@
 
 		<header class="entry-header">
 
-			<?php if ( 'post' == evoke_get_option( 'layout_post_title' ) || ! has_post_thumbnail() ) : ?>
+			<?php if ( 'post' == fathom_get_option( 'layout_post_title' ) || ! has_post_thumbnail() ) : ?>
 				<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 			<?php endif; ?>
 
@@ -22,8 +22,8 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( 'Posted in %s', 'evoke' ) ) ); ?>
-			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'evoke' ), 'before' => '&nbsp;' ) ); ?>
+			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( 'Posted in %s', 'fathom' ) ) ); ?>
+			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'fathom' ), 'before' => '&nbsp;' ) ); ?>
 		</footer><!-- .entry-footer -->
 
 	<?php else : // If not viewing a single post. ?>

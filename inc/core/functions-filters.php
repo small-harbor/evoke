@@ -2,34 +2,34 @@
 /**
  * Custom Filters.
  *
- * @package    Evoke
+ * @package    Fathom
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 # Add a class to the body
-add_filter( 'hybrid_attr_body', 'evoke_attr_body', 6 );
+add_filter( 'hybrid_attr_body', 'fathom_attr_body', 6 );
 
 # Add a class to the branding
-add_filter( 'hybrid_attr_branding', 'evoke_attr_branding', 6 );
+add_filter( 'hybrid_attr_branding', 'fathom_attr_branding', 6 );
 
 # Filter the theme layout class
-add_filter( 'hybrid_get_theme_layout', 'evoke_theme_layout', 5 );
+add_filter( 'hybrid_get_theme_layout', 'fathom_theme_layout', 5 );
 
 # Customize our parent theme stylesheet uri
-add_filter( 'hybrid_get_parent_stylesheet_uri', 'evoke_parent_stylesheet_uri', 5 );
+add_filter( 'hybrid_get_parent_stylesheet_uri', 'fathom_parent_stylesheet_uri', 5 );
 
 # Filter the default form options
-add_filter( 'comment_form_defaults', 'evoke_comment_form_defaults' );
+add_filter( 'comment_form_defaults', 'fathom_comment_form_defaults' );
 
 # Add support for breadcrumbs
-add_filter( 'breadcrumb_trail_args', 'evoke_breadcrumb_trail_args' );
-add_filter( 'breadcrumb_trail', 'evoke_breadcrumb_trail', 5, 2 );
+add_filter( 'breadcrumb_trail_args', 'fathom_breadcrumb_trail_args' );
+add_filter( 'breadcrumb_trail', 'fathom_breadcrumb_trail', 5, 2 );
 
-add_filter( 'hybrid_sidebar_args', 'evoke_sidebar_defaults' );
+add_filter( 'hybrid_sidebar_args', 'fathom_sidebar_defaults' );
 
-add_filter( 'excerpt_more', 'evoke_excerpt_more' );
+add_filter( 'excerpt_more', 'fathom_excerpt_more' );
 
-add_filter( 'excerpt_length', 'evoke_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'fathom_excerpt_length', 999 );
 
 /**
  * Filter the body attributes.
@@ -38,7 +38,7 @@ add_filter( 'excerpt_length', 'evoke_excerpt_length', 999 );
  * @access public
  * @return array
  */
-function evoke_attr_body( $attr ) {
+function fathom_attr_body( $attr ) {
 	global $post;
 
 	$attr['class'] .= ' no-js';
@@ -51,32 +51,32 @@ function evoke_attr_body( $attr ) {
 		$attr['class'] .= ' fixed-width-footer';
 	}
 
-	if ( evoke_get_option( 'layout_container' ) ) {
-		$attr['class'] .= ' container-body-' . evoke_get_option( 'layout_container' );
+	if ( fathom_get_option( 'layout_container' ) ) {
+		$attr['class'] .= ' container-body-' . fathom_get_option( 'layout_container' );
 	}
 
-	if ( $singular_layout = get_post_meta( $post->ID, 'evoke-container-post-layout', true ) ) {
+	if ( $singular_layout = get_post_meta( $post->ID, 'fathom-container-post-layout', true ) ) {
 		$attr['class'] .= ' container-singular-' . $singular_layout;
 	}
 
-	else if ( is_page() && evoke_get_option( 'layout_container_page' ) ) {
-		$attr['class'] .= ' container-page-' . evoke_get_option( 'layout_container_page' );
+	else if ( is_page() && fathom_get_option( 'layout_container_page' ) ) {
+		$attr['class'] .= ' container-page-' . fathom_get_option( 'layout_container_page' );
 	}
 
-	else if ( is_single() && evoke_get_option( 'layout_container_post' ) ) {
-		$attr['class'] .= ' container-post-' . evoke_get_option( 'layout_container_post' );
+	else if ( is_single() && fathom_get_option( 'layout_container_post' ) ) {
+		$attr['class'] .= ' container-post-' . fathom_get_option( 'layout_container_post' );
 	}
 
-	else if ( is_archive() && evoke_get_option( 'layout_container_archive' ) ) {
-		$attr['class'] .= ' container-archive-' . evoke_get_option( 'layout_container_archive' );
+	else if ( is_archive() && fathom_get_option( 'layout_container_archive' ) ) {
+		$attr['class'] .= ' container-archive-' . fathom_get_option( 'layout_container_archive' );
 	}
 
-	if ( evoke_get_option( 'layout_container_header' ) ) {
-		$attr['class'] .= ' container-header-' . evoke_get_option( 'layout_container_header' );
+	if ( fathom_get_option( 'layout_container_header' ) ) {
+		$attr['class'] .= ' container-header-' . fathom_get_option( 'layout_container_header' );
 	}
 
-	if ( evoke_get_option( 'layout_container_footer' ) ) {
-		$attr['class'] .= ' container-footer-' . evoke_get_option( 'layout_container_footer' );
+	if ( fathom_get_option( 'layout_container_footer' ) ) {
+		$attr['class'] .= ' container-footer-' . fathom_get_option( 'layout_container_footer' );
 	}
 
 	if ( is_singular() && has_post_thumbnail() ) {
@@ -93,7 +93,7 @@ function evoke_attr_body( $attr ) {
  * @access public
  * @return array
  */
-function evoke_attr_branding( $attr ) {
+function fathom_attr_branding( $attr ) {
 	$attr['class'] = 'title-area menu';
 	return $attr;
 }
@@ -106,7 +106,7 @@ function evoke_attr_branding( $attr ) {
  * @access public
  * @return array
  */
-function evoke_theme_layout( $theme_layout ) {
+function fathom_theme_layout( $theme_layout ) {
 
 	/* If viewing a singular post, get the post layout. */
 	if ( is_singular() )
@@ -123,15 +123,15 @@ function evoke_theme_layout( $theme_layout ) {
 
 	else {
 		if ( is_page() ) {
-			$layout = evoke_get_option( 'layout_content_page' );
+			$layout = fathom_get_option( 'layout_content_page' );
 		}
 
 		elseif ( is_single() ) {
-			$layout = evoke_get_option( 'layout_content_post' );
+			$layout = fathom_get_option( 'layout_content_post' );
 		}
 
 		elseif ( is_archive() ) {
-			$layout = evoke_get_option( 'layout_content_archive' );
+			$layout = fathom_get_option( 'layout_content_archive' );
 		}
 
 		if ( ! empty( $layout ) ) $theme_layout = $layout;
@@ -147,7 +147,7 @@ function evoke_theme_layout( $theme_layout ) {
  * @access public
  * @return array
  */
-function evoke_parent_stylesheet_uri( $stylesheet_uri ) {
+function fathom_parent_stylesheet_uri( $stylesheet_uri ) {
 	$stylesheet_uri = hybrid()->parent_uri . 'assets/dist/style.min.css';
 
 	return $stylesheet_uri;
@@ -160,10 +160,10 @@ function evoke_parent_stylesheet_uri( $stylesheet_uri ) {
  * @access public
  * @return array
  */
-function evoke_comment_form_defaults( $defaults ) {
+function fathom_comment_form_defaults( $defaults ) {
 
 	/* Change the defaults depending on your requirements */
-	//$defaults['title_reply'] = __( 'Submit a Comment', 'evoke' );
+	//$defaults['title_reply'] = __( 'Submit a Comment', 'fathom' );
 
 	return $defaults;
 }
@@ -175,7 +175,7 @@ function evoke_comment_form_defaults( $defaults ) {
  * @access public
  * @return array
  */
-function evoke_breadcrumb_trail_args( $args ) {
+function fathom_breadcrumb_trail_args( $args ) {
 	$args['show_browse'] = false;
 	return $args;
 }
@@ -187,7 +187,7 @@ function evoke_breadcrumb_trail_args( $args ) {
  * @access public
  * @return array
  */
-function evoke_breadcrumb_trail( $breadcrumb, $args ) {
+function fathom_breadcrumb_trail( $breadcrumb, $args ) {
 	$breadcrumb = str_replace( 'breadcrumb-trail breadcrumbs', 'breadcrumb-trail', $breadcrumb );
 	$breadcrumb = str_replace( 'ul class="trail-items"', 'ul class="breadcrumbs trail-items', $breadcrumb );
 	return $breadcrumb;
@@ -200,7 +200,7 @@ function evoke_breadcrumb_trail( $breadcrumb, $args ) {
  * @access public
  * @return array
  */
-function evoke_sidebar_defaults( $defaults ) {
+function fathom_sidebar_defaults( $defaults ) {
 	$defaults['before_title'] = '<h3 class="widget-title"><span>';
 	$defaults['after_title'] = '</span></h3>';
 
@@ -214,8 +214,8 @@ function evoke_sidebar_defaults( $defaults ) {
  * @access public
  * @return array
  */
-function evoke_excerpt_more( $more ) {
-	return '<p class="read-more"><a class="button small" href="' . get_permalink() . '">' . __( 'Read More', 'evoke' ) . '</a></p>';
+function fathom_excerpt_more( $more ) {
+	return '<p class="read-more"><a class="button small" href="' . get_permalink() . '">' . __( 'Read More', 'fathom' ) . '</a></p>';
 }
 
 /**
@@ -225,6 +225,6 @@ function evoke_excerpt_more( $more ) {
  * @access public
  * @return array
  */
-function evoke_excerpt_length( $length ) {
+function fathom_excerpt_length( $length ) {
 	return 20;
 }

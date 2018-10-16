@@ -1,10 +1,10 @@
 <?php
 
-if ( ! function_exists( 'evoke_get_option' ) ) {
+if ( ! function_exists( 'fathom_get_option' ) ) {
 
-	function evoke_get_option( $option ) {
+	function fathom_get_option( $option ) {
 
-		$theme_options = Evoke_Theme_Options::get_options();
+		$theme_options = Fathom_Theme_Options::get_options();
 
 		$value = ( isset( $theme_options[ $option ] ) && '' !== $theme_options[ $option ] ) ? $theme_options[ $option ] : $default;
 

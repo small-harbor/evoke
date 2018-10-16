@@ -2,11 +2,11 @@
 /**
  * Handles the theme options.
  *
- * @package    Evoke
+ * @package    Fathom
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-if ( ! class_exists( 'Evoke_Theme_Options' ) ) {
+if ( ! class_exists( 'Fathom_Theme_Options' ) ) {
 
 	/**
 	 * Theme Options.
@@ -14,7 +14,7 @@ if ( ! class_exists( 'Evoke_Theme_Options' ) ) {
 	 * @since  1.0.0
 	 * @access public
 	 */
-	class Evoke_Theme_Options {
+	class Fathom_Theme_Options {
 		/**
 		 * Holds the instance of this class.
 		 *
@@ -68,7 +68,7 @@ if ( ! class_exists( 'Evoke_Theme_Options' ) ) {
 		 */
 		public static function get_defaults() {
 			return apply_filters(
-				'evoke_defaults',
+				'fathom_defaults',
 				array(
 					'custom_logo_height' => 60,
 					'color_primary' => '#ff780b',
@@ -116,4 +116,4 @@ if ( ! class_exists( 'Evoke_Theme_Options' ) ) {
 	}
 }
 
-$evoke_theme_options = Evoke_Theme_Options::get_instance();
+$fathom_theme_options = Fathom_Theme_Options::get_instance();

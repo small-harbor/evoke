@@ -2,7 +2,7 @@
 /**
  * Layout Options.
  *
- * @package     Evoke
+ * @package     Fathom
  * @since       1.0.0
  */
 
@@ -14,7 +14,7 @@
 $wp_customize->add_panel(
 	'panel_layout',
 	array(
-		'title' => __( 'Layout', 'evoke' ),
+		'title' => __( 'Layout', 'fathom' ),
 		'priority' => 30,
 	)
 );
@@ -27,7 +27,7 @@ $wp_customize->add_panel(
 $wp_customize->add_section(
 	'panel_layout_section_containers',
 	array(
-		'title' => __( 'Containers', 'evoke' ),
+		'title' => __( 'Containers', 'fathom' ),
 		'panel' => 'panel_layout',
 	)
 );
@@ -39,8 +39,8 @@ $wp_customize->add_setting(
 	'layout_container',
 	array(
 		'capability' => 'edit_theme_options',
-		'sanitize_callback' => 'evoke_sanitize_choices',
-		'default' => evoke_get_option( 'layout_container' ),
+		'sanitize_callback' => 'fathom_sanitize_choices',
+		'default' => fathom_get_option( 'layout_container' ),
 		'transport' => 'postMessage'
 	)
 );
@@ -50,11 +50,11 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_containers',
-		'label' => __( 'Body Container Layout', 'evoke' ),
+		'label' => __( 'Body Container Layout', 'fathom' ),
 		'choices' => array(
-			'boxed' => __( 'Boxed', 'evoke' ),
-			'contained' => __( 'Contained', 'evoke' ),
-			'full-width' => __( 'Full Width', 'evoke' ),
+			'boxed' => __( 'Boxed', 'fathom' ),
+			'contained' => __( 'Contained', 'fathom' ),
+			'full-width' => __( 'Full Width', 'fathom' ),
 		),
 		'settings' => 'layout_container'
 	)
@@ -71,13 +71,13 @@ $wp_customize->add_setting(
 );
 
 $wp_customize->add_control(
-	new Evoke_Divider(
+	new Fathom_Divider(
 		$wp_customize,
 		'layout_divider_1',
 		array(
 			'type' => 'hf-divider',
 			'section' => 'panel_layout_section_containers',
-			'label' => __( 'Body Container Layout', 'evoke' ),
+			'label' => __( 'Body Container Layout', 'fathom' ),
 		)
 	)
 );
@@ -89,8 +89,8 @@ $wp_customize->add_setting(
 	'layout_container_header',
 	array(
 		'capability' => 'edit_theme_options',
-		'sanitize_callback' => 'evoke_sanitize_choices',
-		'default' => evoke_get_option( 'layout_container_header' ),
+		'sanitize_callback' => 'fathom_sanitize_choices',
+		'default' => fathom_get_option( 'layout_container_header' ),
 		'transport' => 'postMessage'
 	)
 );
@@ -100,11 +100,11 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_containers',
-		'label' => __( 'Header Container Layout', 'evoke' ),
+		'label' => __( 'Header Container Layout', 'fathom' ),
 		'choices' => array(
-			'boxed' => __( 'Boxed', 'evoke' ),
-			'contained' => __( 'Contained', 'evoke' ),
-			'full-width' => __( 'Full Width', 'evoke' ),
+			'boxed' => __( 'Boxed', 'fathom' ),
+			'contained' => __( 'Contained', 'fathom' ),
+			'full-width' => __( 'Full Width', 'fathom' ),
 		),
 		'settings' => 'layout_container_header'
 	)
@@ -117,8 +117,8 @@ $wp_customize->add_setting(
 	'layout_container_footer',
 	array(
 		'capability' => 'edit_theme_options',
-		'sanitize_callback' => 'evoke_sanitize_choices',
-		'default' => evoke_get_option( 'layout_container_footer' ),
+		'sanitize_callback' => 'fathom_sanitize_choices',
+		'default' => fathom_get_option( 'layout_container_footer' ),
 		'transport' => 'postMessage'
 	)
 );
@@ -128,11 +128,11 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_containers',
-		'label' => __( 'Footer Container Layout', 'evoke' ),
+		'label' => __( 'Footer Container Layout', 'fathom' ),
 		'choices' => array(
-			'boxed' => __( 'Boxed', 'evoke' ),
-			'contained' => __( 'Contained', 'evoke' ),
-			'full-width' => __( 'Full Width', 'evoke' ),
+			'boxed' => __( 'Boxed', 'fathom' ),
+			'contained' => __( 'Contained', 'fathom' ),
+			'full-width' => __( 'Full Width', 'fathom' ),
 		),
 		'settings' => 'layout_container_footer'
 	)
@@ -149,13 +149,13 @@ $wp_customize->add_setting(
 );
 
 $wp_customize->add_control(
-	new Evoke_Divider(
+	new Fathom_Divider(
 		$wp_customize,
 		'layout_divider_2',
 		array(
 			'type' => 'hf-divider',
 			'section' => 'panel_layout_section_containers',
-			'label' => __( 'Body Container Layout', 'evoke' ),
+			'label' => __( 'Body Container Layout', 'fathom' ),
 		)
 	)
 );
@@ -168,8 +168,8 @@ $wp_customize->add_setting(
 	'layout_container_page',
 	array(
 		'capability' => 'edit_theme_options',
-		'sanitize_callback' => 'evoke_sanitize_choices',
-		'default' => evoke_get_option( 'layout_container_page' ),
+		'sanitize_callback' => 'fathom_sanitize_choices',
+		'default' => fathom_get_option( 'layout_container_page' ),
 		'transport' => 'postMessage'
 	)
 );
@@ -179,12 +179,12 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_containers',
-		'label' => __( 'Page Body Container Layout', 'evoke' ),
+		'label' => __( 'Page Body Container Layout', 'fathom' ),
 		'choices' => array(
-			'default' => __( 'Default', 'evoke' ),
-			'boxed' => __( 'Boxed', 'evoke' ),
-			'contained' => __( 'Contained', 'evoke' ),
-			'full-width' => __( 'Full Width', 'evoke' ),
+			'default' => __( 'Default', 'fathom' ),
+			'boxed' => __( 'Boxed', 'fathom' ),
+			'contained' => __( 'Contained', 'fathom' ),
+			'full-width' => __( 'Full Width', 'fathom' ),
 		),
 		'settings' => 'layout_container_page'
 	)
@@ -194,8 +194,8 @@ $wp_customize->add_setting(
 	'layout_container_post',
 	array(
 		'capability' => 'edit_theme_options',
-		'sanitize_callback' => 'evoke_sanitize_choices',
-		'default' => evoke_get_option( 'layout_container_post' ),
+		'sanitize_callback' => 'fathom_sanitize_choices',
+		'default' => fathom_get_option( 'layout_container_post' ),
 		'transport' => 'postMessage'
 	)
 );
@@ -205,12 +205,12 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_containers',
-		'label' => __( 'Blog Post Body Container Layout', 'evoke' ),
+		'label' => __( 'Blog Post Body Container Layout', 'fathom' ),
 		'choices' => array(
-			'default' => __( 'Default', 'evoke' ),
-			'boxed' => __( 'Boxed', 'evoke' ),
-			'contained' => __( 'Contained', 'evoke' ),
-			'full-width' => __( 'Full Width', 'evoke' ),
+			'default' => __( 'Default', 'fathom' ),
+			'boxed' => __( 'Boxed', 'fathom' ),
+			'contained' => __( 'Contained', 'fathom' ),
+			'full-width' => __( 'Full Width', 'fathom' ),
 		),
 		'settings' => 'layout_container_post'
 	)
@@ -220,8 +220,8 @@ $wp_customize->add_setting(
 	'layout_container_archive',
 	array(
 		'capability' => 'edit_theme_options',
-		'sanitize_callback' => 'evoke_sanitize_choices',
-		'default' => evoke_get_option( 'layout_container_archive' ),
+		'sanitize_callback' => 'fathom_sanitize_choices',
+		'default' => fathom_get_option( 'layout_container_archive' ),
 		'transport' => 'postMessage'
 	)
 );
@@ -231,12 +231,12 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_containers',
-		'label' => __( 'Blog Archive Body Container Layout', 'evoke' ),
+		'label' => __( 'Blog Archive Body Container Layout', 'fathom' ),
 		'choices' => array(
-			'default' => __( 'Default', 'evoke' ),
-			'boxed' => __( 'Boxed', 'evoke' ),
-			'contained' => __( 'Contained', 'evoke' ),
-			'full-width' => __( 'Full Width', 'evoke' ),
+			'default' => __( 'Default', 'fathom' ),
+			'boxed' => __( 'Boxed', 'fathom' ),
+			'contained' => __( 'Contained', 'fathom' ),
+			'full-width' => __( 'Full Width', 'fathom' ),
 		),
 		'settings' => 'layout_container_archive'
 	)
@@ -250,7 +250,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
 	'panel_layout_section_content',
 	array(
-		'title' => __( 'Content', 'evoke' ),
+		'title' => __( 'Content', 'fathom' ),
 		'panel' => 'panel_layout',
 	)
 );
@@ -261,7 +261,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
 	'layout_content_page',
 	array(
-		'default'           => evoke_get_option( 'layout_content_page' ),
+		'default'           => fathom_get_option( 'layout_content_page' ),
 		'sanitize_callback' => 'sanitize_key',
 		'transport'         => 'postMessage'
 	)
@@ -272,7 +272,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'layout_content_page',
 		array(
-			'label' => __( 'Page Content Layout', 'evoke' ),
+			'label' => __( 'Page Content Layout', 'fathom' ),
 			'section' => 'panel_layout_section_content'
 		)
 	)
@@ -284,7 +284,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'layout_content_post',
 	array(
-		'default'           => evoke_get_option( 'layout_content_post' ),
+		'default'           => fathom_get_option( 'layout_content_post' ),
 		'sanitize_callback' => 'sanitize_key',
 		'transport'         => 'postMessage'
 	)
@@ -295,7 +295,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'layout_content_post',
 		array(
-			'label' => __( 'Blog Post Content Layout', 'evoke' ),
+			'label' => __( 'Blog Post Content Layout', 'fathom' ),
 			'section' => 'panel_layout_section_content'
 		)
 	)
@@ -307,7 +307,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'layout_content_archive',
 	array(
-		'default'           => evoke_get_option( 'layout_content_archive' ),
+		'default'           => fathom_get_option( 'layout_content_archive' ),
 		'sanitize_callback' => 'sanitize_key',
 		'transport'         => 'postMessage'
 	)
@@ -318,7 +318,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'layout_content_archive',
 		array(
-			'label' => __( 'Blog Archive Content Layout', 'evoke' ),
+			'label' => __( 'Blog Archive Content Layout', 'fathom' ),
 			'section' => 'panel_layout_section_content'
 		)
 	)
@@ -330,7 +330,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'layout_featured_image',
 	array(
-		'default'           => evoke_get_option( 'layout_featured_image' ),
+		'default'           => fathom_get_option( 'layout_featured_image' ),
 		'sanitize_callback' => 'sanitize_key',
 		'transport'         => 'postMessage'
 	)
@@ -341,12 +341,12 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_content',
-		'label' => __( 'Featured Image Size', 'evoke' ),
+		'label' => __( 'Featured Image Size', 'fathom' ),
 		'choices' => array(
-			'theme' => __( 'Theme Defined', 'evoke' ),
-			'ratio' => __( 'Use Image Ratio', 'evoke' ),
+			'theme' => __( 'Theme Defined', 'fathom' ),
+			'ratio' => __( 'Use Image Ratio', 'fathom' ),
 		),
-		'description' => __( 'Use the predefined image size or keep the ratio of your upload image', 'evoke' )
+		'description' => __( 'Use the predefined image size or keep the ratio of your upload image', 'fathom' )
 	)
 );
 
@@ -356,7 +356,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'layout_post_title',
 	array(
-		'default'           => evoke_get_option( 'layout_post_title' ),
+		'default'           => fathom_get_option( 'layout_post_title' ),
 		'sanitize_callback' => 'sanitize_key',
 		'transport'         => 'postMessage'
 	)
@@ -367,10 +367,10 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_content',
-		'label' => __( 'Post Title Placement', 'evoke' ),
+		'label' => __( 'Post Title Placement', 'fathom' ),
 		'choices' => array(
-			'featured-image' => __( 'Inside Featured Image', 'evoke' ),
-			'post' => __( 'With Post', 'evoke' ),
+			'featured-image' => __( 'Inside Featured Image', 'fathom' ),
+			'post' => __( 'With Post', 'fathom' ),
 		),
 	)
 );

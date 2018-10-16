@@ -16,7 +16,7 @@
 	<div class="off-canvas-content" data-off-canvas-content>
 
 		<div class="skip-link">
-			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'evoke' ); ?></a>
+			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'fathom' ); ?></a>
 		</div><!-- .skip-link -->
 
 		<header <?php hybrid_attr( 'header' ); ?>>

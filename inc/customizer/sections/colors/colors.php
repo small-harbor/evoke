@@ -2,7 +2,7 @@
 /**
  * Color Options.
  *
- * @package     Evoke
+ * @package     Fathom
  * @since       1.0.0
  */
 
@@ -13,8 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 $wp_customize->add_setting(
 	'color_primary',
 	array(
-		'default' => evoke_get_option( 'color_primary' ),
-		'sanitize_callback' => 'evoke_sanitize_hex_color'
+		'default' => fathom_get_option( 'color_primary' ),
+		'sanitize_callback' => 'fathom_sanitize_hex_color'
 	)
 );
 
@@ -23,7 +23,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'color_primary',
 		array(
-			'label'    => esc_html__( 'Primary Color', 'evoke' ),
+			'label'    => esc_html__( 'Primary Color', 'fathom' ),
 			'section'  => 'colors',
 			'settings' => 'color_primary',
 			'priority' => 10,
@@ -34,8 +34,8 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'color_secondary',
 	array(
-		'default' => evoke_get_option( 'color_secondary' ),
-		'sanitize_callback' => 'evoke_sanitize_hex_color'
+		'default' => fathom_get_option( 'color_secondary' ),
+		'sanitize_callback' => 'fathom_sanitize_hex_color'
 	)
 );
 
@@ -44,7 +44,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'color_secondary',
 		array(
-			'label'    => esc_html__( 'Secondary Color', 'evoke' ),
+			'label'    => esc_html__( 'Secondary Color', 'fathom' ),
 			'section'  => 'colors',
 			'settings' => 'color_secondary',
 			'priority' => 10,
