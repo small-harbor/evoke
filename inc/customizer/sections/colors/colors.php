@@ -13,7 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 $wp_customize->add_setting(
 	'color_primary',
 	array(
-		'default' => evoke_get_option( 'color_primary' )
+		'default' => evoke_get_option( 'color_primary' ),
+		'sanitize_callback' => 'evoke_sanitize_hex_color'
 	)
 );
 
@@ -33,7 +34,8 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'color_secondary',
 	array(
-		'default' => evoke_get_option( 'color_secondary' )
+		'default' => evoke_get_option( 'color_secondary' ),
+		'sanitize_callback' => 'evoke_sanitize_hex_color'
 	)
 );
 

@@ -14,7 +14,8 @@ $wp_customize->add_setting(
 	'front_page_hide_title',
 	array(
 		'default' => evoke_get_option( 'front_page_hide_title' ),
-		'transport' => 'postMessage'
+		'transport' => 'postMessage',
+		'sanitize_callback' => 'evoke_sanitize_checkbox'
 	)
 );
 

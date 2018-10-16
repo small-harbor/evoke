@@ -14,7 +14,8 @@ $wp_customize->add_setting(
 	'custom_logo_height',
 	array(
 		'default' => evoke_get_option( 'custom_logo_height' ),
-		'transport' => 'postMessage'
+		'transport' => 'postMessage',
+		'sanitize_callback' => 'evoke_sanitize_integer'
 	)
 );
 
@@ -34,7 +35,9 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
 	'site_identity_divider',
-	array()
+	array(
+		'sanitize_callback' => 'esc_attr'
+	)
 );
 
 $wp_customize->add_control(

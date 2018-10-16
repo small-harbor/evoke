@@ -39,7 +39,7 @@ $wp_customize->add_setting(
 	'layout_container',
 	array(
 		'capability' => 'edit_theme_options',
-		//'sanitize_callback' => 'Evoke_sanitize_select',
+		'sanitize_callback' => 'evoke_sanitize_choices',
 		'default' => evoke_get_option( 'layout_container' ),
 		'transport' => 'postMessage'
 	)
@@ -56,6 +56,7 @@ $wp_customize->add_control(
 			'contained' => __( 'Contained', 'evoke' ),
 			'full-width' => __( 'Full Width', 'evoke' ),
 		),
+		'settings' => 'layout_container'
 	)
 );
 
@@ -64,7 +65,9 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
 	'layout_divider_1',
-	array()
+	array(
+		'sanitize_callback' => 'esc_attr'
+	)
 );
 
 $wp_customize->add_control(
@@ -86,7 +89,7 @@ $wp_customize->add_setting(
 	'layout_container_header',
 	array(
 		'capability' => 'edit_theme_options',
-		//'sanitize_callback' => 'evoke_sanitize_select',
+		'sanitize_callback' => 'evoke_sanitize_choices',
 		'default' => evoke_get_option( 'layout_container_header' ),
 		'transport' => 'postMessage'
 	)
@@ -103,6 +106,7 @@ $wp_customize->add_control(
 			'contained' => __( 'Contained', 'evoke' ),
 			'full-width' => __( 'Full Width', 'evoke' ),
 		),
+		'settings' => 'layout_container_header'
 	)
 );
 
@@ -113,7 +117,7 @@ $wp_customize->add_setting(
 	'layout_container_footer',
 	array(
 		'capability' => 'edit_theme_options',
-		//'sanitize_callback' => 'evoke_sanitize_select',
+		'sanitize_callback' => 'evoke_sanitize_choices',
 		'default' => evoke_get_option( 'layout_container_footer' ),
 		'transport' => 'postMessage'
 	)
@@ -130,6 +134,7 @@ $wp_customize->add_control(
 			'contained' => __( 'Contained', 'evoke' ),
 			'full-width' => __( 'Full Width', 'evoke' ),
 		),
+		'settings' => 'layout_container_footer'
 	)
 );
 
@@ -138,7 +143,9 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
 	'layout_divider_2',
-	array()
+	array(
+		'sanitize_callback' => 'esc_attr'
+	)
 );
 
 $wp_customize->add_control(
@@ -161,7 +168,7 @@ $wp_customize->add_setting(
 	'layout_container_page',
 	array(
 		'capability' => 'edit_theme_options',
-		//'sanitize_callback' => 'evoke_sanitize_select',
+		'sanitize_callback' => 'evoke_sanitize_choices',
 		'default' => evoke_get_option( 'layout_container_page' ),
 		'transport' => 'postMessage'
 	)
@@ -179,6 +186,7 @@ $wp_customize->add_control(
 			'contained' => __( 'Contained', 'evoke' ),
 			'full-width' => __( 'Full Width', 'evoke' ),
 		),
+		'settings' => 'layout_container_page'
 	)
 );
 
@@ -186,7 +194,7 @@ $wp_customize->add_setting(
 	'layout_container_post',
 	array(
 		'capability' => 'edit_theme_options',
-		//'sanitize_callback' => 'evoke_sanitize_select',
+		'sanitize_callback' => 'evoke_sanitize_choices',
 		'default' => evoke_get_option( 'layout_container_post' ),
 		'transport' => 'postMessage'
 	)
@@ -200,10 +208,11 @@ $wp_customize->add_control(
 		'label' => __( 'Blog Post Body Container Layout', 'evoke' ),
 		'choices' => array(
 			'default' => __( 'Default', 'evoke' ),
-			'boxed' => __( 'Boxed' 'evoke' ),
-			'contained' => __( 'Contained' 'evoke' ),
-			'full-width' => __( 'Full Width' 'evoke' ),
+			'boxed' => __( 'Boxed', 'evoke' ),
+			'contained' => __( 'Contained', 'evoke' ),
+			'full-width' => __( 'Full Width', 'evoke' ),
 		),
+		'settings' => 'layout_container_post'
 	)
 );
 
@@ -211,7 +220,7 @@ $wp_customize->add_setting(
 	'layout_container_archive',
 	array(
 		'capability' => 'edit_theme_options',
-		//'sanitize_callback' => 'evoke_sanitize_select',
+		'sanitize_callback' => 'evoke_sanitize_choices',
 		'default' => evoke_get_option( 'layout_container_archive' ),
 		'transport' => 'postMessage'
 	)
@@ -229,6 +238,7 @@ $wp_customize->add_control(
 			'contained' => __( 'Contained', 'evoke' ),
 			'full-width' => __( 'Full Width', 'evoke' ),
 		),
+		'settings' => 'layout_container_archive'
 	)
 );
 
