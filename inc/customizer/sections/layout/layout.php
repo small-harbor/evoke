@@ -197,12 +197,12 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_containers',
-		'label' => __( 'Blog Post Body Container Layout' ),
+		'label' => __( 'Blog Post Body Container Layout', 'evoke' ),
 		'choices' => array(
-			'default' => __( 'Default' ),
-			'boxed' => __( 'Boxed' ),
-			'contained' => __( 'Contained' ),
-			'full-width' => __( 'Full Width' ),
+			'default' => __( 'Default', 'evoke' ),
+			'boxed' => __( 'Boxed' 'evoke' ),
+			'contained' => __( 'Contained' 'evoke' ),
+			'full-width' => __( 'Full Width' 'evoke' ),
 		),
 	)
 );
@@ -222,12 +222,12 @@ $wp_customize->add_control(
 	array(
 		'type' => 'select',
 		'section' => 'panel_layout_section_containers',
-		'label' => __( 'Blog Archive Body Container Layout' ),
+		'label' => __( 'Blog Archive Body Container Layout', 'evoke' ),
 		'choices' => array(
-			'default' => __( 'Default' ),
-			'boxed' => __( 'Boxed' ),
-			'contained' => __( 'Contained' ),
-			'full-width' => __( 'Full Width' ),
+			'default' => __( 'Default', 'evoke' ),
+			'boxed' => __( 'Boxed', 'evoke' ),
+			'contained' => __( 'Contained', 'evoke' ),
+			'full-width' => __( 'Full Width', 'evoke' ),
 		),
 	)
 );
