@@ -16,6 +16,14 @@
 
 	<?php endif; // End check for posts. ?>
 
+	<h3 class="section-title latest">
+		<span></span>
+		<span class="text">
+			<?php _e( 'Latest', 'fathom' ); ?>
+		</span>
+		<span></span>
+	</h3>
+
 	<div class="latest-articles">
 
 	<?php $args = array(
@@ -59,6 +67,14 @@
 	<?php endif; ?>
 
 	</div>
+
+	<h3 class="section-title">
+		<span></span>
+		<span class="text">
+			<?php _e( 'Articles', 'fathom' ); ?>
+		</span>
+		<span></span>
+	</h3>
 
 	<div class="article-list">
 
