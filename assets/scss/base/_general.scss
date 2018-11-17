@@ -1,4 +1,12 @@
-code {
-	border: none;
+code,
+kbd {
+	background-color: transparent;
 	font-size: 0.9em;
+	color: $primary-color;
+}
+
+pre {
+	white-space: pre-wrap;
+	padding-left: rem-calc(32);
+	padding-right: rem-calc(32);
 }
