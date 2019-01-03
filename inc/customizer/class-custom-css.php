@@ -98,10 +98,10 @@ if ( ! class_exists( 'Fathom_Custom_CSS' ) ) {
 
 			$style = '';
 
-			if ( has_custom_logo() ) {
+			if ( ! get_theme_mod( 'header_text', true ) ) {
 				$style .= '.site-title a { background: url(' . Fathom_Custom_CSS::get_custom_logo_src() . ') center center no-repeat; }';
 
-				$logo_size = Fathom_Custom_CSS::get_custom_logo_ratio( $options['custom_logo'], $options['custom_logo_height'] );
+				$logo_size = Fathom_Custom_CSS::get_custom_logo_ratio( get_theme_mod( 'custom_logo' ), $options['custom_logo_height'] );
 
 				$style .= '.site-title a { width: ' . $logo_size['width'] . 'px; height: ' . $logo_size['height'] . 'px; }';
 			}

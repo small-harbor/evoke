@@ -8346,55 +8346,60 @@ pre {
   display: none;
 }
 
-/* line 10, assets/scss/sections/_header.scss */
-.wp-custom-logo .top-bar-title h1 a {
+/* line 9, assets/scss/sections/_header.scss */
+.wp-custom-logo .top-bar-title.has-image h1 {
+  position: static;
+}
+
+/* line 12, assets/scss/sections/_header.scss */
+.wp-custom-logo .top-bar-title.has-image h1 a {
   display: block;
   text-indent: 101%;
   overflow: hidden;
   background-size: contain;
 }
 
-/* line 20, assets/scss/sections/_header.scss */
+/* line 22, assets/scss/sections/_header.scss */
 .title-bar-title {
   padding: 0.5rem 0.75rem;
 }
 
-/* line 25, assets/scss/sections/_header.scss */
+/* line 27, assets/scss/sections/_header.scss */
 .top-bar {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 25, assets/scss/sections/_header.scss */
+  /* line 27, assets/scss/sections/_header.scss */
   .top-bar {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
   }
 }
 
-/* line 28, assets/scss/sections/_header.scss */
+/* line 30, assets/scss/sections/_header.scss */
 .top-bar .site-title {
   margin: 0;
   font-size: 1.3125rem;
 }
 
-/* line 32, assets/scss/sections/_header.scss */
+/* line 34, assets/scss/sections/_header.scss */
 .top-bar .site-title a {
   padding-left: 0;
 }
 
-/* line 37, assets/scss/sections/_header.scss */
+/* line 39, assets/scss/sections/_header.scss */
 .top-bar a {
   color: #333333;
 }
 
-/* line 42, assets/scss/sections/_header.scss */
+/* line 44, assets/scss/sections/_header.scss */
 li.description {
   display: none;
 }
 
-/* line 46, assets/scss/sections/_header.scss */
+/* line 48, assets/scss/sections/_header.scss */
 .menu-primary {
   font-size: 0.875rem;
 }

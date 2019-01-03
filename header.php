@@ -30,7 +30,7 @@
 
 			<div class="top-bar show-for-medium" data-topbar>
 
-				<div class="top-bar-title <?php echo has_custom_logo() ? 'has-image' : 'has-text'; ?>">
+				<div class="top-bar-title <?php echo get_theme_mod( 'header_text', true ) ? 'has-text' : 'has-image'; ?>">
 					<ul <?php hybrid_attr( 'branding' ); ?>>
 						<li class="name"><?php hybrid_site_title(); ?></li>
 						<li class="description"><?php hybrid_site_description(); ?></li>

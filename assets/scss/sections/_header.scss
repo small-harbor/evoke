@@ -5,8 +5,10 @@
 
 // Custom logo
 .wp-custom-logo {
-	.top-bar-title {
+	.top-bar-title.has-image {
 		h1 {
+			position: static;
+			
 			a {
 				display: block;
 				text-indent: 101%;
