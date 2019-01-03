@@ -192,8 +192,6 @@ final class Fathom_Theme {
 			array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' )
 		);
 
-		add_image_size( 'archive', 1024, 682, true );
-
 		// Handle content width for embeds and images.
 		hybrid_set_content_width( 1280 );
 
@@ -238,6 +236,9 @@ final class Fathom_Theme {
 
 		// Adds the 'fathom-full' image size.
 		add_image_size( 'fathom-full', 1200, 500, false );
+
+		// Adds the 'fathom-archive' image size.
+		add_image_size( 'fathom-archive', 1024, 682, true );
 	}
 
 	/**

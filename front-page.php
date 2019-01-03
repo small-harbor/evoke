@@ -39,7 +39,7 @@
 			<article>
 
 				<div class="entry-thumbnail">
-					<?php the_post_thumbnail( 'archive' ); ?>
+					<?php the_post_thumbnail( 'fathom-archive' ); ?>
 				</div>
 
 				<header class="entry-header">
@@ -92,7 +92,7 @@
 			<article>
 
 				<div class="entry-thumbnail">
-					<?php the_post_thumbnail( 'archive' ); ?>
+					<?php the_post_thumbnail( 'fathom-archive' ); ?>
 				</div>
 
 				<div class="entry-body">
