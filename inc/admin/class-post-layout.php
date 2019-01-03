@@ -74,8 +74,10 @@ final class Fathom_Admin_Post_Layout {
 	public function add_meta_boxes( $post_type ) {
 
 		if ( post_type_supports( $post_type, 'theme-layouts' ) && current_user_can( 'edit_theme_options' ) ) {
-			global $wp_meta_boxes;
-			$wp_meta_boxes[$post_type]['side']['default']['hybrid-post-layout']['title'] = 'Content Layout';
+
+			// Change the Hybrid Core meta box title.
+			remove_meta_box( 'hybrid-post-layout', $post_type, 'side' );
+			add_meta_box( 'hybrid-post-layout', esc_html__( 'Content Layout', 'hybrid-core' ), array( $this, 'layout_meta_box' ), $post_type, 'side', 'default' );
 
 			// Add meta box.
 			add_meta_box( 'fathom-container-post-layout', esc_html__( 'Body Container Layout', 'fathom' ), array( $this, 'meta_box' ), $post_type, 'side', 'default' );
@@ -152,6 +154,43 @@ final class Fathom_Admin_Post_Layout {
 			<?php endforeach; ?>
 		</select>
 		<?php
+	}
+
+	/**
+	 * Callback function for displaying the layout meta box.
+	 *
+	 * @since  1.0.1
+	 * @access public
+	 * @param  object  $object
+	 * @param  array   $box
+	 * @return void
+	 */
+	public function layout_meta_box( $post, $box ) {
+
+		// Get only the post layouts.
+		$layouts = wp_list_filter( hybrid_get_layouts(), array( 'is_post_layout' => true, 'image' => true ) );
+
+		// Remove unwanted layouts.
+		foreach ( $layouts as $layout ) {
+
+			if ( $layout->post_types && ! in_array( $post->post_type, $layout->post_types ) )
+				unset( $layouts[ $layout->name ] );
+		}
+
+		// Get the current post's layout.
+		$post_layout = hybrid_get_post_layout( $post->ID );
+
+		// Output the nonce field.
+		wp_nonce_field( basename( __FILE__ ), 'hybrid_post_layout_nonce' );
+
+		// Output the layout field.
+		hybrid_form_field_layout(
+			array(
+				'layouts'    => $layouts,
+				'selected'   => $post_layout ? $post_layout : 'default',
+				'field_name' => 'hybrid-post-layout'
+			)
+		);
 	}
 
 	/**
