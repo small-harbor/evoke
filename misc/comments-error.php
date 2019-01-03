@@ -3,7 +3,7 @@
 	<p class="comments-closed pings-open">
 		<?php
 			// Translators: The two %s are placeholders for HTML. The order can't be changed.
-			printf( esc_html__( 'Comments are closed, but %strackbacks%s and pingbacks are open.', 'fathom' ), '<a href="' . esc_url( get_trackback_url() ) . '">', '</a>' );
+			printf( esc_html__( 'Comments are closed, but %1$strackbacks%2$s and pingbacks are open.', 'fathom' ), '<a href="' . esc_url( get_trackback_url() ) . '">', '</a>' );
 		?>
 	</p><!-- .comments-closed .pings-open -->
 
