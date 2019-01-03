@@ -215,7 +215,7 @@ function fathom_sidebar_defaults( $defaults ) {
  * @return array
  */
 function fathom_excerpt_more( $more ) {
-	return '<p class="read-more"><a class="button small" href="' . get_permalink() . '">' . __( 'Read More', 'fathom' ) . '</a></p>';
+	return '<p class="read-more"><a class="button small" href="' . esc_url( get_permalink() ) . '">' . __( 'Read More', 'fathom' ) . '</a></p>';
 }
 
 /**
