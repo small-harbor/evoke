@@ -26,9 +26,17 @@
 
 	<div class="latest-articles">
 
-	<?php $args = array(
-		'posts_per_page' => 3
-	); ?>
+	<?php
+
+	$sticky_posts = get_option( 'sticky_posts' );
+	$sticky_count = count( $sticky_posts );
+	$posts_per_page = 3 - $sticky_count;
+
+	$args = array(
+		'posts_per_page' => $posts_per_page
+	);
+
+	?>
 
 	<?php $the_query = new WP_Query( $args ); ?>
 
