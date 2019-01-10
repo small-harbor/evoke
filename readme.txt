@@ -4,7 +4,7 @@ Tags: one-column, two-columns, three-columns, custom-menu, featured-images, left
 Requires at least: 4.5
 Tested up to: 5.0.2
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,3 +34,20 @@ More details [here](http://www.gnu.org/licenses/gpl-2.0.html).
 Release date: October 16, 2018
 
 * Initial release
+
+= 1.0.1 =
+
+Release date: January 9, 2018
+
+* Update readme.txt
+* Fix logo disply when site title and tagline are not shown
+* Define image size with prefix
+* Various PHP fixes
+
+== Resources ==
+* back-view-beautiful-bloom-906002.jpg © 2017 Noelle Otto, CC0
+* burrito-chicken-close-up-461198.jpg © 2005 Samuel Fernandez Rivera, CC0
+* buffet-chicken-cooking-5938.jpg © 2014 Kaboompics.com, CC0
+* boutique-bridal-bridal-fashion-237432.jpg © 2016 Michael Gaida, CC0
+* Foundation Framework © 2011-2018 ZURB, Inc, MIT
+* Hybrid Core © 2008-2018 Justin Tadlock, GNU GPL

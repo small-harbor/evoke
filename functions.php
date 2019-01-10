@@ -13,7 +13,7 @@
  *
  * @package    Fathom
  * @subpackage Functions
- * @version    1.0.0
+ * @version    1.0.1
  * @author     David Sutoyo <david@smallharbor.com>
  * @copyright  Copyright (c) 2013 - 2015, David Sutoyo
  * @link       https://themeharbor.com/themes/fathom
