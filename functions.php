@@ -13,7 +13,7 @@
  *
  * @package    Fathom
  * @subpackage Functions
- * @version    1.0.2
+ * @version    1.0.3
  * @author     David Sutoyo <david@smallharbor.com>
  * @copyright  Copyright (c) 2013 - 2015, David Sutoyo
  * @link       https://themeharbor.com/themes/fathom
@@ -91,7 +91,7 @@ final class Fathom_Theme {
 
 		/* Define Constants. */
 		// Theme Version
-		define( 'FATHOM_THEME_VERSION', '1.0.2' );
+		define( 'FATHOM_THEME_VERSION', '1.0.3' );
 
 		// Settings
 		define( 'FATHOM_THEME_SETTINGS', 'fathom-settings' );
@@ -103,7 +103,7 @@ final class Fathom_Theme {
 		define( 'FATHOM_THEME_URI', trailingslashit( get_template_directory_uri() ) );
 
 		// Specify our Foundation version
-		define( 'FOUNDATION_VERSION', '6.4.3');
+		define( 'FOUNDATION_VERSION', '6.5.0');
 	}
 
 	/**

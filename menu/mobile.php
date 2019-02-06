@@ -5,7 +5,7 @@
 
 		<?php if ( current_theme_supports( 'popup-navigation' ) ) : ?>
 
-			<a class="popup-navigation-close" href="#">Close</a>
+			<a class="popup-navigation-close" href="#"><?php esc_html_e( 'Close', 'fathom' ); ?></a>
 
 		<?php endif; ?>
 
