@@ -13,7 +13,7 @@
  *
  * @package    Fathom
  * @subpackage Functions
- * @version    1.0.1
+ * @version    1.0.2
  * @author     David Sutoyo <david@smallharbor.com>
  * @copyright  Copyright (c) 2013 - 2015, David Sutoyo
  * @link       https://themeharbor.com/themes/fathom
@@ -91,7 +91,7 @@ final class Fathom_Theme {
 
 		/* Define Constants. */
 		// Theme Version
-		define( 'FATHOM_THEME_VERSION', '1.0.0' );
+		define( 'FATHOM_THEME_VERSION', '1.0.2' );
 
 		// Settings
 		define( 'FATHOM_THEME_SETTINGS', 'fathom-settings' );
