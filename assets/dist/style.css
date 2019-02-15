@@ -8059,35 +8059,35 @@ pre {
   width: 100%;
   text-align: center;
   padding: 1.5rem 0;
-  color: #ff780b;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 1.125rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.125rem;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
 }
 
-/* line 15, assets/scss/base/_typography.scss */
+/* line 16, assets/scss/base/_typography.scss */
 .section-title.latest {
   margin-top: 2rem;
 }
 
-/* line 19, assets/scss/base/_typography.scss */
+/* line 20, assets/scss/base/_typography.scss */
 .section-title span {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  border-top: 1px solid #e4e6e7;
+  border-top: 1px solid #cacaca;
 }
 
-/* line 23, assets/scss/base/_typography.scss */
+/* line 24, assets/scss/base/_typography.scss */
 .section-title span.text {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   border-top: none;
-  border-left: 1px solid #e4e6e7;
-  border-right: 1px solid #e4e6e7;
-  padding: 0 1.5rem;
+  background-color: #474747;
+  padding: 0.5rem 1.5rem;
 }
 
 /* # Breadcrumbs ===== */
@@ -8381,25 +8381,26 @@ pre {
 /* line 30, assets/scss/sections/_header.scss */
 .top-bar .site-title {
   margin: 0;
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-/* line 34, assets/scss/sections/_header.scss */
+/* line 35, assets/scss/sections/_header.scss */
 .top-bar .site-title a {
   padding-left: 0;
 }
 
-/* line 39, assets/scss/sections/_header.scss */
+/* line 40, assets/scss/sections/_header.scss */
 .top-bar a {
   color: #333333;
 }
 
-/* line 44, assets/scss/sections/_header.scss */
+/* line 45, assets/scss/sections/_header.scss */
 li.description {
   display: none;
 }
 
-/* line 48, assets/scss/sections/_header.scss */
+/* line 49, assets/scss/sections/_header.scss */
 .menu-primary {
   font-size: 0.875rem;
 }
@@ -8837,7 +8838,7 @@ article .read-more a.button {
 
 /* line 19, assets/scss/pages/_post.scss */
 article .read-more a.button:hover {
-  background-color: #333333;
+  background-color: #474747;
   color: #ffffff;
 }
 
