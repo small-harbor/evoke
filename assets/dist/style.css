@@ -8354,7 +8354,7 @@ pre {
 /* line 12, assets/scss/sections/_header.scss */
 .wp-custom-logo .top-bar-title.has-image h1 a {
   display: block;
-  text-indent: 101%;
+  text-indent: -500%;
   overflow: hidden;
   background-size: contain;
 }
