@@ -2,7 +2,7 @@
 Contributors: presscargo
 Tags: one-column, two-columns, three-columns, custom-menu, featured-images, left-sidebar,  right-sidebar, full-width-template, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
 Requires at least: 4.5
-Tested up to: 5.0.2
+Tested up to: 5.5
 Requires PHP: 5.6
 Stable tag: 1.0.3
 License: GPLv2 or later
@@ -55,6 +55,12 @@ Release date: February 5, 2019
 Release date: February 6, 2019
 
 * Add translatable text in mobile menu
+
+= 1.1.0 =
+
+Release date: August 11, 2020
+
+* Update Foundation to 6.6.3
 
 == Resources ==
 StockSnap_JD8V13VMYT.jpg https://stocksnap.io/photo/JD8V13VMYT, © Allef Vinicius
