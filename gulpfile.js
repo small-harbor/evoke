@@ -11,7 +11,6 @@ var notify        = require('gulp-notify');
 var sass          = require('gulp-sass');
 var sourcemaps    = require('gulp-sourcemaps');
 var uglify        = require('gulp-uglify');
-var zip           = require('gulp-zip');
 var browserSync   = require('browser-sync');
 var reload        = browserSync.reload;
 
@@ -41,19 +40,19 @@ gulp.task('browser-sync', function() {
 	];
 
 	browserSync.init(files, {
-		proxy: 'https://themes.dev.cc/'
+		proxy: 'https://themes.local/'
 	});
 });
 
 // Compile our stylesheets
 // =========================================================
 gulp.task('styles', function() {
-	gulp.src('./assets/scss/editor-style.scss')
+	gulp.src('./src/scss/editor-style.scss')
 		.pipe(sass({
 			outputStyle: 'expanded'
 		}))
 		.pipe(gulp.dest('./assets/stylesheets/'));
-	gulp.src('./assets/scss/style.scss')
+	gulp.src('./src/scss/style.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass({
 			outputStyle: 'expanded',
@@ -76,7 +75,7 @@ gulp.task('styles', function() {
 // Compile our scripts
 // =========================================================
 gulp.task('scripts', function() {
-	return gulp.src('assets/javascripts/**/*.js')
+	return gulp.src('src/js/**/*.js')
 		.pipe(concat('app.js'))
 		.pipe(gulp.dest('./assets/dist/'))
 		.pipe(rename({suffix: '.min'}))
@@ -93,21 +92,13 @@ gulp.task('scripts', function() {
 // Watch function
 // =========================================================
 gulp.task('watch', ['styles', 'scripts'], function() {
-	gulp.watch('./assets/scss/**/*.scss', ['styles']);
-	gulp.watch('./assets/javascripts/**/*.js', ['scripts']);
+	gulp.watch('./src/scss/**/*.scss', ['styles']);
+	gulp.watch('./src/js/**/*.js', ['scripts']);
 })
-
-// Package it up for distribution
-// =========================================================
-gulp.task('package', function() {
-	return gulp.src(['./*', './+(assets|comment|content|inc|languages|library|menu|misc|sidebar)/**/*'], {base: "."})
-		.pipe(zip('archive.zip'))
-		.pipe(gulp.dest('./'));
-});
 
 // Build an updated package
 // =========================================================
-gulp.task('build', ['styles', 'scripts', 'package']);
+gulp.task('build', ['styles', 'scripts']);
 
 // Update versions
 // =========================================================

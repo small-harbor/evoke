@@ -1,9 +1,9 @@
-# Copyright (C) 2015 Justin Tadlock
+# Copyright (C) 2018 David Sutoyo
 # This file is distributed under the GNU General Public License v2.0 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hybrid Base 1.0.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tags/hybrid-base\n"
+"Project-Id-Version: Fathom 1.0.4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/themes/fathom\n"
 "POT-Creation-Date: 2015-08-19 16:54:48+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -455,17 +455,17 @@ msgid "Hybrid Base"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://themehybrid.com/themes/hybrid-base"
+msgid "https://presscargo.io/themes/fathom"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "A starter theme from Theme Hybrid. Please fork this."
+msgid "A simple blog theme."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Justin Tadlock"
+msgid "David Sutoyo"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://justintadlock.com"
+msgid "https://davidsutoyo.com"
 msgstr ""
