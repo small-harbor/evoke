@@ -6,7 +6,9 @@
 </head>
 
 <body <?php hybrid_attr( 'body' ); ?>>
-
+<?php if ( function_exists( 'wp_body_open' ) ) {
+	wp_body_open();
+} ?>
 <div id="container" class="off-canvas-wrapper">
 
 	<div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="<?php echo current_theme_supports( 'offcanvas-overlap' ) ? 'overlap' : 'push' ?>">
