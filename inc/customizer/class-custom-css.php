@@ -45,90 +45,77 @@ if ( ! class_exists( 'Fathom_Custom_CSS' ) ) {
 		 * @access private
 		 * @return void
 		 */
-		private function __construct() {
-			add_action( 'wp_head', array( $this, 'wp_head_callback' ) );
-			add_action( 'embed_head', array( $this, 'wp_head_callback' ), 25 );
-		}
-
-		/**
-		 * Callback for 'wp_head' that outputs the CSS for this feature.
-		 *
-		 * @since  1.0.0
-		 * @access public
-		 * @return void
-		 */
-		public function wp_head_callback() {
-
-			$stylesheet = get_stylesheet();
-
-			// Get the cached style.
-			$style = wp_cache_get( "{$stylesheet}_custom_css" );
-
-			// If the style is available, output it and return.
-			if ( ! empty( $style ) ) {
-				echo $style;
-				return;
-			}
-
-			$style = $this->get_custom_styles();
-
-			// Put the final style output together.
-			$style = "\n" . '<style type="text/css" id="' . $stylesheet . '-custom-css">' . trim( $style ) . '</style>' . "\n";
-
-			// Cache the style, so we don't have to process this on each page load.
-			wp_cache_set( "{$stylesheet}_custom_css", $style );
-
-			// Output the custom style.
-			echo $style;
-		}
+		private function __construct() {}
 
 		/**
 		 * Formats the custom styles for output.
 		 *
 		 * @since  1.0.0
 		 * @access public
-		 * @return string
+		 * @return array
 		 */
-		public function get_custom_styles() {
+		public static function get_custom_styles() {
 			$theme_options = get_option( 'theme_mods_' . get_stylesheet() );
 			$theme_defaults = Fathom_Theme_Options::get_defaults();
 			$color_functions = Fathom_Color_Functions::get_instance();
 
 			$options = wp_parse_args( $theme_options, $theme_defaults );
 
-			$style = '';
+			$css = array();
 
 			if ( ! get_theme_mod( 'header_text', true ) ) {
-				$style .= '.site-title a { background: url(' . Fathom_Custom_CSS::get_custom_logo_src() . ') center center no-repeat; }';
-
 				$logo_size = Fathom_Custom_CSS::get_custom_logo_ratio( get_theme_mod( 'custom_logo' ), $options['custom_logo_height'] );
 
-				$style .= '.site-title a { width: ' . $logo_size['width'] . 'px; height: ' . $logo_size['height'] . 'px; }';
+				$css['.site-title a'] = array(
+					'background' => 'url(' . Fathom_Custom_CSS::get_custom_logo_src() . ') center center no-repeat',
+					'width' => esc_attr( $logo_size['width'] ) . 'px',
+					'height' => esc_attr( $logo_size['height'] ) . 'px'
+				);
 			}
 
 			if ( $options['color_primary'] ) {
-				$style .= 'a { color: ' . $options['color_primary'] . ' }';
+				$primary_color = esc_attr( $options['color_primary'] );
+
+				$css['a'] = array(
+					'color' => $primary_color
+				);
 				
-				$style .= 'a:focus, a:hover { color: ' . $color_functions->adjust( $options['color_primary'], -0.1 ) . ' }';
+				$css['a:focus, a:hover'] = array(
+					'color' => $color_functions->adjust( $primary_color, -0.1 )
+				);
 
-				$style .= '.dropdown.menu > li.is-dropdown-submenu-parent > a::after { border-top-color: ' . $options['color_primary'] . ' }';
+				$css['.dropdown.menu > li.is-dropdown-submenu-parent > a::after'] = array(
+					'border-top-color' => $primary_color
+				);
 
-				$style .= '.dropdown.menu .is-active > a { color: ' . $options['color_primary'] . ' }';
+				$css['.dropdown.menu .is-active > a'] = array(
+					'color' => $primary_color
+				);
 
-				$style .= '.is-dropdown-submenu .is-dropdown-submenu-parent.opens-left > a::after { border-right-color: ' . $options['color_primary'] . '}';
+				$css['.is-dropdown-submenu .is-dropdown-submenu-parent.opens-left > a::after'] = array(
+					'border-right-color' => $primary_color
+				);
 
-				$style .= '.is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after { border-left-color: ' . $options['color_primary'] . '}';
+				$css['.is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after'] = array(
+					'border-left-color' => $primary_color
+				);
 
-				$style .= '.pagination .current { background: ' . $options['color_primary'] . ' }';
+				$css['.pagination .current'] = array(
+					'background' => $primary_color
+				);
 
-				$style .= 'input[type="submit"] { background: ' . $options['color_primary'] . ' }';
+				$css['input[type="submit"]'] = array(
+					'background' => $primary_color
+				);
 			}
 
 			if ( $options['color_secondary'] ) {
-				$style .= '.sidebar-secondary a { color: ' . $options['color_secondary'] . ' }';
+				$css['.sidebar-secondary a'] = array(
+					'color' => esc_attr( $options['color_secondary'] )
+				);
 			}
 
-			return $style;
+			return fathom_parse_css( $css );
 		}
 
 		/**

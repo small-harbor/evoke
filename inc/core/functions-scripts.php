@@ -47,4 +47,6 @@ function fathom_enqueue_styles() {
 
 	/* Load active theme stylesheet. */
 	wp_enqueue_style( 'fathom-style', trailingslashit( get_stylesheet_directory_uri() ) . 'assets/dist/style.min.css', array(), filemtime( get_stylesheet_directory() . '/assets/dist/style.min.css' ) );
+
+	wp_add_inline_style( 'fathom-style', Fathom_Custom_CSS::get_custom_styles() );
 }

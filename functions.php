@@ -192,19 +192,11 @@ final class Fathom_Theme {
 			array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' )
 		);
 
+		add_theme_support( 'editor-styles' );
+		add_editor_style( 'assets/dist/editor-style.css' );
+
 		// Handle content width for embeds and images.
 		hybrid_set_content_width( 1280 );
-
-		/* Hybrid Foundation Features */
-
-		// Off-canvas Transition - Overlap
-		// add_theme_support( 'offcanvas-overlap' );
-
-		// Fixed-width header
-		// add_theme_support( 'fixed-width-header' );
-
-		// Fixed-width footer
-		// add_theme_support( 'fixed-width-footer' );
 
 		if ( is_admin() && current_theme_supports( 'theme-layouts' ) ) {
 			require_once( $this->dir . 'inc/admin/class-post-layout.php' );

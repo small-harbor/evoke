@@ -51,7 +51,7 @@ gulp.task('styles', function() {
 		.pipe(sass({
 			outputStyle: 'expanded'
 		}))
-		.pipe(gulp.dest('./assets/stylesheets/'));
+		.pipe(gulp.dest('./assets/dist/'));
 	gulp.src('./src/scss/style.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass({

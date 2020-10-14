@@ -1,0 +1,17 @@
+/**
+ * Foundation for Sites
+ * Version 6.6.3
+ * https://get.foundation
+ * Licensed under MIT Open Source
+ */
+body {
+  color: #333333;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
