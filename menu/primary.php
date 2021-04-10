@@ -2,7 +2,7 @@
 
 	<section class="menu-primary top-bar-right">
 
-	<nav <?php hybrid_attr( 'menu', 'primary' ); ?>>
+	<nav class="menu menu-primary">
 
 		<?php wp_nav_menu(
 			array(

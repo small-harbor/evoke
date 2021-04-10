@@ -4,12 +4,6 @@
 
 	<div class="wrap">
 
-		<?php if ( ! is_front_page() && is_archive() ) : ?>
-
-			<?php locate_template( array( 'misc/archive-header.php' ), true ); ?>
-
-		<?php endif; // End check for multi-post page. ?>
-
 		<?php if ( have_posts() ) : ?>
 
 			<?php while ( have_posts() ) : ?>
@@ -17,6 +11,8 @@
 				<?php the_post(); ?>
 
 				<?php get_template_part( 'content/content', get_post_type() ); ?>
+
+				<?php comments_template( '', true ); // Loads the comments.php template. ?>
 
 			<?php endwhile; ?>
 
@@ -26,6 +22,6 @@
 
 	</div>
 
-</main><!-- #content -->
+</main><!-- #site-content -->
 
 <?php get_footer(); ?>

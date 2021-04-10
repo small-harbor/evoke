@@ -114,15 +114,12 @@ final class Fathom_Theme {
 	 * @return void
 	 */
 	private function includes() {
-
-		// Load the Hybrid Core framework and theme files.
-		require_once( $this->dir . 'library/hybrid.php' );
-
 		// Load theme includes.
 		require_once( $this->dir . 'inc/core/class-color-functions.php' );
 		require_once( $this->dir . 'inc/core/class-theme-options.php' );
 		require_once( $this->dir . 'inc/core/functions-scripts.php' );
 		require_once( $this->dir . 'inc/core/functions-filters.php' );
+		require_once( $this->dir . 'inc/core/functions-template.php' );
 		require_once( $this->dir . 'inc/core/functions.php' );
 		require_once( $this->dir . 'inc/customizer/class-customizer.php' );
 		require_once( $this->dir . 'inc/customizer/class-custom-css.php' );
@@ -161,6 +158,11 @@ final class Fathom_Theme {
 	 * @return void
 	 */
 	public function theme_setup() {
+		// Set content-width.
+		global $content_width;
+		if ( ! isset( $content_width ) ) {
+			$content_width = 1280;
+		}
 
 		// Custom logo
 		add_theme_support( 'custom-logo', array(
@@ -171,36 +173,20 @@ final class Fathom_Theme {
 			'header-text' => array( 'site-title', 'site-description' ),
 		) );
 
-		// Theme layouts.
-		add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-r' :'2c-l' ) );
-
-		// Enable custom template hierarchy.
-		add_theme_support( 'hybrid-core-template-hierarchy' );
-
-		// The best thumbnail/image script ever.
-		add_theme_support( 'get-the-image' );
-
-		// Nicer [gallery] shortcode implementation.
-		add_theme_support( 'cleaner-gallery' );
-
 		// Automatically add feed links to <head>.
 		add_theme_support( 'automatic-feed-links' );
 
-		// Post formats.
-		add_theme_support(
-			'post-formats',
-			array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' )
-		);
+		// Title tag.
+		add_theme_support( 'title-tag' );
+
+		// HTML5 semantic markup.
+		add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
+
+		// Alignwide and alignfull classes in the block editor.
+		add_theme_support( 'align-wide' );
 
 		add_theme_support( 'editor-styles' );
 		add_editor_style( 'assets/dist/editor-style.css' );
-
-		// Handle content width for embeds and images.
-		hybrid_set_content_width( 1280 );
-
-		if ( is_admin() && current_theme_supports( 'theme-layouts' ) ) {
-			require_once( $this->dir . 'inc/admin/class-post-layout.php' );
-		}
 	}
 
 	/**
@@ -213,7 +199,7 @@ final class Fathom_Theme {
 	public function register_menus() {
 
 		register_nav_menu( 'primary',   _x( 'Primary',   'nav menu location', 'fathom' ) );
-		register_nav_menu( 'secondary', _x( 'Secondary', 'nav menu location', 'fathom' ) );
+		register_nav_menu( 'mobile',    _x( 'Mobile', 'nav menu location', 'fathom' ) );
 		register_nav_menu( 'social',    _x( 'Social',    'nav menu location', 'fathom' ) );
 	}
 
@@ -242,7 +228,7 @@ final class Fathom_Theme {
 	 */
 	function register_sidebars() {
 
-		hybrid_register_sidebar(
+		register_sidebar(
 			array(
 				'id'          => 'primary',
 				'name'        => _x( 'Page Sidebar', 'sidebar', 'fathom' ),
@@ -250,27 +236,13 @@ final class Fathom_Theme {
 			)
 		);
 
-		hybrid_register_sidebar(
+		register_sidebar(
 			array(
 				'id'          => 'secondary',
 				'name'        => _x( 'Blog Sidebar', 'sidebar', 'fathom' ),
 				'description' => __( 'The main sidebar for single blog posts and blog archives. It is displayed on either the left or right side of the page based on the chosen layout.', 'fathom' )
 			)
 		);
-	}
-
-	/**
-	 * Registers layouts.
-	 *
-	 * @since  1.0.0
-	 * @access public
-	 * @return void
-	 */
-	public function register_layouts() {
-
-		hybrid_register_layout( '1c',        array( 'label' => __( '1 Column Wide',                'fathom' ), 'image' => '%s/assets/images/layouts/1c.png' ) );
-		hybrid_register_layout( '2c-l',      array( 'label' => __( '2 Columns: Content / Sidebar', 'fathom' ), 'image' => '%s/assets/images/layouts/2c-l.png' ) );
-		hybrid_register_layout( '2c-r',      array( 'label' => __( '2 Columns: Sidebar / Content', 'fathom' ), 'image' => '%s/assets/images/layouts/2c-r.png' ) );
 	}
 }
 

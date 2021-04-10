@@ -33,15 +33,6 @@ function fathom_enqueue_scripts() {
  * @return void
  */
 function fathom_enqueue_styles() {
-
-	// Load gallery style if 'cleaner-gallery' is active.
-	if ( current_theme_supports( 'cleaner-gallery' ) )
-		wp_enqueue_style( 'hybrid-gallery' );
-
-	// Load parent theme stylesheet if child theme is active.
-	if ( is_child_theme() )
-		wp_enqueue_style( 'hybrid-parent' );
-
 	/* Load font. */
 	wp_enqueue_style( 'fathom-font', '//fonts.googleapis.com/css?family=Merriweather:300,300i,400|Open+Sans:300,300i,400,400i"' );
 
