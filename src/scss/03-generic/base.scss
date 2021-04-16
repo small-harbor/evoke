@@ -1,0 +1,66 @@
+/**
+ * Reset specific elements to make them easier to style in other contexts.
+ */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+form,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', var(--hiq-font-family-base);
+	font-weight: 300;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+code {
+	white-space: pre-wrap;
+}
+
+pre {
+	position: relative;
+	padding: 1em;
+	overflow: auto;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+	border-width: 1px;
+	border-style: solid;
+}
+
+a {
+	text-decoration: none;
+}

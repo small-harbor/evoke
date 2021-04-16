@@ -1,0 +1,23 @@
+.sidebar {
+	font-size: 1.6rem;
+}
+
+.widgettitle {
+	font-size: 1.6rem;
+	font-weight: var(--hiq-font-weight-normal);
+	margin-bottom: calc(var(--fathom--spacing-vertical) * 2);
+
+	span {
+		padding-bottom: calc(var(--fathom--spacing-vertical) / 2);
+		border-bottom: 1px solid var(--hiq-color-gray-6);
+	}
+}
+
+.widget {
+	margin-bottom: calc(var(--fathom--spacing-vertical) * 4);
+
+	> ul {
+		padding: 0;
+		list-style-type: none;
+	}
+}

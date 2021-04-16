@@ -9,7 +9,6 @@ var rename        = require('gulp-rename');
 var replace       = require('gulp-replace');
 var notify        = require('gulp-notify');
 var sass          = require('gulp-sass');
-var sourcemaps    = require('gulp-sourcemaps');
 var uglify        = require('gulp-uglify');
 var browserSync   = require('browser-sync');
 var reload        = browserSync.reload;
@@ -53,10 +52,8 @@ gulp.task('styles', function() {
 		}))
 		.pipe(gulp.dest('./assets/dist/'));
 	gulp.src('./src/scss/style.scss')
-		.pipe(sourcemaps.init())
 		.pipe(sass({
-			outputStyle: 'expanded',
-			sourceComments: 'normal'
+			outputStyle: 'expanded'
 		}).on('error', notify.onError(function(error) {
 			return "Error: " + error.message;
 		})))
@@ -66,7 +63,6 @@ gulp.task('styles', function() {
 			keepSpecialComments:0
 		}))
 		.pipe(header())
-		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('./assets/dist/'))
 		.pipe(reload({stream:true}))
 		.pipe(notify({message: "Styles task complete!"}));
@@ -129,20 +125,6 @@ gulp.task('version', function() {
 			.pipe(replace(String(options.s), String(options.r)))
 			.pipe(gulp.dest('./'));
 	}
-});
-
-// Search and replace
-// =========================================================
-gulp.task('replace', function() {
-	return gulp.src(['**', '!./node_modules/**', '!./gulpfile.js', '!./library/'], { base: './' })
-		.pipe(replace('hybrid-foundation', 'grandview'))
-		.pipe(replace('hybrid_foundation', 'grandview'))
-		.pipe(replace('hybrid-base', 'grandview'))
-		.pipe(replace('hybrid_base', 'grandview'))
-		.pipe(replace('Hybrid_Foundation', 'Grandview'))
-		.pipe(replace('Hybrid Foundation', 'Grandview'))
-		.pipe(replace('HYBRID_FOUNDATION', 'GRANDVIEW'))
-		.pipe(gulp.dest('./'));
 });
 
 // Default task

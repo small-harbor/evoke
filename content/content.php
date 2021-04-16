@@ -4,15 +4,11 @@
 
 		<header class="entry-header">
 
+			<time class="entry-published"><?php echo get_the_date(); ?></time>
+
 			<?php if ( 'post' == fathom_get_option( 'layout_post_title' ) || ! has_post_thumbnail() ) : ?>
 				<h1 class="entry-title"><?php single_post_title(); ?></h1>
 			<?php endif; ?>
-
-			<div class="entry-byline">
-				<span class="entry-author"><?php the_author_posts_link(); ?></span>
-				<time class="entry-published"><?php echo get_the_date(); ?></time>
-				<?php comments_popup_link( number_format_i18n( 0 ) . ' comments', number_format_i18n( 1 ) . ' comment', '% comments', 'comments-link', 'Comments Off' ); ?>
-			</div><!-- .entry-byline -->
 
 		</header><!-- .entry-header -->
 
@@ -20,11 +16,6 @@
 			<?php the_content(); ?>
 			<?php wp_link_pages(); ?>
 		</div><!-- .entry-content -->
-
-		<footer class="entry-footer">
-			<?php echo fathom_get_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( 'Posted in %s', 'fathom' ) ) ); ?>
-			<?php echo fathom_get_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'fathom' ), 'before' => '&nbsp;' ) ); ?>
-		</footer><!-- .entry-footer -->
 
 	<?php else : // If not viewing a single post. ?>
 
@@ -34,13 +25,9 @@
 
 		<header class="entry-header">
 
-			<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
+			<time class="entry-published"><?php echo get_the_date(); ?></time>
 
-			<div class="entry-byline">
-				<span class="entry-author"><?php the_author_posts_link(); ?></span>
-				<time class="entry-published"><?php echo get_the_date(); ?></time>
-				<?php comments_popup_link( number_format_i18n( 0 ) . ' comments', number_format_i18n( 1 ) . ' comment', '% comments', 'comments-link', 'Comments Off' ); ?>
-			</div><!-- .entry-byline -->
+			<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
 
 		</header><!-- .entry-header -->
 
@@ -49,5 +36,25 @@
 		</div><!-- .entry-summary -->
 
 	<?php endif; // End single post check. ?>
+
+	<footer class="entry-footer">
+		<ul class="entry-metadata">
+			<li class="entry-byline">
+				<span class="entry-meta-prep entry-author-by"><?php _e( 'by', 'fathom' ); ?></span> <span class="entry-author"><?php the_author_posts_link(); ?></span>
+			</li>
+			
+			<?php if ( comments_open() ) : ?>
+				<li>
+					<span class="entry-meta-prep entry-comment-count"><?php _e( 'comments', 'fathom' ); ?></span> <?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', 'Comments Off' ); ?>
+				</li>
+			<?php endif; ?>
+			<li>
+				<span class="entry-meta-prep entry-categorized"><?php _e( 'posted in', 'fathom' ); ?></span> <?php echo fathom_get_post_terms( array( 'taxonomy' => 'category' ) ); ?>
+			</li>
+			<li>
+				<span class="entry-meta-prep entry-tagged"><?php _e( 'tagged', 'fathom' ); ?></span> <?php echo fathom_get_post_terms( array( 'taxonomy' => 'post_tag' ) ); ?>
+			</li>
+		</ul>
+	</footer><!-- .entry-footer -->
 
 </article><!-- .entry -->

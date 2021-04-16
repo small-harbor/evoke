@@ -1,0 +1,108 @@
+/* Breakpoints */
+$small: 0;
+$medium: 640px;
+$large: 1024px;
+$xlarge: 1200px;
+$xxlarge: 1440px;
+$global-width: 1200px;
+$inner-width: 640px;
+
+$baseline-unit: 10px;
+$nav-breakpoint: $medium;
+$global-padding: 1rem;
+$paragraph-margin-bottom: 1rem;
+
+:root {
+	/* gray palette */
+	--hiq-color-gray-1: hsl(220, 10%, 5%);
+	--hiq-color-gray-2: hsl(220, 10%, 10%);
+	--hiq-color-gray-3: hsl(220, 10%, 20%);
+	--hiq-color-gray-4: hsl(220, 10%, 40%);
+	--hiq-color-gray-5: hsl(220, 10%, 60%);
+	--hiq-color-gray-6: hsl(220, 10%, 90%);
+	--hiq-color-gray-7: hsl(220, 10%, 95%);
+	--hiq-color-gray-8: hsl(220, 10%, 98%);
+	--hiq-color-primary: hsl(210, 100%, 20%);
+	--hiq-color-secondary: hsl(210, 100%, 20%);
+	--hiq-color-black: #000;
+	--hiq-color-white: #fff;
+	--hiq-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	--hiq-font-family-secondary: 'Merriweather', "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif;
+
+	--hiq-font-size-1: 5.6rem;
+	--hiq-font-size-2: 4.2rem;
+	--hiq-font-size-3: 3.2rem;
+	--hiq-font-size-4: 2.4rem;
+	--hiq-font-size-5: 1.8rem;
+	--hiq-font-size-6: 1.4rem;
+	--hiq-font-size-base: var(--hiq-font-size-5);
+	--hiq-font-size-large: var(--hiq-font-size-4);
+	--hiq-font-size-small: var(--hiq-font-size-6);
+
+	--hiq-line-height-base: 1.5;
+	--hiq-heading-line-height: 1.2;
+
+	--hiq-font-weight-light: 300;
+	--hiq-font-weight-normal: 400;
+	--hiq-font-weight-medium: 500;
+	--hiq-font-weight-semibold: 600;
+	--hiq-font-weight-bold: 700;
+	--hiq-font-weight-base: var(--hiq-font-weight-normal);
+
+	--hiq-border-radius: 0;
+
+	/* Typography */
+	--fathom-body--font-family: var(--hiq-font-family-base);
+	--fathom-heading--font-family: var(--hiq-font-family-secondary);
+
+	/* Spacing */
+	--hiq-block-element-margin-bottom: 2rem;
+	--hiq-heading-margin-bottom: 1.2rem;
+	--hiq-paragraph-margin-bottom: 1.2rem;
+
+	--fathom--spacing-measure: unset; // Use ch units here. ie: 60ch = 60 character max-width
+	--fathom--spacing-horizontal: 2rem;
+	--fathom--spacing-vertical: 1.2rem;
+
+	/* Main navigation */
+	--fathom-menu--font-family: var(--hiq-font-family-base);
+	--fathom-menu--font-family-mobile: var(--hiq-font-family-base);
+	--fathom-menu--font-size: var(--hiq-font-size-5);
+	--fathom-menu--font-size-sub-menu: var(--hiq-font-size-6);
+	--fathom-menu--font-size-mobile: var(--hiq-font-size-5);
+	--fathom-menu--font-size-sub-menu-mobile: var(--hiq-font-size-5);
+	--fathom-menu--font-size-button: var(--hiq-font-size-6);
+	--fathom-menu--font-style: normal;
+	--fathom-menu--font-style-sub-menu-mobile: normal;
+	--fathom-menu--font-weight: normal;
+	--fathom-menu--font-weight-button: 500;
+	--fathom-menu--link-color: var(--hiq-color-primary);
+	--fathom-menu--link-color-hover: var(--hiq-color-primary-hover);
+	--fathom-menu--text-color: var(--hiq-color-primary);
+	--fathom-menu--padding: calc(0.66 * var(--hiq-spacing-unit));
+	--fathom-menu--border-color: var(--hiq-color-primary);
+
+	--fathom-menu--sub-menu-background-color: #000;
+	--fathom-menu--sub-menu-link-color: #fff;
+
+	--fathom-menu--dropdown-arrow-width: 4px;
+	--fathom-menu--dropdown-arrow-border-width: 1px;
+	--fathom-menu--dropdown-arrow-color: var(--hiq-color-primary);
+
+	--fathom-flyout--background-color: #000;
+	--fathom-flyout--link-color: #fff;
+
+	--fathom-hamburger--color: #f00;
+	--fathom-hamburger--width: 24px;
+	--fathom-hamburger--bar-height: 3px;
+	--fathom-hamburger--bar-spacing: 8px;
+
+	/* Forms */
+	--hiq-input-height: 4.4rem;
+
+	/* Buttons */
+	--hiq-button-height: auto;
+	--hiq-button-vertical-padding: 1rem;
+	--hiq-button-horizontal-padding: 1.5rem;
+	--hiq-button-border-color: var(--hiq-color-primary);
+}

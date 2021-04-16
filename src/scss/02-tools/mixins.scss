@@ -1,0 +1,68 @@
+@mixin breakpoint( $res ) {
+
+	@if small-only == $res {
+		@media only screen and (max-width: #{$small - 1}) {
+			@content;
+		}
+	}
+
+	@else if small == $res {
+		@media only screen and (min-width: #{$small}) {
+			@content;
+		}
+	}
+
+	@else if medium-only == $res {
+		@media only screen and (max-width: #{$medium - 1}) {
+			@content;
+		}
+	}
+
+	@else if medium == $res {
+		@media only screen and (min-width: #{$medium}) {
+			@content;
+		}
+	}
+
+	@else if large-only == $res {
+		@media only screen and (max-width: #{$large - 1}) {
+			@content;
+		}
+	}
+
+	@else if large == $res {
+		@media only screen and (min-width: #{$large}) {
+			@content;
+		}
+	}
+
+	@else if xlarge-only == $res {
+		@media only screen and (max-width: #{$xlarge - 1}) {
+			@content;
+		}
+	}
+
+	@else if xlarge == $res {
+		@media only screen and (min-width: #{$xlarge}) {
+			@content;
+		}
+	}
+
+	@else if xxlarge-only == $res {
+		@media only screen and (max-width: #{$xxlarge - 1}) {
+			@content;
+		}
+	}
+
+	@else if xxlarge == $res {
+		@media only screen and (min-width: #{$xxlarge}) {
+			@content;
+		}
+	}
+
+	@else {
+		@media only screen and (min-width: #{$res}) {
+			@content;
+		}
+	}
+}

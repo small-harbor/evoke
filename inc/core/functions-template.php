@@ -73,3 +73,43 @@ function fathom_get_post_terms( $args = array() ) {
 
 	return $html;
 }
+
+/**
+ * Add markup for dropdown arrows
+ *
+ * @since  1.0.0
+ * @access public
+ * @return string
+ */
+function fathom_nav_menu_arrow( $item_output, $item, $depth, $args ) {
+	if ( in_array( 'menu-item-has-children', $item->classes ) ){
+		$item_output .= '<a href="#" class="fathom-dropdown-arrow"></a>';
+	}
+
+	return $item_output;
+}
+
+add_filter( 'walker_nav_menu_start_el', 'fathom_nav_menu_arrow', 10, 4 );
+
+/**
+ * Checks if the specified comment is written by the author of the post commented on.
+ *
+ * @param object $comment Comment data.
+ * @return bool
+ */
+function fathom_is_comment_by_post_author( $comment = null ) {
+
+	if ( is_object( $comment ) && $comment->user_id > 0 ) {
+
+		$user = get_userdata( $comment->user_id );
+		$post = get_post( $comment->comment_post_ID );
+
+		if ( ! empty( $user ) && ! empty( $post ) ) {
+
+			return $comment->user_id === $post->post_author;
+
+		}
+	}
+	return false;
+
+}

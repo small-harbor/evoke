@@ -1,22 +1,19 @@
 <?php if ( has_nav_menu( 'primary' ) ) : // Check if there's a menu assigned to the 'primary' location. ?>
 
-	<section class="menu-primary top-bar-right">
+	<nav id="site-navigation" class="site-navigation main-navigation">
 
-	<nav class="menu menu-primary">
+		<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<span><?php esc_html_e( 'Primary Menu', 'wuqi' ); ?></span>
+		</button>
 
 		<?php wp_nav_menu(
 			array(
 				'theme_location'  => 'primary',
-				'container'       => '',
-				'menu_id'         => 'menu-primary-items',
-				'menu_class'      => 'menu-items',
-				'fallback_cb'     => '',
-				'items_wrap'      => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>'
+				'container_id'    => 'menu-primary-container',
+				'menu_id'         => 'menu-primary'
 			)
 		); ?>
 
 	</nav><!-- #menu-primary -->
-
-	</section>
 
 <?php endif; // End check for menu. ?>

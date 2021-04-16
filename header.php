@@ -9,40 +9,35 @@
 <?php if ( function_exists( 'wp_body_open' ) ) {
 	wp_body_open();
 } ?>
-<div id="container" class="off-canvas-wrapper">
+<div id="container">
 
-	<div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="<?php echo current_theme_supports( 'offcanvas-overlap' ) ? 'overlap' : 'push' ?>">
-		<?php get_template_part( 'menu/mobile' ); ?>
-	</div>
+	<div class="skip-link">
+		<ul>
+			<li><a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'fathom' ); ?></a></li>
+		</ul>
+	</div><!-- .skip-link -->
 
-	<div class="off-canvas-content" data-off-canvas-content>
+	<header class="header site-header">
 
-		<div class="skip-link">
-			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'fathom' ); ?></a>
-		</div><!-- .skip-link -->
+		<div class="header-wrap">
 
-		<header class="header">
-
-			<nav class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-				<button type="button" class="menu-icon" data-toggle="offCanvas"></button>
-				<div class="title-bar-title">
-					<?php bloginfo( 'name' ); ?>
-				</div>
-			</nav>
-
-			<div class="top-bar show-for-medium" data-topbar>
-
-				<div class="top-bar-title <?php echo get_theme_mod( 'header_text', true ) ? 'has-text' : 'has-image'; ?>">
-					<ul class="branding">
-						<li class="name"><?php printf( '<h1 class="site-title"><a href="%s" rel="home">%s</a></h1>', esc_url( home_url() ), get_bloginfo( 'name' ) ); ?></li>
-						<li class="description"><?php get_bloginfo( 'description' ); ?></li>
-					</ul><!-- #branding -->
-				</div>
-
-				<?php get_template_part( 'menu/primary' ); // Loads the menu/primary.php template. ?>
-
+			<div class="site-branding <?php echo get_theme_mod( 'header_text', true ) ? 'has-text' : 'has-image'; ?>">
+				<?php if ( ( is_front_page() || is_home() ) && ! is_paged() ) : ?>
+					<h1 class="site-title">
+						<a href="<?php echo esc_url( home_url() ); ?>" rel="home"><?php echo get_bloginfo( 'name' ); ?></a>
+					</h1>
+				<?php else : ?>
+					<div class="site-title">
+						<a href="<?php echo esc_url( home_url() ); ?>" rel="home"><?php echo get_bloginfo( 'name' ); ?></a>
+					</div>
+				<?php endif; ?>
+				<p class="site-description">
+					<?php echo get_bloginfo( 'description' ); ?>
+				</p>
 			</div>
 
-		</header><!-- #header -->
+			<?php get_template_part( 'menu/primary' ); ?>
 
-		<?php locate_template( array( 'misc/hero.php' ), true ); // Loads the misc/hero.php template. ?>
+		</div>
+
+	</header><!-- #header -->

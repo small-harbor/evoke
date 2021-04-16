@@ -1,0 +1,143 @@
+/* # Comments ===== */
+#comments-template {
+	@include breakpoint($global-width) {
+		margin: calc(var(--fathom--spacing-vertical) * 8) auto;
+		width: $inner-width;
+	}
+}
+
+#comments {
+	padding: 4.8rem 0;
+}
+
+#comments-number {
+	font-size: 1.8rem;
+}
+
+.comment-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ol.children {
+	list-style-type: none;
+	margin: 0;
+	border-left: 1px solid var(--hiq-color-gray-6);
+}
+
+/* ## Individual Comments ===== */
+li.comment,
+li.ping,
+li.bypostauthor {
+	padding: 3.2rem 0 0 0;
+
+	article {
+		max-width: 100%;
+		margin-bottom: 0;
+		padding-bottom: 3.2rem;
+		border-bottom: 1px solid var(--hiq-color-gray-6);
+
+		.comment-meta,
+		.comment-content,
+		.reply {
+			
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+.comment-entry {
+	flex: 0 1 auto;
+	max-width: calc(100% - 60px);
+	padding-left: 3.2rem;
+	color: #828282;
+}
+
+.comment-header {
+	margin-bottom: 2rem;
+}
+
+/* ## Comment Avatars ===== */
+.comment-author {
+	img {
+		border-radius: 10rem;
+		float: left;
+	}
+
+	.fn {
+		margin-left: var(--fathom--spacing-horizontal);
+	}
+
+	.says {
+		display: none;
+	}
+}
+
+/* ## Comment Meta===== */
+.comment-metadata {
+	margin-left: calc(var(--fathom--spacing-horizontal) + 60px);
+
+	cite {
+		display: block;
+		font-style: normal;
+		line-height: 1;
+		font-size: 1.6rem;
+
+		&:before {
+			content: none;
+		}
+
+		.bypostauthor &,
+		.bypostauthor & a {
+			color: var(--fathom-warning-color);
+		}
+	}
+
+	time,
+	.comment-permalink,
+	.comment-edit-link {
+		font-size: var(--hiq-font-size-6);
+		color: var(--fathom-dark-gray);
+	}
+
+	.comment-permalink,
+	.comment-edit-link {
+		&:before {
+			content: '\00b7';
+			padding: 0 1rem 0 0.5rem;
+			color: var(--fathom-black);
+		}
+	}
+
+	.ping & {
+		float: none;
+	}
+}
+
+.comment-content {
+	margin: var(--fathom--spacing-horizontal) 0 var(--fathom--spacing-horizontal) calc(var(--fathom--spacing-horizontal) + 60px);
+}
+
+/* ## Comment Reply ===== */
+.comment-reply-link {
+	margin-top: 0.8rem;
+	margin-bottom: 0;
+	text-align: right;
+	font-size: 1.2rem;
+	color: var(--fathom-primary-color);
+}
+
+
+/* ## Comment Form ===== */
+#respond {
+	padding: 4.8rem 0;
+}
+
+#reply-title {
+	font-size: 1.8rem;
+}
+

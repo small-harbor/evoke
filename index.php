@@ -2,7 +2,7 @@
 
 <main id="main" class="main" role="main">
 
-	<div class="wrap">
+	<div class="content-wrap">
 
 		<?php if ( ! is_front_page() && is_archive() ) : ?>
 
@@ -25,6 +25,8 @@
 		<?php endif; ?>
 
 	</div>
+
+	<?php locate_template( array( 'sidebar/blog.php' ), true ); ?>
 
 </main><!-- #content -->
 

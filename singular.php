@@ -2,7 +2,7 @@
 
 <main id="main" class="main" role="main">
 
-	<div class="wrap">
+	<div class="content-wrap">
 
 		<?php if ( have_posts() ) : ?>
 

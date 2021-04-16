@@ -15,7 +15,8 @@ if ( post_password_required() || ( ! have_comments() && ! comments_open() && ! p
 			<ol class="comment-list">
 				<?php wp_list_comments(
 					array(
-						'style'        => 'ol'
+						'avatar_size' => 60,
+						'style'       => 'ol'
 					)
 				); ?>
 			</ol><!-- .comment-list -->

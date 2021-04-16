@@ -1,37 +1,48 @@
-/**
- * Theme Name:  Fathom
- * Theme URI:   https://presscargo.io/themes/fathom
- * Description: A simple blog theme
- * Version:     1.1.0
- * Author:      Press Cargo
- * Author URI:  https://presscargo.io
- * Tags:        one-column, two-columns, three-columns, custom-menu, featured-images, left-sidebar,  right-sidebar, full-width-template, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
- * Text Domain: fathom
- * License:     GNU General Public License v2.0 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Requires PHP: 5.6
- * Requires at least: 4.5
- * Tested up to: 5.5.1 
- */
+
+@import "01-settings/file-header";
+@import "../../node_modules/hiq/dist/hiq.min.css";
+@import "01-settings/fonts";
+@import "01-settings/variables";
+
+@import "02-tools/mixins";
+//@import "02-tools/functions";
+
+@import "03-generic/normalize";
+@import "03-generic/base";
+@import "03-generic/layout";
+
+@import "04-elements/forms";
+
+@import "05-blocks/blocks";
+
+@import "06-components/header";
+@import "06-components/footer";
+@import "06-components/navigation";
+@import "06-components/pagination";
+@import "06-components/comments";
+@import "06-components/sidebar";
+@import "06-components/entry";
+
+@import "07-utilities/a11y";
 
 // Foundation
-@import "settings";
-@import "../../node_modules/foundation-sites/scss/foundation";
+//@import "settings";
+//@import "../../node_modules/foundation-sites/scss/foundation";
 
 // Third-part libraries such as Foundation and Bourbon
-@import "vendor/index";
+//@import "vendor/index";
 
 // Our base styles
-@import "base/index";
+//@import "base/index";
 
 // Reusable components
-@import "components/index";
+//@import "components/index";
 
 // Page sections
-@import "sections/index";
+//@import "sections/index";
 
 // Pages and templates
-@import "pages/index";
+//@import "pages/index";
 
 // Plugin support
-@import "plugins/index";
+//@import "plugins/index";

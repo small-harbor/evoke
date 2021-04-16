@@ -1,0 +1,27 @@
+/* # Header ===== */
+.header-wrap {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.site-branding {
+	position: relative;
+	flex: 1 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	padding-bottom: 14px;
+}
+
+.site-title {
+	font-family: var(--fathom-heading--font-family);
+	font-size: var(--hiq-font-size-3);
+	font-weight: var(--hiq-font-weight-bold);
+	margin: 0;
+	flex: 0 0 100%;
+}
+
+.site-description {
+	font-size: var(--hiq-font-size-6);
+	margin: 0;
+}

@@ -1,0 +1,66 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	clear: both;
+	font-family: var(--fathom-heading--font-family);
+	font-weight: var(--hiq-font-weight-bold);
+	margin: var(--fathom--spacing-vertical) 0;
+
+	strong {
+		font-weight: var(--heading--font-weight-strong);
+	}
+}
+
+h1,
+.h1 {
+	font-size: var(--hiq-font-size-1);
+	letter-spacing: var(--heading--letter-spacing-h1);
+	line-height: var(--hiq-heading-line-height);
+}
+
+h2,
+.h2 {
+	font-size: var(--hiq-font-size-2);
+	letter-spacing: var(--heading--letter-spacing-h2);
+	line-height: var(--hiq-heading-line-height);
+}
+
+h3,
+.h3 {
+	font-size: var(--hiq-font-size-3);
+	letter-spacing: var(--heading--letter-spacing-h3);
+	line-height: var(--hiq-heading-line-height);
+}
+
+h4,
+.h4 {
+	font-size: var(--hiq-font-size-4);
+	font-weight: var(--heading--font-weight-strong);
+	letter-spacing: var(--heading--letter-spacing-h4);
+	line-height: var(--hiq-heading-line-height);
+}
+
+h5,
+.h5 {
+	font-size: var(--hiq-font-size-5);
+	font-weight: var(--heading--font-weight-strong);
+	letter-spacing: var(--heading--letter-spacing-h5);
+	line-height: var(--hiq-heading-line-height);
+}
+
+h6,
+.h6 {
+	font-size: var(--hiq-font-size-6);
+	font-weight: var(--heading--font-weight-strong);
+	letter-spacing: var(--heading--letter-spacing-h6);
+	line-height: var(--hiq-heading-line-height);
+}

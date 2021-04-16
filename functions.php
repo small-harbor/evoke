@@ -121,6 +121,7 @@ final class Fathom_Theme {
 		require_once( $this->dir . 'inc/core/functions-filters.php' );
 		require_once( $this->dir . 'inc/core/functions-template.php' );
 		require_once( $this->dir . 'inc/core/functions.php' );
+
 		require_once( $this->dir . 'inc/customizer/class-customizer.php' );
 		require_once( $this->dir . 'inc/customizer/class-custom-css.php' );
 	}
@@ -197,10 +198,7 @@ final class Fathom_Theme {
 	 * @return void
 	 */
 	public function register_menus() {
-
 		register_nav_menu( 'primary',   _x( 'Primary',   'nav menu location', 'fathom' ) );
-		register_nav_menu( 'mobile',    _x( 'Mobile', 'nav menu location', 'fathom' ) );
-		register_nav_menu( 'social',    _x( 'Social',    'nav menu location', 'fathom' ) );
 	}
 
 	/**
@@ -230,17 +228,13 @@ final class Fathom_Theme {
 
 		register_sidebar(
 			array(
-				'id'          => 'primary',
-				'name'        => _x( 'Page Sidebar', 'sidebar', 'fathom' ),
-				'description' => __( 'The main sidebar for pages. It is displayed on either the left or right side of the page based on the chosen layout.', 'fathom' )
-			)
-		);
-
-		register_sidebar(
-			array(
-				'id'          => 'secondary',
+				'id'          => 'blog',
 				'name'        => _x( 'Blog Sidebar', 'sidebar', 'fathom' ),
-				'description' => __( 'The main sidebar for single blog posts and blog archives. It is displayed on either the left or right side of the page based on the chosen layout.', 'fathom' )
+				'description' => __( 'The main sidebar for the blog archives. It is displayed on either the left or right side of the page based on the chosen layout.', 'fathom' ),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3 class="widgettitle"><span>',
+				'after_title'   => '</span></h3>',
 			)
 		);
 	}

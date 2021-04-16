@@ -1,0 +1,25 @@
+.pagination {
+	ul.page-numbers {
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			margin: 0 0.5rem;
+		}
+	}
+
+	a.page-numbers,
+	span.page-numbers {
+		display: inline-block;
+		text-align: center;
+		width: 2.8rem;
+		height: 2.8rem;
+		border-radius: 5rem;
+	}
+
+	a.next,
+	a.prev {
+		width: auto;
+	}
+}

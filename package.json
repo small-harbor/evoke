@@ -4,34 +4,60 @@
 	"author": "David Sutoyo",
 	"description": "Fathom WordPress theme",
 	"browserslist": [
-		"defaults",
-		"not IE 11",
-		"not IE_Mob 11"
+		"extends @wordpress/browserslist-config"
 	],
-	"dependencies": {
-		"foundation-sites": "6.6.3",
-		"natives": "^1.1.6"
-	},
 	"devDependencies": {
 		"@babel/core": "^7.11.6",
 		"@babel/preset-env": "^7.11.5",
-		"browser-sync": "^2.26.12",
-		"gulp": "^3.9.1",
-		"gulp-autoprefixer": "^7.0.0",
-		"gulp-babel": "^8.0.0",
-		"gulp-clean-css": "^4.2.0",
-		"gulp-concat": "^2.6.0",
-		"gulp-header": "^2.0.0",
-		"gulp-notify": "^3.2.0",
-		"gulp-rename": "^2.0.0",
-		"gulp-replace": "1.0.0",
-		"gulp-sass": "^4.1.0",
-		"gulp-sourcemaps": "^2.6.5",
-		"gulp-uglify": "^2.0.0",
-		"gulp-zip": "^5.0.0",
-		"minimist": "^1.2.3"
+		"@wordpress/browserslist-config": "^3.0.0",
+		"@wordpress/eslint-plugin": "^8.0.1",
+		"autoprefixer": "^10.0.4",
+		"babel-loader": "^8.1.0",
+		"concurrently": "^5.3.0",
+		"cross-env": "^7.0.2",
+		"css-loader": "^3.6.0",
+		"eslint": "^7.18.0",
+		"hiq": "^4.1.4",
+		"mini-css-extract-plugin": "^0.9.0",
+		"node-sass": "^4.14.1",
+		"optimize-css-assets-webpack-plugin": "^5.0.4",
+		"postcss": "^8.1.10",
+		"postcss-calc": "^7.0.5",
+		"postcss-css-variables": "^0.17.0",
+		"postcss-custom-media": "^7.0.8",
+		"postcss-discard-duplicates": "^4.0.2",
+		"postcss-focus-within": "^3.0.0",
+		"postcss-loader": "^4.1.0",
+		"postcss-nested": "^4.2.1",
+		"precss": "^4.0.0",
+		"rtlcss": "^2.6.1",
+		"sass-loader": "^7.3.1",
+		"stylelint": "^13.9.0",
+		"stylelint-config-recommended-scss": "^4.2.0",
+		"stylelint-config-wordpress": "^17.0.0",
+		"terser-webpack-plugin": "^2.3.7",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-notifier": "^1.13.0"
+	},
+	"rtlcssConfig": {
+		"options": {
+			"autoRename": false,
+			"autoRenameStrict": false,
+			"blacklist": {},
+			"clean": true,
+			"greedy": false,
+			"processUrls": false,
+			"stringMap": []
+		},
+		"plugins": [],
+		"map": false
 	},
 	"scripts": {
-    "bundle": "dir-archiver --src . --dest ../fathom.zip --exclude .DS_Store .ds_store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md babel.config.json composer.json composer.lock gulpfile.js node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist src style.css.map style.min.css.map"
-  }
+		"start": "cross-env NODE_ENV=development webpack --watch --hide-modules",
+		"dev": "cross-env NODE_ENV=development webpack --hide-modules",
+		"prod": "cross-env NODE_ENV=production webpack --hide-modules",
+		"build": "npm run prod",
+		"bundle": "dir-archiver --src . --dest ../fathom.zip --exclude .DS_Store .ds_store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md babel.config.json composer.json composer.lock gulpfile.js node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist src style.css.map style.min.css.map"
+	}
 }
