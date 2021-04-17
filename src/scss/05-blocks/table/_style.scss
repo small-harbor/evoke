@@ -10,13 +10,14 @@ table,
 	}
 
 	th {
-		font-family: var(--heading--font-family);
+		font-family: var(--fathom-heading--font-family);
+		color: var(--hiq-table-heading-text-color);
 	}
 
 	td,
 	th {
-		padding: calc(0.5 * var(--global--spacing-unit));
-		border: 1px solid;
+		padding: var(--hiq-table-cell-padding-vertical) var(--hiq-table-cell-padding-horizontal);
+		border: 1px solid var(--hiq-table-cell-border-color);
 	}
 
 	figcaption {

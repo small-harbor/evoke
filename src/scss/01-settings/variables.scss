@@ -5,12 +5,13 @@ $large: 1024px;
 $xlarge: 1200px;
 $xxlarge: 1440px;
 $global-width: 1200px;
-$inner-width: 640px;
+$inner-width: $medium - 80px;
 
 $baseline-unit: 10px;
 $nav-breakpoint: $medium;
 $global-padding: 1rem;
-$paragraph-margin-bottom: 1rem;
+$spacing-horizontal: 2rem;
+$spacing-vertical: 1.2rem;
 
 :root {
 	/* gray palette */
@@ -22,8 +23,8 @@ $paragraph-margin-bottom: 1rem;
 	--hiq-color-gray-6: hsl(220, 10%, 90%);
 	--hiq-color-gray-7: hsl(220, 10%, 95%);
 	--hiq-color-gray-8: hsl(220, 10%, 98%);
-	--hiq-color-primary: hsl(210, 100%, 20%);
-	--hiq-color-secondary: hsl(210, 100%, 20%);
+	--hiq-color-primary: hsl(131, 79%, 71%);
+	--hiq-color-secondary: hsl(321, 70%, 53%);
 	--hiq-color-black: #000;
 	--hiq-color-white: #fff;
 	--hiq-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
@@ -64,7 +65,50 @@ $paragraph-margin-bottom: 1rem;
 	--fathom--spacing-horizontal: 2rem;
 	--fathom--spacing-vertical: 1.2rem;
 
-	/* Main navigation */
+	/* Links */
+	--hiq-link-color: var(--hiq-color-primary);
+	--hiq-link-hover-color: var(--hiq-color-gray-2);
+	--hiq-link-active-color: var(--hiq-color-primary);
+	--hiq-link-visited-color: var(--hiq-color-primary);
+	--hiq-link-visited-hover-color: var(--hiq-link-hover-color);
+	--hiq-link-visited-active-color: var(--hiq-link-active-color);
+	--hiq-link-text-decoration: none;
+
+	/* Forms */
+	--hiq-input-height: 4.4rem;
+
+	/* Buttons */
+	--hiq-button-height: auto;
+	--hiq-button-vertical-padding: 0.5rem;
+	--hiq-button-horizontal-padding: 1.5rem;
+	--hiq-button-border-width: 1px;
+	--hiq-button-border-radius: var(--hiq-border-radius);
+	--hiq-button-font-weight: var(--hiq-font-weight-medium);
+	--hiq-button-border-color: var(--hiq-color-primary);
+	--hiq-button-background-color: var(--hiq-color-primary);
+	--hiq-button-text-color: white;
+	--hiq-button-hover-border-color: var(--hiq-color-gray-2);
+	--hiq-button-hover-background-color: var(--hiq-color-gray-2);
+	--hiq-button-hover-text-color: white;
+	--hiq-button-active-border-color: var(--hiq-color-primary);
+	--hiq-button-active-background-color: var(--hiq-color-primary);
+	--hiq-button-active-text-color: white;
+
+	/* Tables */
+	--hiq-table-head-border-width: var(--hiq-table-cell-border-width);
+	--hiq-table-foot-border-width: var(--hiq-table-cell-border-width);
+	--hiq-table-caption-padding-vertical: 0.5rem;
+	--hiq-table-caption-text-color: var(--hiq-color-gray-5);
+	--hiq-table-caption-font-weight: var(--hiq-font-weight-semibold);
+	--hiq-table-cell-padding-vertical: 0.5rem;
+	--hiq-table-cell-padding-horizontal: 1rem;
+	--hiq-table-cell-border-width: 1px;
+	--hiq-table-cell-border-color: var(--hiq-color-gray-6);
+	--hiq-table-heading-background-color: var(--hiq-color-gray-7);
+	--hiq-table-heading-text-color: var(--hiq-color-gray-4);
+	--hiq-table-heading-font-weight: var(--hiq-font-weight-medium);
+
+	/* Main Navigation */
 	--fathom-menu--font-family: var(--hiq-font-family-base);
 	--fathom-menu--font-family-mobile: var(--hiq-font-family-base);
 	--fathom-menu--font-size: var(--hiq-font-size-5);
@@ -76,7 +120,7 @@ $paragraph-margin-bottom: 1rem;
 	--fathom-menu--font-style-sub-menu-mobile: normal;
 	--fathom-menu--font-weight: normal;
 	--fathom-menu--font-weight-button: 500;
-	--fathom-menu--link-color: var(--hiq-color-primary);
+	--fathom-menu--link-color: var(--hiq-color-gray-4);
 	--fathom-menu--link-color-hover: var(--hiq-color-primary-hover);
 	--fathom-menu--text-color: var(--hiq-color-primary);
 	--fathom-menu--padding: calc(0.66 * var(--hiq-spacing-unit));
@@ -96,13 +140,4 @@ $paragraph-margin-bottom: 1rem;
 	--fathom-hamburger--width: 24px;
 	--fathom-hamburger--bar-height: 3px;
 	--fathom-hamburger--bar-spacing: 8px;
-
-	/* Forms */
-	--hiq-input-height: 4.4rem;
-
-	/* Buttons */
-	--hiq-button-height: auto;
-	--hiq-button-vertical-padding: 1rem;
-	--hiq-button-horizontal-padding: 1.5rem;
-	--hiq-button-border-color: var(--hiq-color-primary);
 }

@@ -1,7 +1,7 @@
 /* # Content Layout Structure ===== */
 #main {
-	padding-top: calc(var(--fathom--spacing-vertical) * 4);
-	padding-bottom: calc(var(--fathom--spacing-vertical) * 4);
+	padding-top: calc(var(--fathom--spacing-vertical) * 2);
+	padding-bottom: calc(var(--fathom--spacing-vertical) * 2);
 }
 
 .has-post-thumbnail {
@@ -11,47 +11,63 @@
 }
 
 .header-wrap {
-	padding: calc(var(--fathom--spacing-vertical) * 2);
+	padding: calc(var(--fathom--spacing-vertical) * 2) calc(var(--fathom--spacing-horizontal) * 2);
 
 	@media (min-width: $nav-breakpoint) and (max-width: $large - 1) {
-		max-width: $inner-width;
+		.site-branding,
+		.site-navigation {
+			flex: 0 0 $inner-width;
+			width: $inner-width;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#menu-primary {
+			margin-left: -1 * $global-padding;
+			margin-right: -1 * $global-padding;
+		}
+	}
+
+	@include breakpoint($large) {
+		#menu-primary {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+.content-wrap {
+	max-width: 100%;
+}
+
+.main-wrap {
+	max-width: $global-width;
+	padding: calc(var(--fathom--spacing-vertical) * 2) calc(var(--fathom--spacing-horizontal) * 2);
+	background-color: var(--hiq-color-white);
+
+	@include breakpoint($global-width + 48px) {
 		margin-left: auto;
 		margin-right: auto;
 	}
 }
 
-.content-wrap {
-	max-width: $global-width;
-	margin-left: auto;
-	margin-right: auto;
-	padding: calc(var(--fathom--spacing-vertical) * 2);
-}
-
 .footer-wrap {
-	padding: calc(var(--fathom--spacing-vertical) * 2);
-}
+	background-color: var(--hiq-color-white);
+	margin-left: calc(var(--fathom--spacing-vertical) * 2);
+	margin-right: calc(var(--fathom--spacing-vertical) * 2);
+	padding: calc(var(--fathom--spacing-vertical) * 2) calc(var(--fathom--spacing-horizontal) * 2);
 
-.sidebar {
-	padding: calc(var(--fathom--spacing-vertical) * 2);
+	@include breakpoint($global-width + 48px) {
+		max-width: $global-width;
+		margin: 0 auto;
+	}
 }
 
 /* # Container Layout Structure ===== */
-.container-body-boxed {
-	.content-wrap {
-		background: var(--hiq-color-white);
-		padding: calc(var(--fathom--spacing-horizontal) * 6) 0;
-
-		@include breakpoint($medium) {
-			padding: calc(var(--fathom--spacing-horizontal) * 6) calc(var(--fathom--spacing-vertical) * 10);
-		}
-	}
-}
-
-.container-body-contained {
-	#main {
-		background-color: var(--hiq-color-white);
-	}
-
+.container-body-boxed,
+.container-body-contained,
+.container-body-full-width {
 	&.home,
 	&.archive {
 		@include breakpoint($medium) {
@@ -60,15 +76,14 @@
 				width: $inner-width;
 				margin-left: auto;
 				margin-right: auto;
+				padding-left: 0;
+				padding-right: 0;
 			}
 		}
 
-		@include breakpoint($large) {
-			#main {
+		@include breakpoint($global-width + 48px) {
+			.main-wrap {
 				display: flex;
-				max-width: $global-width;
-				margin-left: auto;
-				margin-right: auto;
 				justify-content: space-between;
 			}
 
@@ -88,37 +103,63 @@
 	}
 }
 
+.container-body-boxed {
+	#main {
+		background-color: var(--hiq-color-gray-6);
+	}
+
+	.main-wrap {
+		margin-left: calc(var(--fathom--spacing-vertical) * 2);
+		margin-right: calc(var(--fathom--spacing-vertical) * 2);
+
+		@include breakpoint($global-width + 48px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+.container-body-contained {
+	#main {
+		background-color: var(--hiq-color-white);
+	}
+}
+
 .container-body-full-width {
 	#main {
 		background-color: var(--hiq-color-white);
 	}
 
-	.content-wrap {
+	.main-wrap {
 		max-width: none;
 	}
 }
 
 .container-header-boxed {
 	header.header {
-		background-color: transparent;
+		background-color: var(--hiq-color-gray-6);
+		padding: calc(var(--fathom--spacing-vertical) * 2) 0 0 0;
 	}
 	
 	.header-wrap {
-		@include breakpoint($large) {
-			background-color: var(--hiq-color-white);
+		background-color: var(--hiq-color-white);
+		margin-left: calc(var(--fathom--spacing-vertical) * 2);
+		margin-right: calc(var(--fathom--spacing-vertical) * 2);
+
+		@include breakpoint($global-width + 48px) {
 			max-width: $global-width;
-			margin: var(--fathom--spacing-vertical) auto 0 auto;
+			margin: 0 auto;
 		}
 	}
 }
 
 .container-header-contained {
 	header.header {
-		background-color: transparent;
+		background-color: var(--hiq-color-white);
 	}
 	
 	.header-wrap {
-		@include breakpoint($large) {
+		@include breakpoint($global-width + 48px) {
 			max-width: $global-width;
 			margin: 0 auto;
 		}
@@ -127,21 +168,22 @@
 
 .container-header-full-width {
 	.header-wrap {
-
+		max-width: none;
 	}
 }
 
 .container-footer-boxed {
-	.footer-wrap {
-		max-width: $global-width;
-		background-color: var(--hiq-color-white);
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: calc(var(--fathom--spacing-vertical) * 2);
+	footer.footer {
+		background-color: var(--hiq-color-gray-6);
+		padding-bottom: calc(var(--fathom--spacing-vertical) * 2);
 	}
 }
 
 .container-footer-contained {
+	footer.footer {
+		background-color: var(--hiq-color-white);
+	}
+
 	.footer-wrap {
 		max-width: $global-width;
 		margin-left: auto;
@@ -149,7 +191,39 @@
 	}
 }
 
-.container-archive-boxed,
+.container-footer-full-width {
+	.footer-wrap {
+		max-width: none;
+	}
+}
+
+.container-page-boxed,
+.container-post-boxed,
+.container-singular-boxed,
+.container-post-contained,
+.container-page-contained,
+.container-singular-contained {
+	@include breakpoint($medium) {
+		.content-wrap {
+			width: $inner-width;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	@include breakpoint($global-width + 48px) {
+		.main-wrap {
+			max-width: $global-width;
+		}
+
+		.content-wrap {
+			flex: 0 0 $inner-width;
+		}
+	}
+}
+
 .container-page-boxed,
 .container-post-boxed,
 .container-singular-boxed {
@@ -157,31 +231,33 @@
 		background-color: var(--hiq-color-gray-6);
 	}
 
-	.content-wrap {
-		max-width: $global-width;
-		margin-left: auto;
-		margin-right: auto;
-		background-color: var(--hiq-color-white);
-		padding: calc(var(--fathom--spacing-vertical) * 2);
+	.main-wrap {
+		margin-left: calc(var(--fathom--spacing-vertical) * 2);
+		margin-right: calc(var(--fathom--spacing-vertical) * 2);
+
+		@include breakpoint($global-width + 48px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }
 
-.container-archive-contained,
 .container-post-contained,
 .container-page-contained,
 .container-singular-contained {
-	.content-wrap {
-		max-width: $global-width;
-		margin-left: auto;
-		margin-right: auto;
+	#main {
+		background-color: var(--hiq-color-white);
 	}
 }
 
-.container-archive-full-width,
 .container-post-full-width,
 .container-page-full-width,
 .container-singular-full-width {
-	.content-wrap {
+	#main {
+		background-color: var(--hiq-color-white);
+	}
+
+	.main-wrap {
 		max-width: none;
 	}
 }

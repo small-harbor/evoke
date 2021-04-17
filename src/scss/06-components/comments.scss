@@ -7,11 +7,11 @@
 }
 
 #comments {
-	padding: 4.8rem 0;
+	padding: calc(var(--fathom--spacing-vertical) * 4) 0;
 }
 
 #comments-number {
-	font-size: 1.8rem;
+	font-size: var(--hiq-font-size-3);
 }
 
 .comment-list {
@@ -22,7 +22,7 @@
 
 ol.children {
 	list-style-type: none;
-	margin: 0;
+	margin: calc(var(--fathom--spacing-vertical) * 3) 0 0 0;
 	border-left: 1px solid var(--hiq-color-gray-6);
 }
 
@@ -30,35 +30,12 @@ ol.children {
 li.comment,
 li.ping,
 li.bypostauthor {
-	padding: 3.2rem 0 0 0;
-
-	article {
-		max-width: 100%;
-		margin-bottom: 0;
-		padding-bottom: 3.2rem;
-		border-bottom: 1px solid var(--hiq-color-gray-6);
-
-		.comment-meta,
-		.comment-content,
-		.reply {
-			
-		}
-
-		&:last-child {
-			border-bottom: none;
-		}
-	}
+	margin-bottom: calc(var(--fathom--spacing-vertical) * 3);
+	padding: calc(var(--fathom--spacing-vertical) * 3) 0 0 0;
 }
 
-.comment-entry {
-	flex: 0 1 auto;
-	max-width: calc(100% - 60px);
-	padding-left: 3.2rem;
-	color: #828282;
-}
-
-.comment-header {
-	margin-bottom: 2rem;
+.comment-content {
+	margin: var(--fathom--spacing-vertical) 0 var(--fathom--spacing-horizontal) calc(var(--fathom--spacing-horizontal) + 60px);
 }
 
 /* ## Comment Avatars ===== */
@@ -69,6 +46,8 @@ li.bypostauthor {
 	}
 
 	.fn {
+		font-family: var(--fathom-heading--font-family);
+		font-weight: var(--hiq-font-weight-bold);
 		margin-left: var(--fathom--spacing-horizontal);
 	}
 
@@ -81,27 +60,11 @@ li.bypostauthor {
 .comment-metadata {
 	margin-left: calc(var(--fathom--spacing-horizontal) + 60px);
 
-	cite {
-		display: block;
-		font-style: normal;
-		line-height: 1;
-		font-size: 1.6rem;
-
-		&:before {
-			content: none;
-		}
-
-		.bypostauthor &,
-		.bypostauthor & a {
-			color: var(--fathom-warning-color);
-		}
-	}
-
 	time,
 	.comment-permalink,
 	.comment-edit-link {
 		font-size: var(--hiq-font-size-6);
-		color: var(--fathom-dark-gray);
+		color: var(--hiq-color-gray-4);
 	}
 
 	.comment-permalink,
@@ -109,7 +72,7 @@ li.bypostauthor {
 		&:before {
 			content: '\00b7';
 			padding: 0 1rem 0 0.5rem;
-			color: var(--fathom-black);
+			color: var(--hiq-color-black);
 		}
 	}
 
@@ -118,17 +81,16 @@ li.bypostauthor {
 	}
 }
 
-.comment-content {
-	margin: var(--fathom--spacing-horizontal) 0 var(--fathom--spacing-horizontal) calc(var(--fathom--spacing-horizontal) + 60px);
-}
-
 /* ## Comment Reply ===== */
+.reply {
+	margin-left: calc(var(--fathom--spacing-horizontal) + 60px);
+}
 .comment-reply-link {
-	margin-top: 0.8rem;
-	margin-bottom: 0;
-	text-align: right;
-	font-size: 1.2rem;
-	color: var(--fathom-primary-color);
+	font-size: var(--hiq-font-size-6);
+	background-color: var(--hiq-color-white);
+	border: 1px solid var(--hiq-color-gray-5);
+	color: var(--hiq-color-gray-4);
+	padding: var(--hiq-button-vertical-padding) var(--hiq-button-horizontal-padding);
 }
 
 

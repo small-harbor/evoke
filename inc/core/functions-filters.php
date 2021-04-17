@@ -76,7 +76,7 @@ function fathom_attr_body( $classes ) {
  * @return array
  */
 function fathom_excerpt_more( $more ) {
-	return '<p class="read-more"><a href="' . esc_url( get_permalink() ) . '">' . __( 'Read More', 'fathom' ) . '</a></p>';
+	return '<p class="read-more"><a class="button" href="' . esc_url( get_permalink() ) . '">' . __( 'Read More', 'fathom' ) . '</a></p>';
 }
 
 /**

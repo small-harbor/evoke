@@ -2,23 +2,27 @@
 
 <main id="main" class="main" role="main">
 
-	<div class="content-wrap">
+	<div class="main-wrap">
 
-		<?php if ( have_posts() ) : ?>
+		<div class="content-wrap">
 
-			<?php while ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
-				<?php the_post(); ?>
+				<?php while ( have_posts() ) : ?>
 
-				<?php get_template_part( 'content/content', get_post_type() ); ?>
+					<?php the_post(); ?>
 
-				<?php comments_template( '', true ); // Loads the comments.php template. ?>
+					<?php get_template_part( 'content/content', get_post_type() ); ?>
 
-			<?php endwhile; ?>
+					<?php comments_template( '', true ); // Loads the comments.php template. ?>
 
-			<?php locate_template( array( 'misc/loop-nav.php' ), true ); ?>
+				<?php endwhile; ?>
 
-		<?php endif; ?>
+				<?php locate_template( array( 'misc/loop-nav.php' ), true ); ?>
+
+			<?php endif; ?>
+
+		</div>
 
 	</div>
 

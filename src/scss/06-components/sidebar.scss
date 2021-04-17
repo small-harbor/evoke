@@ -16,8 +16,67 @@
 .widget {
 	margin-bottom: calc(var(--fathom--spacing-vertical) * 4);
 
-	> ul {
+	ul {
 		padding: 0;
 		list-style-type: none;
+
+		> li {
+			padding-bottom: calc(var(--fathom--spacing-vertical) / 2);
+
+			&:before {
+				font-family: "bootstrap-icons";
+				display: inline-block;
+				font-family: bootstrap-icons !important;
+				font-style: normal;
+				font-weight: normal !important;
+				font-variant: normal;
+				font-size: 1rem;
+				text-transform: none;
+				line-height: 1;
+				vertical-align: 0;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				margin-right: 1rem;
+				content: "\f309";
+				color: var(--hiq-color-gray-5);
+			}
+		}
+
+		a {
+			color: var(--hiq-color-gray-4);
+		}
+	}
+}
+
+.widget_archive {
+	ul {
+		> li {
+			&:before {
+				content: "\f1f6";
+			}
+		}
+	}
+}
+
+.widget_categories {
+	ul {
+		> li {
+			&:before {
+				content: "\f3d7";
+			}
+		}
+	}
+}
+
+.widget_search {
+	form {
+		position: relative;
+	}
+
+	.search-button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: var(--hiq-input-height);
 	}
 }

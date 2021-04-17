@@ -76,6 +76,10 @@ if ( ! class_exists( 'Fathom_Custom_CSS' ) ) {
 			if ( $options['color_primary'] ) {
 				$primary_color = esc_attr( $options['color_primary'] );
 
+				$css[':root'] = array(
+					'--hiq-color-primary' => $primary_color
+				);
+/*
 				$css['a'] = array(
 					'color' => $primary_color
 				);
@@ -106,7 +110,7 @@ if ( ! class_exists( 'Fathom_Custom_CSS' ) ) {
 
 				$css['input[type="submit"]'] = array(
 					'background' => $primary_color
-				);
+				);*/
 			}
 
 			if ( $options['color_secondary'] ) {

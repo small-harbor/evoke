@@ -6,8 +6,9 @@
 }
 
 .entry-header {
-	@include breakpoint($global-width) {
-		.single & {
+	@include breakpoint($inner-width) {
+		.single &,
+		.page & {
 			margin: calc(var(--fathom--spacing-vertical) * 8) auto;
 			max-width: $inner-width;
 		}
@@ -46,7 +47,7 @@
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce),
 *[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce),
 .default-max-width {
-	@include breakpoint($global-width) {
+	@include breakpoint($inner-width) {
 		max-width: $inner-width;
 		margin-left: auto;
 		margin-right: auto;
@@ -54,8 +55,12 @@
 }
 
 .entry-footer {
-	@include breakpoint($global-width) {
-		.single & {
+	border-top: 1px solid var(--hiq-color-gray-6);
+	padding-top: var(--fathom--spacing-vertical);
+
+	@include breakpoint($inner-width) {
+		.single &,
+		.page & {
 			margin: calc(var(--fathom--spacing-vertical) * 8) auto;
 			max-width: $inner-width;
 		}
@@ -68,15 +73,34 @@
 	padding: 0;
 
 	li {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		text-transform: uppercase;
 		font-weight: 400;
+		color: var(--hiq-color-gray-4);
+		padding-bottom: calc(var(--fathom--spacing-vertical) / 2);
+
+		a,
+		a:hover,
+		a:visited,
+		a:active {
+			color: var(--hiq-color-gray-3);
+		}
 	}
 }
 
 .entry-meta-prep {
+	display: block;
 	font-family: var(--fathom-heading--font-family);
 	font-style: italic;
 	text-transform: none;
 	font-weight: 300;
+}
+
+.read-more {
+	.button {
+		font-size: var(--hiq-font-size-6);
+		background-color: var(--hiq-color-white);
+		border-color: var(--hiq-color-gray-5);
+		color: var(--hiq-color-gray-4);
+	}
 }
