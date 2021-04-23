@@ -1,9 +1,11 @@
 <?php if ( is_singular( 'post' ) ) : // If viewing a single post page. ?>
 
-	<div class="loop-nav">
-		<?php previous_post_link( '<div class="prev"><h5>' . __( 'Previous Post', 'fathom' ) . '</h5>' . esc_html__( '%link', 'fathom' ) . '</div>', '%title' ); ?>
-		<?php next_post_link(     '<div class="next"><h5>' . __( 'Next Post', 'fathom' ) . '</h5>' . esc_html__( '%link', 'fathom' ) . '</div>', '%title' ); ?>
-	</div><!-- .loop-nav -->
+	<nav class="post-navigation">
+		<div class="nav-links">
+			<?php previous_post_link( '<div class="nav-prev">' . esc_html__( 'Previous Post %link', 'fathom' ) . '</div>', '%title' ); ?>
+			<?php next_post_link(     '<div class="nav-next">' . esc_html__( 'Next Post %link',     'fathom' ) . '</div>', '%title' ); ?>
+		</div>
+	</nav><!-- .post-navigation -->
 
 <?php elseif ( is_home() || is_archive() || is_search() ) : // If viewing the blog, an archive, or search results. ?>
 

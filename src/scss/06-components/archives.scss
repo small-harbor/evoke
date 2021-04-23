@@ -1,0 +1,26 @@
+.archive-header {
+	border-bottom: 1px solid var(--hiq-color-gray-6);
+	margin-bottom: calc(var(--fathom--spacing-vertical) * 2);
+}
+
+.archive-title {
+	font-size: var(--hiq-font-size-6);
+	font-family: var(--fathom-body--font-family);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--hiq-color-gray-5);
+
+	span {
+		display: block;
+		margin-top: var(--fathom--spacing-vertical);
+		font-size: var(--hiq-font-size-2);
+		font-family: var(--fathom-heading--font-family);
+		text-transform: none;
+		letter-spacing: 0;
+		color: var(--hiq-color-gray-1);
+	}
+}
+
+.archive-description {
+	color: var(--hiq-color-gray-4);
+}

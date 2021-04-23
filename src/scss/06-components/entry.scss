@@ -58,10 +58,11 @@
 	border-top: 1px solid var(--hiq-color-gray-6);
 	padding-top: var(--fathom--spacing-vertical);
 
-	@include breakpoint($inner-width) {
-		.single &,
-		.page & {
-			margin: calc(var(--fathom--spacing-vertical) * 8) auto;
+	.single &,
+	.page & {
+		margin: calc(var(--fathom--spacing-vertical) * 8) auto;
+
+		@include breakpoint($inner-width) {
 			max-width: $inner-width;
 		}
 	}

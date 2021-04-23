@@ -5211,6 +5211,41 @@ table.wp-calendar-table caption {
   margin: 0; }
 
 /* # Footer ===== */
+footer.footer p {
+  margin-bottom: 0; }
+
+.archive-header {
+  border-bottom: 1px solid hsl(220, 10%, 90%);
+  border-bottom: 1px solid var(--hiq-color-gray-6);
+  margin-bottom: calc(1.2rem * 2);
+  margin-bottom: calc(var(--fathom--spacing-vertical) * 2); }
+
+.archive-title {
+  font-size: 1.4rem;
+  font-size: var(--hiq-font-size-6);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: var(--fathom-body--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(220, 10%, 60%);
+  color: var(--hiq-color-gray-5); }
+  .archive-title span {
+    display: block;
+    margin-top: 1.2rem;
+    margin-top: var(--fathom--spacing-vertical);
+    font-size: 4.2rem;
+    font-size: var(--hiq-font-size-2);
+    font-family: 'Merriweather', "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif;
+    font-family: var(--fathom-heading--font-family);
+    text-transform: none;
+    letter-spacing: 0;
+    color: hsl(220, 10%, 5%);
+    color: var(--hiq-color-gray-1); }
+
+.archive-description {
+  color: hsl(220, 10%, 40%);
+  color: var(--hiq-color-gray-4); }
+
 /* Main Navigation
 --------------------------------------------- */
 .main-navigation {
@@ -5426,6 +5461,48 @@ table.wp-calendar-table caption {
 
 body.flyout-active {
   overflow: hidden; }
+
+/* Post Navigation
+--------------------------------------------- */
+.post-navigation .nav-links {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.4rem;
+  font-size: var(--hiq-font-size-6);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: var(--fathom-body--font-family);
+  font-weight: 700;
+  font-weight: var(--hiq-font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(220, 10%, 60%);
+  color: var(--hiq-color-gray-5); }
+  .post-navigation .nav-links a {
+    display: block;
+    font-size: 1.8rem;
+    font-size: var(--hiq-font-size-5);
+    font-family: 'Merriweather', "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif;
+    font-family: var(--fathom-heading--font-family);
+    text-transform: none;
+    letter-spacing: 0;
+    color: hsl(220, 10%, 5%);
+    color: var(--hiq-color-gray-1); }
+
+.post-navigation .nav-prev,
+.post-navigation .nav-next {
+  flex: 0 0 100%; }
+  @media only screen and (min-width: 1024px) {
+    .post-navigation .nav-prev,
+    .post-navigation .nav-next {
+      flex: 0 0 50%; } }
+
+.post-navigation .nav-next {
+  margin-top: 1.2rem;
+  margin-top: var(--fathom--spacing-vertical); }
+  @media only screen and (min-width: 1024px) {
+    .post-navigation .nav-next {
+      margin-top: 0;
+      text-align: right; } }
 
 .pagination ul.page-numbers {
   display: flex;
@@ -5664,12 +5741,14 @@ li.bypostauthor {
   border-top: 1px solid var(--hiq-color-gray-6);
   padding-top: 1.2rem;
   padding-top: var(--fathom--spacing-vertical); }
-  @media only screen and (min-width: 560px) {
-    .single .entry-footer,
-    .page .entry-footer {
-      margin: calc(1.2rem * 8) auto;
-      margin: calc(var(--fathom--spacing-vertical) * 8) auto;
-      max-width: 560px; } }
+  .single .entry-footer,
+  .page .entry-footer {
+    margin: calc(1.2rem * 8) auto;
+    margin: calc(var(--fathom--spacing-vertical) * 8) auto; }
+    @media only screen and (min-width: 560px) {
+      .single .entry-footer,
+      .page .entry-footer {
+        max-width: 560px; } }
 
 .entry-metadata {
   list-style-type: none;

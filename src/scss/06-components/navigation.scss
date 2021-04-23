@@ -279,3 +279,46 @@
 body.flyout-active {
 	overflow: hidden;
 }
+
+
+/* Post Navigation
+--------------------------------------------- */
+.post-navigation {
+	.nav-links {
+		display: flex;
+		flex-flow: row wrap;
+		font-size: var(--hiq-font-size-6);
+		font-family: var(--fathom-body--font-family);
+		font-weight: var(--hiq-font-weight-bold);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--hiq-color-gray-5);
+
+		a {
+			display: block;
+			font-size: var(--hiq-font-size-5);
+			font-family: var(--fathom-heading--font-family);
+			text-transform: none;
+			letter-spacing: 0;
+			color: var(--hiq-color-gray-1);
+		}
+	}
+
+	.nav-prev,
+	.nav-next {
+		flex: 0 0 100%;
+
+		@include breakpoint($large) {
+			flex: 0 0 50%;
+		}
+	}
+
+	.nav-next {
+		margin-top: var(--fathom--spacing-vertical);
+
+		@include breakpoint($large) {
+			margin-top: 0;
+			text-align: right;
+		}
+	}
+}
